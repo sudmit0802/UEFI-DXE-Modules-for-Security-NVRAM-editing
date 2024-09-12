@@ -7,7 +7,7 @@ sudo apt install build-essential git python2 uuid-dev nasm acpica-tools
 ```
 
 ```bash
-pip install -r edk2/requirements.txt
+pip install -r edk2/pip-requirements.txt
 ```
 
 ```bash
