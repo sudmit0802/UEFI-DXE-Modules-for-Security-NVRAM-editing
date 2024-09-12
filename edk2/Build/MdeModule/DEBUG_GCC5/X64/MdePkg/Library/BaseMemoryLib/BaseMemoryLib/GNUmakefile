@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = BaseMemoryLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdePkg/Library/BaseMemoryLib
 PACKAGE_RELATIVE_DIR = Library/BaseMemoryLib
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib
+MODULE_DIR = $EDK_PATH/MdePkg/Library/BaseMemoryLib
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -212,7 +212,7 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/object_files.lst
 
 
 #
@@ -222,7 +222,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib \
               
 
 #
@@ -300,87 +300,87 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/SetMem.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SetMem.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SetMem.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/SetMem.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/SetMem.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/SetMem.c
 
 $(OUTPUT_DIR)/CompareMemWrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CompareMemWrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CompareMemWrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/CompareMemWrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./CompareMemWrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/CompareMemWrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./CompareMemWrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/CompareMemWrapper.c
 
 $(OUTPUT_DIR)/ScanMem32Wrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ScanMem32Wrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ScanMem32Wrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/ScanMem32Wrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem32Wrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/ScanMem32Wrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem32Wrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/ScanMem32Wrapper.c
 
 $(OUTPUT_DIR)/SetMem64Wrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SetMem64Wrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SetMem64Wrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/SetMem64Wrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem64Wrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/SetMem64Wrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem64Wrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/SetMem64Wrapper.c
 
 $(OUTPUT_DIR)/MemLibGeneric.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/MemLibGeneric.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/MemLibGeneric.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/MemLibGeneric.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./MemLibGeneric.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/MemLibGeneric.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./MemLibGeneric.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/MemLibGeneric.c
 
 $(OUTPUT_DIR)/CopyMem.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CopyMem.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CopyMem.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/CopyMem.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./CopyMem.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/CopyMem.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./CopyMem.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/CopyMem.c
 
 $(OUTPUT_DIR)/IsZeroBufferWrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IsZeroBufferWrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IsZeroBufferWrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/IsZeroBufferWrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./IsZeroBufferWrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/IsZeroBufferWrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./IsZeroBufferWrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/IsZeroBufferWrapper.c
 
 $(OUTPUT_DIR)/SetMem16Wrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SetMem16Wrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SetMem16Wrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/SetMem16Wrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem16Wrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/SetMem16Wrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem16Wrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/SetMem16Wrapper.c
 
 $(OUTPUT_DIR)/ScanMem8Wrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ScanMem8Wrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ScanMem8Wrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/ScanMem8Wrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem8Wrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/ScanMem8Wrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem8Wrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/ScanMem8Wrapper.c
 
 $(OUTPUT_DIR)/SetMem32Wrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SetMem32Wrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SetMem32Wrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/SetMem32Wrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem32Wrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/SetMem32Wrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMem32Wrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/SetMem32Wrapper.c
 
 $(OUTPUT_DIR)/MemLibGuid.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/MemLibGuid.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/MemLibGuid.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/MemLibGuid.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./MemLibGuid.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/MemLibGuid.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./MemLibGuid.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/MemLibGuid.c
 
 $(OUTPUT_DIR)/ZeroMemWrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ZeroMemWrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ZeroMemWrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/ZeroMemWrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ZeroMemWrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/ZeroMemWrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ZeroMemWrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/ZeroMemWrapper.c
 
 $(OUTPUT_DIR)/SetMemWrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SetMemWrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SetMemWrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/SetMemWrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMemWrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/SetMemWrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./SetMemWrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/SetMemWrapper.c
 
 $(OUTPUT_DIR)/ScanMem64Wrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ScanMem64Wrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ScanMem64Wrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/ScanMem64Wrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem64Wrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/ScanMem64Wrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem64Wrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/ScanMem64Wrapper.c
 
 $(OUTPUT_DIR)/CopyMemWrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CopyMemWrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CopyMemWrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/CopyMemWrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./CopyMemWrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/CopyMemWrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./CopyMemWrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/CopyMemWrapper.c
 
 $(OUTPUT_DIR)/ScanMem16Wrapper.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ScanMem16Wrapper.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ScanMem16Wrapper.obj : $(WORKSPACE)/MdePkg/Library/BaseMemoryLib/ScanMem16Wrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem16Wrapper.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseMemoryLib/ScanMem16Wrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/./ScanMem16Wrapper.obj $(INC) $EDK_PATH/MdePkg/Library/BaseMemoryLib/ScanMem16Wrapper.c
 
 $(OUTPUT_DIR)/BaseMemoryLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/BaseMemoryLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

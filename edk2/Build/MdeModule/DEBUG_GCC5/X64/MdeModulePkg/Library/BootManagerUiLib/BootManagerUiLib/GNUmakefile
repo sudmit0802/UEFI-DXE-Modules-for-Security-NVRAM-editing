@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = BootManagerUiLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Library/BootManagerUiLib
 PACKAGE_RELATIVE_DIR = Library/BootManagerUiLib
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BootManagerUiLib
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Library/BootManagerUiLib
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -203,7 +203,7 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/object_files.lst
 
 
 #
@@ -213,7 +213,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManagerUiLib.lib \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManagerUiLib.lib \
               
 
 #
@@ -292,29 +292,29 @@ $(DEBUG_DIR)/BootManagerVfr.c : $(MAKE_FILE)
 $(DEBUG_DIR)/BootManagerVfr.c : $(DEBUG_DIR)/AutoGen.h
 $(DEBUG_DIR)/BootManagerVfr.c : $(DEBUG_DIR)/BootManagerUiLibStrDefs.h
 $(DEBUG_DIR)/BootManagerVfr.c : $(WORKSPACE)/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr > $(OUTPUT_DIR)/BootManagerVfr.i
-	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/. $(OUTPUT_DIR)/BootManagerVfr.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) $EDK_PATH/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr > $(OUTPUT_DIR)/BootManagerVfr.i
+	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/. $(OUTPUT_DIR)/BootManagerVfr.i
 
 $(OUTPUT_DIR)/BootManager.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/BootManager.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/BootManager.obj : $(DEBUG_DIR)/BootManagerUiLibStrDefs.h
 $(OUTPUT_DIR)/BootManager.obj : $(WORKSPACE)/MdeModulePkg/Library/BootManagerUiLib/BootManager.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/./BootManager.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManager.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/./BootManager.obj $(INC) $EDK_PATH/MdeModulePkg/Library/BootManagerUiLib/BootManager.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/BootManagerUiLibStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/BootManagerVfr.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/BootManagerVfr.obj : $(DEBUG_DIR)/BootManagerVfr.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/./BootManagerVfr.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/BootManagerVfr.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/./BootManagerVfr.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/BootManagerVfr.c
 
 $(OUTPUT_DIR)/BootManagerUiLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/BootManagerUiLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManagerUiLib.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManagerUiLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManagerUiLib.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/OUTPUT/BootManagerUiLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

@@ -1,15 +1,15 @@
 
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/AutoGen.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/AutoGen.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthConfigureVfr.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthConfigureVfr.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerVfr.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerVfr.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthConfigureVfr.c.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthConfigureVfr.c.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerVfr.c.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerVfr.c.deps
 
                

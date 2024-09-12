@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = HiiDatabaseDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/HiiDatabaseDxe
 PACKAGE_RELATIVE_DIR = Universal/HiiDatabaseDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeHiiDatabase
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -224,8 +224,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -235,7 +235,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi \
               
 
 #
@@ -325,67 +325,67 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/String.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/String.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/String.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/String.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./String.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/String.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./String.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/String.c
 
 $(OUTPUT_DIR)/Image.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Image.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Image.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/Image.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./Image.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/Image.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./Image.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/Image.c
 
 $(OUTPUT_DIR)/Database.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Database.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Database.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/Database.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./Database.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/Database.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./Database.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/Database.c
 
 $(OUTPUT_DIR)/ImageEx.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ImageEx.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ImageEx.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/ImageEx.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./ImageEx.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/ImageEx.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./ImageEx.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/ImageEx.c
 
 $(OUTPUT_DIR)/ConfigRouting.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ConfigRouting.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ConfigRouting.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/ConfigRouting.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./ConfigRouting.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/ConfigRouting.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./ConfigRouting.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/ConfigRouting.c
 
 $(OUTPUT_DIR)/ConfigKeywordHandler.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ConfigKeywordHandler.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ConfigKeywordHandler.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/ConfigKeywordHandler.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./ConfigKeywordHandler.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/ConfigKeywordHandler.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./ConfigKeywordHandler.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/ConfigKeywordHandler.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/HiiDatabaseEntry.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/HiiDatabaseEntry.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/HiiDatabaseEntry.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseEntry.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./HiiDatabaseEntry.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseEntry.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./HiiDatabaseEntry.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseEntry.c
 
 $(OUTPUT_DIR)/Font.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Font.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Font.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiDatabaseDxe/Font.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./Font.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/Font.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/./Font.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiDatabaseDxe/Font.c
 
 $(OUTPUT_DIR)/HiiDatabase.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/HiiDatabase.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/HiiDatabase.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/HiiDatabase.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/HiiDatabase.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll
 
 $(OUTPUT_DIR)/HiiDatabase.efi : $(DEBUG_DIR)/HiiDatabase.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/OUTPUT/HiiDatabase.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/HiiDatabase.map : $(OUTPUT_DIR)/HiiDatabase.efi

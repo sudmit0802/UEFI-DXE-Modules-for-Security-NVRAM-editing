@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = AhciPei
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Bus/Ata/AhciPei
 PACKAGE_RELATIVE_DIR = Bus/Ata/AhciPei
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = AtaAhciPeimEntry
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -227,8 +227,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/static_library_files.lst
 
 
 #
@@ -238,7 +238,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi \
               
 
 #
@@ -331,67 +331,67 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/AhciPeiPassThru.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AhciPeiPassThru.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AhciPeiPassThru.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiPassThru.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiPassThru.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiPassThru.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiPassThru.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiPassThru.c
 
 $(OUTPUT_DIR)/DmaMem.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DmaMem.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DmaMem.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/DmaMem.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./DmaMem.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/DmaMem.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./DmaMem.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/DmaMem.c
 
 $(OUTPUT_DIR)/AhciMode.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AhciMode.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AhciMode.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/AhciMode.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciMode.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/AhciMode.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciMode.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/AhciMode.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/AhciPei.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AhciPei.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AhciPei.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/AhciPei.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPei.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/AhciPei.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPei.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/AhciPei.c
 
 $(OUTPUT_DIR)/AhciPeiBlockIo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AhciPeiBlockIo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AhciPeiBlockIo.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiBlockIo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiBlockIo.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiBlockIo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiBlockIo.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiBlockIo.c
 
 $(OUTPUT_DIR)/DevicePath.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DevicePath.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DevicePath.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/DevicePath.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./DevicePath.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/DevicePath.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./DevicePath.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/DevicePath.c
 
 $(OUTPUT_DIR)/AhciPeiStorageSecurity.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AhciPeiStorageSecurity.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AhciPeiStorageSecurity.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiStorageSecurity.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiStorageSecurity.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiStorageSecurity.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiStorageSecurity.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiStorageSecurity.c
 
 $(OUTPUT_DIR)/AhciPeiS3.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AhciPeiS3.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AhciPeiS3.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiS3.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiS3.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiS3.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/./AhciPeiS3.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AhciPei/AhciPeiS3.c
 
 $(OUTPUT_DIR)/AhciPei.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/AhciPei.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/AhciPei.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/AhciPei.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/AhciPei.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll
 
 $(OUTPUT_DIR)/AhciPei.efi : $(DEBUG_DIR)/AhciPei.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/DEBUG/AhciPei.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AhciPei/AhciPei/OUTPUT/AhciPei.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/AhciPei.map : $(OUTPUT_DIR)/AhciPei.efi

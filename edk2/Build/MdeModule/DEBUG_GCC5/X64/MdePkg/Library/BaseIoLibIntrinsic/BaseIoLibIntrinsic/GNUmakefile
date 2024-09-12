@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = BaseIoLibIntrinsic
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdePkg/Library/BaseIoLibIntrinsic
 PACKAGE_RELATIVE_DIR = Library/BaseIoLibIntrinsic
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseIoLibIntrinsic
+MODULE_DIR = $EDK_PATH/MdePkg/Library/BaseIoLibIntrinsic
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -202,7 +202,7 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/object_files.lst
 
 
 #
@@ -212,7 +212,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib \
               
 
 #
@@ -290,37 +290,37 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/IoLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IoLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IoLib.obj : $(WORKSPACE)/MdePkg/Library/BaseIoLibIntrinsic/IoLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLib.obj $(INC) $EDK_PATH/MdePkg/Library/BaseIoLibIntrinsic/IoLib.c
 
 $(OUTPUT_DIR)/IoHighLevel.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IoHighLevel.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IoHighLevel.obj : $(WORKSPACE)/MdePkg/Library/BaseIoLibIntrinsic/IoHighLevel.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoHighLevel.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoHighLevel.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoHighLevel.obj $(INC) $EDK_PATH/MdePkg/Library/BaseIoLibIntrinsic/IoHighLevel.c
 
 $(OUTPUT_DIR)/IoLibInternalTdxNull.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IoLibInternalTdxNull.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IoLibInternalTdxNull.obj : $(WORKSPACE)/MdePkg/Library/BaseIoLibIntrinsic/IoLibInternalTdxNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibInternalTdxNull.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibInternalTdxNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibInternalTdxNull.obj $(INC) $EDK_PATH/MdePkg/Library/BaseIoLibIntrinsic/IoLibInternalTdxNull.c
 
 $(OUTPUT_DIR)/IoLibMmioBuffer.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IoLibMmioBuffer.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IoLibMmioBuffer.obj : $(WORKSPACE)/MdePkg/Library/BaseIoLibIntrinsic/IoLibMmioBuffer.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibMmioBuffer.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibMmioBuffer.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibMmioBuffer.obj $(INC) $EDK_PATH/MdePkg/Library/BaseIoLibIntrinsic/IoLibMmioBuffer.c
 
 $(OUTPUT_DIR)/IoLibGcc.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IoLibGcc.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IoLibGcc.obj : $(WORKSPACE)/MdePkg/Library/BaseIoLibIntrinsic/IoLibGcc.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibGcc.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibGcc.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibGcc.obj $(INC) $EDK_PATH/MdePkg/Library/BaseIoLibIntrinsic/IoLibGcc.c
 
 $(OUTPUT_DIR)/IoLibFifo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IoLibFifo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IoLibFifo.obj : $(WORKSPACE)/MdePkg/Library/BaseIoLibIntrinsic/IoLibFifo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibFifo.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseIoLibIntrinsic/IoLibFifo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/./IoLibFifo.obj $(INC) $EDK_PATH/MdePkg/Library/BaseIoLibIntrinsic/IoLibFifo.c
 
 $(OUTPUT_DIR)/BaseIoLibIntrinsic.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/BaseIoLibIntrinsic.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

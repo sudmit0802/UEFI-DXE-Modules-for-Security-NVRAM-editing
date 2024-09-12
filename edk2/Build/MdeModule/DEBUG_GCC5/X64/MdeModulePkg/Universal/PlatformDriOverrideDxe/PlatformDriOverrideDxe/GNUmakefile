@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = PlatformDriOverrideDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/PlatformDriOverrideDxe
 PACKAGE_RELATIVE_DIR = Universal/PlatformDriOverrideDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/PlatformDriOverrideDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Universal/PlatformDriOverrideDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = PlatDriOverrideDxeInit
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -222,8 +222,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -233,7 +233,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi \
               
 
 #
@@ -327,50 +327,50 @@ $(DEBUG_DIR)/Vfr.c : $(MAKE_FILE)
 $(DEBUG_DIR)/Vfr.c : $(DEBUG_DIR)/AutoGen.h
 $(DEBUG_DIR)/Vfr.c : $(DEBUG_DIR)/PlatDriOverrideDxeStrDefs.h
 $(DEBUG_DIR)/Vfr.c : $(WORKSPACE)/MdeModulePkg/Universal/PlatformDriOverrideDxe/Vfr.vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/PlatformDriOverrideDxe/Vfr.vfr > $(OUTPUT_DIR)/Vfr.i
-	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/. $(OUTPUT_DIR)/Vfr.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) $EDK_PATH/MdeModulePkg/Universal/PlatformDriOverrideDxe/Vfr.vfr > $(OUTPUT_DIR)/Vfr.i
+	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/. $(OUTPUT_DIR)/Vfr.i
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/PlatDriOverrideDxeStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/PlatDriOverrideLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PlatDriOverrideLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PlatDriOverrideLib.obj : $(DEBUG_DIR)/PlatDriOverrideDxeStrDefs.h
 $(OUTPUT_DIR)/PlatDriOverrideLib.obj : $(WORKSPACE)/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatDriOverrideLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./PlatDriOverrideLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatDriOverrideLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./PlatDriOverrideLib.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatDriOverrideLib.c
 
 $(OUTPUT_DIR)/Vfr.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Vfr.obj : $(DEBUG_DIR)/Vfr.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./Vfr.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/Vfr.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./Vfr.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/Vfr.c
 
 $(OUTPUT_DIR)/PlatDriOverrideDxe.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PlatDriOverrideDxe.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PlatDriOverrideDxe.obj : $(DEBUG_DIR)/PlatDriOverrideDxeStrDefs.h
 $(OUTPUT_DIR)/PlatDriOverrideDxe.obj : $(WORKSPACE)/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatDriOverrideDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./PlatDriOverrideDxe.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatDriOverrideDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/./PlatDriOverrideDxe.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatDriOverrideDxe.c
 
 $(OUTPUT_DIR)/PlatDriOverrideDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PlatDriOverrideDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/PlatDriOverrideDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/PlatDriOverrideDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/PlatDriOverrideDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll
 
 $(OUTPUT_DIR)/PlatDriOverrideDxe.efi : $(DEBUG_DIR)/PlatDriOverrideDxe.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/DEBUG/PlatDriOverrideDxe.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe/OUTPUT/PlatDriOverrideDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/PlatDriOverrideDxe.map : $(OUTPUT_DIR)/PlatDriOverrideDxe.efi

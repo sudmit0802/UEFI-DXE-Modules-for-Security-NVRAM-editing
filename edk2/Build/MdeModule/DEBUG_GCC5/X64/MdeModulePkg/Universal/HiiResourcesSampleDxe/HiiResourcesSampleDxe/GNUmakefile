@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = HiiResourcesSampleDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/HiiResourcesSampleDxe
 PACKAGE_RELATIVE_DIR = Universal/HiiResourcesSampleDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiResourcesSampleDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Universal/HiiResourcesSampleDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = HiiResourcesSampleInit
@@ -61,13 +61,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -226,8 +226,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -237,7 +237,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi \
               
 
 #
@@ -331,33 +331,33 @@ $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/HiiResourcesSampleStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/HiiResourcesSample.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/HiiResourcesSample.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/HiiResourcesSample.obj : $(DEBUG_DIR)/HiiResourcesSampleStrDefs.h
 $(OUTPUT_DIR)/HiiResourcesSample.obj : $(WORKSPACE)/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSample.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/./HiiResourcesSample.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSample.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/./HiiResourcesSample.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSample.c
 
 $(OUTPUT_DIR)/HiiResourcesSample.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/HiiResourcesSample.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/HiiResourcesSample.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/HiiResourcesSample.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/HiiResourcesSample.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll
 
 $(OUTPUT_DIR)/HiiResourcesSample.efi : $(DEBUG_DIR)/HiiResourcesSample.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/DEBUG/HiiResourcesSample.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSample.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/HiiResourcesSample.map : $(OUTPUT_DIR)/HiiResourcesSample.efi
@@ -367,12 +367,12 @@ $(OUTPUT_DIR)/Sample.hpk : $(MAKE_FILE)
 $(OUTPUT_DIR)/Sample.hpk : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Sample.hpk : $(DEBUG_DIR)/HiiResourcesSampleStrDefs.h
 $(OUTPUT_DIR)/Sample.hpk : $(WORKSPACE)/MdeModulePkg/Universal/HiiResourcesSampleDxe/Sample.vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/HiiResourcesSampleDxe/Sample.vfr > $(OUTPUT_DIR)/./Sample.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) $EDK_PATH/MdeModulePkg/Universal/HiiResourcesSampleDxe/Sample.vfr > $(OUTPUT_DIR)/./Sample.i
 	"$(VFR)" $(VFR_FLAGS) --create-ifr-package --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory $(OUTPUT_DIR)/. $(OUTPUT_DIR)/./Sample.i
 
 $(OUTPUT_DIR)/HiiResourcesSamplehii.lib : $(HII_BINARY_PACKAGES)
 	"$(GENFW)" -o $(OUTPUT_DIR)/$(MODULE_NAME)hii.rc -g $(MODULE_GUID) --hiibinpackage $(HII_BINARY_PACKAGES) $(GENFW_FLAGS)
-	"$(RC)" $(RC_FLAGS) $(OUTPUT_DIR)/$(MODULE_NAME)hii.rc /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSamplehii.lib
+	"$(RC)" $(RC_FLAGS) $(OUTPUT_DIR)/$(MODULE_NAME)hii.rc $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe/OUTPUT/HiiResourcesSamplehii.lib
 
 
 

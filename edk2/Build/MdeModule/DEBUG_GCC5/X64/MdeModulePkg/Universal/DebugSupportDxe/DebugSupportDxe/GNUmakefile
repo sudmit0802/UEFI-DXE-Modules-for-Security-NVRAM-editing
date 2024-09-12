@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = DebugSupportDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/DebugSupportDxe
 PACKAGE_RELATIVE_DIR = Universal/DebugSupportDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DebugSupportDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Universal/DebugSupportDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeDebugSupportDriver
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -234,9 +234,9 @@ NASM_INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include/
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/static_library_files.lst
-INC_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/inc.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/static_library_files.lst
+INC_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/inc.lst
 
 
 #
@@ -246,7 +246,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi \
               
 
 #
@@ -332,42 +332,42 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/DebugSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DebugSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DebugSupport.obj : $(WORKSPACE)/MdeModulePkg/Universal/DebugSupportDxe/DebugSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/./DebugSupport.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DebugSupportDxe/DebugSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/./DebugSupport.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/DebugSupportDxe/DebugSupport.c
 
 $(OUTPUT_DIR)/X64/PlDebugSupportX64.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/PlDebugSupportX64.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/PlDebugSupportX64.obj : $(WORKSPACE)/MdeModulePkg/Universal/DebugSupportDxe/X64/PlDebugSupportX64.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/PlDebugSupportX64.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DebugSupportDxe/X64/PlDebugSupportX64.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/PlDebugSupportX64.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/DebugSupportDxe/X64/PlDebugSupportX64.c
 
 $(OUTPUT_DIR)/Ia32/PlDebugSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Ia32/PlDebugSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Ia32/PlDebugSupport.obj : $(WORKSPACE)/MdeModulePkg/Universal/DebugSupportDxe/Ia32/PlDebugSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/Ia32/PlDebugSupport.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DebugSupportDxe/Ia32/PlDebugSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/Ia32/PlDebugSupport.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/DebugSupportDxe/Ia32/PlDebugSupport.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/DebugSupportDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/DebugSupportDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/DebugSupportDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/DebugSupportDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/DebugSupportDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll
 
 $(OUTPUT_DIR)/DebugSupportDxe.efi : $(DEBUG_DIR)/DebugSupportDxe.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/DEBUG/DebugSupportDxe.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/DebugSupportDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/DebugSupportDxe.map : $(OUTPUT_DIR)/DebugSupportDxe.efi
@@ -376,10 +376,10 @@ $(OUTPUT_DIR)/DebugSupportDxe.map : $(OUTPUT_DIR)/DebugSupportDxe.efi
 $(OUTPUT_DIR)/X64/AsmFuncs.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/AsmFuncs.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/AsmFuncs.obj : $(WORKSPACE)/MdeModulePkg/Universal/DebugSupportDxe/X64/AsmFuncs.nasm
-	Trim --asm-file -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.i -i $(INC_LIST) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DebugSupportDxe/X64/AsmFuncs.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DebugSupportDxe/X64/AsmFuncs.nasm > /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.ii
-	Trim --trim-long --source-code -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.iii /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.ii
-	"$(NASM)" -I/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DebugSupportDxe/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.obj /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.iii
+	Trim --asm-file -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.i -i $(INC_LIST) $EDK_PATH/MdeModulePkg/Universal/DebugSupportDxe/X64/AsmFuncs.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) $EDK_PATH/MdeModulePkg/Universal/DebugSupportDxe/X64/AsmFuncs.nasm > $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.ii
+	Trim --trim-long --source-code -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.iii $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.ii
+	"$(NASM)" -I$EDK_PATH/MdeModulePkg/Universal/DebugSupportDxe/X64/ $(NASM_INC) $(NASM_FLAGS) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.obj $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe/OUTPUT/X64/AsmFuncs.iii
 
 
 

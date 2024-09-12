@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = UsbMassStorageDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Bus/Usb/UsbMassStorageDxe
 PACKAGE_RELATIVE_DIR = Bus/Usb/UsbMassStorageDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Bus/Usb/UsbMassStorageDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = USBMassStorageEntryPoint
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -219,8 +219,8 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -230,7 +230,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi \
               
 
 #
@@ -321,57 +321,57 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/UsbMassDiskInfo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UsbMassDiskInfo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UsbMassDiskInfo.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassDiskInfo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassDiskInfo.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassDiskInfo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassDiskInfo.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassDiskInfo.c
 
 $(OUTPUT_DIR)/UsbMassImpl.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UsbMassImpl.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UsbMassImpl.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassImpl.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassImpl.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassImpl.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassImpl.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassImpl.c
 
 $(OUTPUT_DIR)/UsbMassBot.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UsbMassBot.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UsbMassBot.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassBot.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassBot.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassBot.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassBot.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassBot.c
 
 $(OUTPUT_DIR)/UsbMassCbi.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UsbMassCbi.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UsbMassCbi.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassCbi.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassCbi.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassCbi.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassCbi.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassCbi.c
 
 $(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/ComponentName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./ComponentName.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/ComponentName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./ComponentName.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/ComponentName.c
 
 $(OUTPUT_DIR)/UsbMassBoot.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UsbMassBoot.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UsbMassBoot.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassBoot.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassBoot.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassBoot.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/./UsbMassBoot.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassBoot.c
 
 $(OUTPUT_DIR)/UsbMassStorageDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UsbMassStorageDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/UsbMassStorageDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/UsbMassStorageDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/UsbMassStorageDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll
 
 $(OUTPUT_DIR)/UsbMassStorageDxe.efi : $(DEBUG_DIR)/UsbMassStorageDxe.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/OUTPUT/UsbMassStorageDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/UsbMassStorageDxe.map : $(OUTPUT_DIR)/UsbMassStorageDxe.efi

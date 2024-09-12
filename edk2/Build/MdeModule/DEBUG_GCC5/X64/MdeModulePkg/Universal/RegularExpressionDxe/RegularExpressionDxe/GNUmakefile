@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = RegularExpressionDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/RegularExpressionDxe
 PACKAGE_RELATIVE_DIR = Universal/RegularExpressionDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = RegularExpressionDxeEntry
@@ -59,13 +59,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -242,8 +242,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -253,7 +253,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi \
               
 
 #
@@ -341,167 +341,167 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/oniguruma/src/utf16_be.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/utf16_be.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/utf16_be.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf16_be.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/utf16_be.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf16_be.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/utf16_be.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf16_be.c
 
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold2_key.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold2_key.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold2_key.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold2_key.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_fold2_key.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold2_key.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_fold2_key.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold2_key.c
 
 $(OUTPUT_DIR)/oniguruma/src/regerror.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regerror.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regerror.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regerror.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regerror.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regerror.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regerror.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regerror.c
 
 $(OUTPUT_DIR)/oniguruma/src/regposix.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regposix.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regposix.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposix.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regposix.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposix.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regposix.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposix.c
 
 $(OUTPUT_DIR)/oniguruma/src/regsyntax.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regsyntax.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regsyntax.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regsyntax.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regsyntax.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regsyntax.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regsyntax.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regsyntax.c
 
 $(OUTPUT_DIR)/oniguruma/src/regcomp.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regcomp.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regcomp.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regcomp.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regcomp.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regcomp.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regcomp.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regcomp.c
 
 $(OUTPUT_DIR)/oniguruma/src/regexec.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regexec.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regexec.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regexec.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regexec.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regexec.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regexec.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regexec.c
 
 $(OUTPUT_DIR)/OnigurumaUefiPort.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/OnigurumaUefiPort.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/OnigurumaUefiPort.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/OnigurumaUefiPort.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/./OnigurumaUefiPort.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/OnigurumaUefiPort.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/./OnigurumaUefiPort.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/OnigurumaUefiPort.c
 
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold1_key.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold1_key.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold1_key.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold1_key.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_fold1_key.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold1_key.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_fold1_key.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold1_key.c
 
 $(OUTPUT_DIR)/oniguruma/src/utf16_le.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/utf16_le.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/utf16_le.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf16_le.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/utf16_le.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf16_le.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/utf16_le.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf16_le.c
 
 $(OUTPUT_DIR)/oniguruma/src/unicode.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/unicode.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/unicode.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode.c
 
 $(OUTPUT_DIR)/oniguruma/src/onig_init.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/onig_init.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/onig_init.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/onig_init.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/onig_init.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/onig_init.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/onig_init.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/onig_init.c
 
 $(OUTPUT_DIR)/oniguruma/src/regtrav.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regtrav.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regtrav.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regtrav.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regtrav.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regtrav.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regtrav.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regtrav.c
 
 $(OUTPUT_DIR)/oniguruma/src/regposerr.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regposerr.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regposerr.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposerr.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regposerr.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposerr.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regposerr.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposerr.c
 
 $(OUTPUT_DIR)/oniguruma/src/sjis_prop.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/sjis_prop.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/sjis_prop.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/sjis_prop.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/sjis_prop.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/sjis_prop.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/sjis_prop.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/sjis_prop.c
 
 $(OUTPUT_DIR)/oniguruma/src/regparse.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regparse.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regparse.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regparse.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regparse.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regparse.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regparse.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regparse.c
 
 $(OUTPUT_DIR)/oniguruma/src/regenc.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regenc.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regenc.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regenc.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regenc.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regenc.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regenc.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regenc.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/oniguruma/src/unicode_unfold_key.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/unicode_unfold_key.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/unicode_unfold_key.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_unfold_key.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_unfold_key.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_unfold_key.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_unfold_key.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_unfold_key.c
 
 $(OUTPUT_DIR)/RegularExpressionDxe.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/RegularExpressionDxe.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/RegularExpressionDxe.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/./RegularExpressionDxe.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/./RegularExpressionDxe.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe.c
 
 $(OUTPUT_DIR)/oniguruma/src/euc_jp_prop.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/euc_jp_prop.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/euc_jp_prop.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/euc_jp_prop.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/euc_jp_prop.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/euc_jp_prop.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/euc_jp_prop.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/euc_jp_prop.c
 
 $(OUTPUT_DIR)/oniguruma/src/utf8.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/utf8.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/utf8.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf8.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/utf8.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf8.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/utf8.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf8.c
 
 $(OUTPUT_DIR)/oniguruma/src/ascii.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/ascii.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/ascii.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/ascii.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/ascii.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/ascii.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/ascii.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/ascii.c
 
 $(OUTPUT_DIR)/oniguruma/src/reggnu.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/reggnu.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/reggnu.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/reggnu.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/reggnu.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/reggnu.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/reggnu.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/reggnu.c
 
 $(OUTPUT_DIR)/oniguruma/src/euc_jp.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/euc_jp.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/euc_jp.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/euc_jp.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/euc_jp.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/euc_jp.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/euc_jp.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/euc_jp.c
 
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold3_key.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold3_key.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/unicode_fold3_key.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold3_key.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_fold3_key.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold3_key.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/unicode_fold3_key.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold3_key.c
 
 $(OUTPUT_DIR)/oniguruma/src/sjis.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/sjis.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/sjis.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/sjis.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/sjis.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/sjis.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/sjis.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/sjis.c
 
 $(OUTPUT_DIR)/oniguruma/src/st.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/st.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/st.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/st.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/st.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/st.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/st.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/st.c
 
 $(OUTPUT_DIR)/oniguruma/src/regversion.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/oniguruma/src/regversion.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/oniguruma/src/regversion.obj : $(WORKSPACE)/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regversion.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regversion.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regversion.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/oniguruma/src/regversion.obj $(INC) $EDK_PATH/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regversion.c
 
 $(OUTPUT_DIR)/RegularExpressionDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/RegularExpressionDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/RegularExpressionDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/RegularExpressionDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/RegularExpressionDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll
 
 $(OUTPUT_DIR)/RegularExpressionDxe.efi : $(DEBUG_DIR)/RegularExpressionDxe.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/DEBUG/RegularExpressionDxe.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe/OUTPUT/RegularExpressionDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/RegularExpressionDxe.map : $(OUTPUT_DIR)/RegularExpressionDxe.efi

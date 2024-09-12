@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = AtaBusDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Bus/Ata/AtaBusDxe
 PACKAGE_RELATIVE_DIR = Bus/Ata/AtaBusDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AtaBusDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Bus/Ata/AtaBusDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeAtaBus
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -218,8 +218,8 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -229,7 +229,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi \
               
 
 #
@@ -322,42 +322,42 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/AtaPassThruExecute.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AtaPassThruExecute.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AtaPassThruExecute.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaPassThruExecute.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./AtaPassThruExecute.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaPassThruExecute.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./AtaPassThruExecute.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaPassThruExecute.c
 
 $(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AtaBusDxe/ComponentName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./ComponentName.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AtaBusDxe/ComponentName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./ComponentName.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AtaBusDxe/ComponentName.c
 
 $(OUTPUT_DIR)/AtaBus.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AtaBus.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AtaBus.obj : $(WORKSPACE)/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBus.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./AtaBus.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBus.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/./AtaBus.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBus.c
 
 $(OUTPUT_DIR)/AtaBusDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/AtaBusDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/AtaBusDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/AtaBusDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/AtaBusDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll
 
 $(OUTPUT_DIR)/AtaBusDxe.efi : $(DEBUG_DIR)/AtaBusDxe.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/DEBUG/AtaBusDxe.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe/OUTPUT/AtaBusDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/AtaBusDxe.map : $(OUTPUT_DIR)/AtaBusDxe.efi
