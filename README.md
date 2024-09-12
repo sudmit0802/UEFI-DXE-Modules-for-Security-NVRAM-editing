@@ -1,1 +1,1 @@
-Prepare evrything befor build:
+Prepare evrything before build:
