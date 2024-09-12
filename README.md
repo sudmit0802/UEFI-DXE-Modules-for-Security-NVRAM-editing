@@ -26,9 +26,12 @@ To build hook.efi module run following:
 ```bash
 HookEfiModule/build.sh
 ```
+Result binary will appear in HookEfiModule directory
 
 To build editor.efi module run following:
 
 ```bash
 EditorEfiModule/build.sh
 ```
+Result binary will appear in EditorEfiModule directory
+
