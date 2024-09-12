@@ -1,18 +1,18 @@
-# 0 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/./RamDisk.i"
+# 0 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/./RamDisk.i"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 1
-# 16 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/PiDxe.h" 1
-# 13 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/PiDxe.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiBaseType.h" 1
-# 16 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h" 1
-# 21 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/X64/ProcessorBind.h" 1
-# 162 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/X64/ProcessorBind.h"
+# 1 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 1
+# 16 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h"
+# 1 "$EDK_PATH/MdePkg/Include/PiDxe.h" 1
+# 13 "$EDK_PATH/MdePkg/Include/PiDxe.h"
+# 1 "$EDK_PATH/MdePkg/Include/Uefi/UefiBaseType.h" 1
+# 16 "$EDK_PATH/MdePkg/Include/Uefi/UefiBaseType.h"
+# 1 "$EDK_PATH/MdePkg/Include/Base.h" 1
+# 21 "$EDK_PATH/MdePkg/Include/Base.h"
+# 1 "$EDK_PATH/MdePkg/Include/X64/ProcessorBind.h" 1
+# 162 "$EDK_PATH/MdePkg/Include/X64/ProcessorBind.h"
 typedef unsigned long long UINT64;
 
 
@@ -68,8 +68,8 @@ typedef UINT64 UINTN;
 
 
 typedef INT64 INTN;
-# 22 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h" 2
-# 213 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 22 "$EDK_PATH/MdePkg/Include/Base.h" 2
+# 213 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef struct {
   UINT32 Data1;
   UINT16 Data2;
@@ -108,11 +108,11 @@ struct _LIST_ENTRY {
   LIST_ENTRY *ForwardLink;
   LIST_ENTRY *BackLink;
 };
-# 607 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 607 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef __builtin_ms_va_list VA_LIST;
-# 711 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 711 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef UINTN *BASE_LIST;
-# 816 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 816 "$EDK_PATH/MdePkg/Include/Base.h"
 _Static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
 _Static_assert (sizeof (INT8) == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
 _Static_assert (sizeof (UINT8) == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
@@ -141,7 +141,7 @@ _Static_assert (_Alignof (CHAR16) == sizeof (CHAR16), "Alignment of CHAR16 does 
 _Static_assert (_Alignof (INTN) == sizeof (INTN), "Alignment of INTN does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (UINTN) == sizeof (UINTN), "Alignment of UINTN does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (void *) == sizeof (void *), "Alignment of VOID * does not meet UEFI Specification Data Type requirements");
-# 852 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 852 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef enum {
   __VerifyUint8EnumValue = 0xff
 } __VERIFY_UINT8_ENUM_SIZE;
@@ -161,10 +161,10 @@ _Static_assert (sizeof (__VERIFY_INT32_ENUM_SIZE) == 4, "Size of enum does not m
 _Static_assert (_Alignof (__VERIFY_UINT8_ENUM_SIZE) == sizeof (__VERIFY_UINT8_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (__VERIFY_UINT16_ENUM_SIZE) == sizeof (__VERIFY_UINT16_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (__VERIFY_INT32_ENUM_SIZE) == sizeof (__VERIFY_INT32_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
-# 1026 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 1026 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef UINTN RETURN_STATUS;
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiBaseType.h" 2
-# 25 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
+# 17 "$EDK_PATH/MdePkg/Include/Uefi/UefiBaseType.h" 2
+# 25 "$EDK_PATH/MdePkg/Include/Uefi/UefiBaseType.h"
 typedef GUID EFI_GUID;
 
 
@@ -196,7 +196,7 @@ typedef UINT64 EFI_PHYSICAL_ADDRESS;
 
 
 typedef UINT64 EFI_VIRTUAL_ADDRESS;
-# 68 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
+# 68 "$EDK_PATH/MdePkg/Include/Uefi/UefiBaseType.h"
 typedef struct {
   UINT16 Year;
   UINT8 Month;
@@ -237,13 +237,13 @@ typedef union {
   EFI_IPv4_ADDRESS v4;
   EFI_IPv6_ADDRESS v6;
 } EFI_IP_ADDRESS;
-# 14 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/PiDxe.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 1
-# 19 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h" 1
-# 34 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/WinCertificate.h" 1
-# 24 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 14 "$EDK_PATH/MdePkg/Include/PiDxe.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 1
+# 19 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
+# 1 "$EDK_PATH/MdePkg/Include/Uefi/UefiMultiPhase.h" 1
+# 34 "$EDK_PATH/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 1 "$EDK_PATH/MdePkg/Include/Guid/WinCertificate.h" 1
+# 24 "$EDK_PATH/MdePkg/Include/Guid/WinCertificate.h"
 typedef struct {
 
 
@@ -268,7 +268,7 @@ typedef struct {
 
 
 } WIN_CERTIFICATE;
-# 58 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 58 "$EDK_PATH/MdePkg/Include/Guid/WinCertificate.h"
 typedef struct {
   EFI_GUID HashType;
   UINT8 PublicKey[256];
@@ -297,7 +297,7 @@ typedef struct {
 
   UINT8 CertData[1];
 } WIN_CERTIFICATE_UEFI_GUID;
-# 95 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 95 "$EDK_PATH/MdePkg/Include/Guid/WinCertificate.h"
 typedef struct {
 
 
@@ -309,11 +309,11 @@ typedef struct {
 
 
   EFI_GUID HashAlgorithm;
-# 116 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 116 "$EDK_PATH/MdePkg/Include/Guid/WinCertificate.h"
 } WIN_CERTIFICATE_EFI_PKCS1_15;
 
 extern EFI_GUID gEfiCertTypeRsa2048Sha256Guid;
-# 35 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h" 2
+# 35 "$EDK_PATH/MdePkg/Include/Uefi/UefiMultiPhase.h" 2
 
 
 
@@ -391,7 +391,7 @@ typedef enum {
 
   EfiUnacceptedMemoryType,
   EfiMaxMemoryType,
-# 123 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 123 "$EDK_PATH/MdePkg/Include/Uefi/UefiMultiPhase.h"
   MEMORY_TYPE_OEM_RESERVED_MIN = 0x70000000,
   MEMORY_TYPE_OEM_RESERVED_MAX = 0x7FFFFFFF,
   MEMORY_TYPE_OS_RESERVED_MIN = 0x80000000,
@@ -462,7 +462,7 @@ typedef struct {
 
   UINT32 Reserved;
 } EFI_TABLE_HEADER;
-# 209 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 209 "$EDK_PATH/MdePkg/Include/Uefi/UefiMultiPhase.h"
 typedef struct {
 
 
@@ -471,10 +471,10 @@ typedef struct {
 
 
   UINT64 MonotonicCount;
-# 225 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 225 "$EDK_PATH/MdePkg/Include/Uefi/UefiMultiPhase.h"
   WIN_CERTIFICATE_UEFI_GUID AuthInfo;
 } EFI_VARIABLE_AUTHENTICATION;
-# 236 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 236 "$EDK_PATH/MdePkg/Include/Uefi/UefiMultiPhase.h"
 typedef struct {
 
 
@@ -486,21 +486,21 @@ typedef struct {
 
   WIN_CERTIFICATE_UEFI_GUID AuthInfo;
 } EFI_VARIABLE_AUTHENTICATION_2;
-# 20 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 20 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
 
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h" 1
-# 16 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/PcAnsi.h" 1
-# 45 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/PcAnsi.h"
+# 1 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h" 1
+# 16 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
+# 1 "$EDK_PATH/MdePkg/Include/Guid/PcAnsi.h" 1
+# 45 "$EDK_PATH/MdePkg/Include/Guid/PcAnsi.h"
 extern EFI_GUID gEfiPcAnsiGuid;
 extern EFI_GUID gEfiVT100Guid;
 extern EFI_GUID gEfiVT100PlusGuid;
 extern EFI_GUID gEfiVTUTF8Guid;
 extern EFI_GUID gEfiUartDevicePathGuid;
 extern EFI_GUID gEfiSasDevicePathGuid;
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Bluetooth.h" 1
-# 13 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Bluetooth.h"
+# 17 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Bluetooth.h" 1
+# 13 "$EDK_PATH/MdePkg/Include/IndustryStandard/Bluetooth.h"
 #pragma pack(1)
 
 
@@ -539,23 +539,23 @@ typedef struct {
 } BLUETOOTH_LE_ADDRESS;
 
 #pragma pack()
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h" 1
-# 13 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h" 1
-# 14 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h" 1
-# 13 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h" 1
-# 11 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h" 1
-# 11 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h" 1
-# 11 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h" 1
-# 12 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/AcpiAml.h" 1
-# 13 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h" 2
+# 18 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h" 1
+# 13 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h" 1
+# 14 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h" 1
+# 13 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h" 1
+# 11 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h" 1
+# 11 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h" 1
+# 11 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h" 1
+# 12 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/AcpiAml.h" 1
+# 13 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h" 2
 
 
 
@@ -582,7 +582,7 @@ typedef struct {
   UINT32 CreatorRevision;
 } EFI_ACPI_DESCRIPTION_HEADER;
 #pragma pack()
-# 110 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 110 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 #pragma pack(1)
 
 
@@ -767,7 +767,7 @@ typedef struct {
   UINT8 Desc;
   UINT8 Checksum;
 } EFI_ACPI_END_TAG_DESCRIPTOR;
-# 393 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 393 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 #pragma pack(1)
 
 
@@ -783,7 +783,7 @@ typedef struct {
   UINT8 Reserved;
   UINT32 RsdtAddress;
 } EFI_ACPI_1_0_ROOT_SYSTEM_DESCRIPTION_POINTER;
-# 423 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 423 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 FirmwareCtrl;
@@ -826,7 +826,7 @@ typedef struct {
   UINT8 Reserved6;
   UINT32 Flags;
 } EFI_ACPI_1_0_FIXED_ACPI_DESCRIPTION_TABLE;
-# 492 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 492 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
@@ -836,13 +836,13 @@ typedef struct {
   UINT32 Flags;
   UINT8 Reserved[40];
 } EFI_ACPI_1_0_FIRMWARE_ACPI_CONTROL_STRUCTURE;
-# 512 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 512 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 LocalApicAddress;
   UINT32 Flags;
 } EFI_ACPI_1_0_MULTIPLE_APIC_DESCRIPTION_TABLE_HEADER;
-# 547 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 547 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -850,7 +850,7 @@ typedef struct {
   UINT8 ApicId;
   UINT32 Flags;
 } EFI_ACPI_1_0_PROCESSOR_LOCAL_APIC_STRUCTURE;
-# 563 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 563 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -902,10 +902,10 @@ typedef struct {
   UINT32 LowEnergyLevel;
   UINT32 CriticalEnergyLevel;
 } EFI_ACPI_1_0_SMART_BATTERY_DESCRIPTION_TABLE;
-# 664 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi10.h"
+# 664 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi10.h"
 #pragma pack()
-# 12 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h" 2
-# 23 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 12 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h" 2
+# 23 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 #pragma pack(1)
 
 
@@ -937,7 +937,7 @@ typedef struct {
   UINT8 Reserved;
   UINT64 Address;
 } EFI_ACPI_2_0_GENERIC_ADDRESS_STRUCTURE;
-# 72 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 72 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   UINT64 Signature;
   UINT8 Checksum;
@@ -949,12 +949,12 @@ typedef struct {
   UINT8 ExtendedChecksum;
   UINT8 Reserved[3];
 } EFI_ACPI_2_0_ROOT_SYSTEM_DESCRIPTION_POINTER;
-# 93 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 93 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
 } EFI_ACPI_2_0_COMMON_HEADER;
-# 123 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 123 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 FirmwareCtrl;
@@ -1009,7 +1009,7 @@ typedef struct {
   EFI_ACPI_2_0_GENERIC_ADDRESS_STRUCTURE XGpe0Blk;
   EFI_ACPI_2_0_GENERIC_ADDRESS_STRUCTURE XGpe1Blk;
 } EFI_ACPI_2_0_FIXED_ACPI_DESCRIPTION_TABLE;
-# 223 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 223 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
@@ -1021,13 +1021,13 @@ typedef struct {
   UINT8 Version;
   UINT8 Reserved[31];
 } EFI_ACPI_2_0_FIRMWARE_ACPI_CONTROL_STRUCTURE;
-# 250 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 250 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 LocalApicAddress;
   UINT32 Flags;
 } EFI_ACPI_2_0_MULTIPLE_APIC_DESCRIPTION_TABLE_HEADER;
-# 289 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 289 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1035,7 +1035,7 @@ typedef struct {
   UINT8 ApicId;
   UINT32 Flags;
 } EFI_ACPI_2_0_PROCESSOR_LOCAL_APIC_STRUCTURE;
-# 305 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 305 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1137,7 +1137,7 @@ typedef struct {
   UINT32 LowEnergyLevel;
   UINT32 CriticalEnergyLevel;
 } EFI_ACPI_2_0_SMART_BATTERY_DESCRIPTION_TABLE;
-# 417 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 417 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   EFI_ACPI_2_0_GENERIC_ADDRESS_STRUCTURE EcControl;
@@ -1145,10 +1145,10 @@ typedef struct {
   UINT32 Uid;
   UINT8 GpeBit;
 } EFI_ACPI_2_0_EMBEDDED_CONTROLLER_BOOT_RESOURCES_TABLE;
-# 537 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi20.h"
+# 537 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi20.h"
 #pragma pack()
-# 12 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h" 2
-# 37 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 12 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h" 2
+# 37 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 #pragma pack(1)
 
 
@@ -1170,7 +1170,7 @@ typedef struct {
 } EFI_ACPI_EXTENDED_ADDRESS_SPACE_DESCRIPTOR;
 
 #pragma pack()
-# 72 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 72 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 #pragma pack(1)
 
 
@@ -1183,7 +1183,7 @@ typedef struct {
   UINT8 AccessSize;
   UINT64 Address;
 } EFI_ACPI_3_0_GENERIC_ADDRESS_STRUCTURE;
-# 111 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 111 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT64 Signature;
   UINT8 Checksum;
@@ -1195,12 +1195,12 @@ typedef struct {
   UINT8 ExtendedChecksum;
   UINT8 Reserved[3];
 } EFI_ACPI_3_0_ROOT_SYSTEM_DESCRIPTION_POINTER;
-# 132 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 132 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
 } EFI_ACPI_3_0_COMMON_HEADER;
-# 162 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 162 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 FirmwareCtrl;
@@ -1255,7 +1255,7 @@ typedef struct {
   EFI_ACPI_3_0_GENERIC_ADDRESS_STRUCTURE XGpe0Blk;
   EFI_ACPI_3_0_GENERIC_ADDRESS_STRUCTURE XGpe1Blk;
 } EFI_ACPI_3_0_FIXED_ACPI_DESCRIPTION_TABLE;
-# 272 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 272 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
@@ -1267,13 +1267,13 @@ typedef struct {
   UINT8 Version;
   UINT8 Reserved[31];
 } EFI_ACPI_3_0_FIRMWARE_ACPI_CONTROL_STRUCTURE;
-# 309 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 309 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 LocalApicAddress;
   UINT32 Flags;
 } EFI_ACPI_3_0_MULTIPLE_APIC_DESCRIPTION_TABLE_HEADER;
-# 348 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 348 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1281,7 +1281,7 @@ typedef struct {
   UINT8 ApicId;
   UINT32 Flags;
 } EFI_ACPI_3_0_PROCESSOR_LOCAL_APIC_STRUCTURE;
-# 364 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 364 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1319,7 +1319,7 @@ typedef struct {
   UINT8 CpeiProcessorOverride;
   UINT8 Reserved[31];
 } EFI_ACPI_3_0_PLATFORM_INTERRUPT_APIC_STRUCTURE;
-# 412 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 412 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1389,14 +1389,14 @@ typedef struct {
   UINT32 GlobalSystemInterrupt;
   UINT32 PlatformInterruptSourceFlags;
 } EFI_ACPI_3_0_PLATFORM_INTERRUPT_SOURCES_STRUCTURE;
-# 491 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 491 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 WarningEnergyLevel;
   UINT32 LowEnergyLevel;
   UINT32 CriticalEnergyLevel;
 } EFI_ACPI_3_0_SMART_BATTERY_DESCRIPTION_TABLE;
-# 508 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 508 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   EFI_ACPI_3_0_GENERIC_ADDRESS_STRUCTURE EcControl;
@@ -1404,13 +1404,13 @@ typedef struct {
   UINT32 Uid;
   UINT8 GpeBit;
 } EFI_ACPI_3_0_EMBEDDED_CONTROLLER_BOOT_RESOURCES_TABLE;
-# 525 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 525 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved1;
   UINT64 Reserved2;
 } EFI_ACPI_3_0_SYSTEM_RESOURCE_AFFINITY_TABLE_HEADER;
-# 547 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 547 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1421,7 +1421,7 @@ typedef struct {
   UINT8 ProximityDomain31To8[3];
   UINT8 Reserved[4];
 } EFI_ACPI_3_0_PROCESSOR_LOCAL_APIC_SAPIC_AFFINITY_STRUCTURE;
-# 566 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 566 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1435,15 +1435,15 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved3;
 } EFI_ACPI_3_0_MEMORY_AFFINITY_STRUCTURE;
-# 591 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 591 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT64 NumberOfSystemLocalities;
 } EFI_ACPI_3_0_SYSTEM_LOCALITY_DISTANCE_INFORMATION_TABLE_HEADER;
-# 735 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi30.h"
+# 735 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi30.h"
 #pragma pack()
-# 12 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h" 2
-# 21 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 12 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h" 2
+# 21 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 #pragma pack(1)
 
 
@@ -1456,7 +1456,7 @@ typedef struct {
   UINT8 AccessSize;
   UINT64 Address;
 } EFI_ACPI_4_0_GENERIC_ADDRESS_STRUCTURE;
-# 60 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 60 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT64 Signature;
   UINT8 Checksum;
@@ -1468,12 +1468,12 @@ typedef struct {
   UINT8 ExtendedChecksum;
   UINT8 Reserved[3];
 } EFI_ACPI_4_0_ROOT_SYSTEM_DESCRIPTION_POINTER;
-# 81 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 81 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
 } EFI_ACPI_4_0_COMMON_HEADER;
-# 111 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 111 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 FirmwareCtrl;
@@ -1528,7 +1528,7 @@ typedef struct {
   EFI_ACPI_4_0_GENERIC_ADDRESS_STRUCTURE XGpe0Blk;
   EFI_ACPI_4_0_GENERIC_ADDRESS_STRUCTURE XGpe1Blk;
 } EFI_ACPI_4_0_FIXED_ACPI_DESCRIPTION_TABLE;
-# 221 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 221 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
@@ -1542,13 +1542,13 @@ typedef struct {
   UINT32 OspmFlags;
   UINT8 Reserved1[24];
 } EFI_ACPI_4_0_FIRMWARE_ACPI_CONTROL_STRUCTURE;
-# 267 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 267 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 LocalApicAddress;
   UINT32 Flags;
 } EFI_ACPI_4_0_MULTIPLE_APIC_DESCRIPTION_TABLE_HEADER;
-# 308 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 308 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1556,7 +1556,7 @@ typedef struct {
   UINT8 ApicId;
   UINT32 Flags;
 } EFI_ACPI_4_0_PROCESSOR_LOCAL_APIC_STRUCTURE;
-# 324 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 324 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1594,7 +1594,7 @@ typedef struct {
   UINT8 CpeiProcessorOverride;
   UINT8 Reserved[31];
 } EFI_ACPI_4_0_PLATFORM_INTERRUPT_APIC_STRUCTURE;
-# 372 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 372 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1664,7 +1664,7 @@ typedef struct {
   UINT32 GlobalSystemInterrupt;
   UINT32 PlatformInterruptSourceFlags;
 } EFI_ACPI_4_0_PLATFORM_INTERRUPT_SOURCES_STRUCTURE;
-# 451 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 451 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1695,7 +1695,7 @@ typedef struct {
   UINT32 LowEnergyLevel;
   UINT32 CriticalEnergyLevel;
 } EFI_ACPI_4_0_SMART_BATTERY_DESCRIPTION_TABLE;
-# 492 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 492 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   EFI_ACPI_4_0_GENERIC_ADDRESS_STRUCTURE EcControl;
@@ -1703,13 +1703,13 @@ typedef struct {
   UINT32 Uid;
   UINT8 GpeBit;
 } EFI_ACPI_4_0_EMBEDDED_CONTROLLER_BOOT_RESOURCES_TABLE;
-# 509 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 509 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved1;
   UINT64 Reserved2;
 } EFI_ACPI_4_0_SYSTEM_RESOURCE_AFFINITY_TABLE_HEADER;
-# 532 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 532 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1720,7 +1720,7 @@ typedef struct {
   UINT8 ProximityDomain31To8[3];
   UINT32 ClockDomain;
 } EFI_ACPI_4_0_PROCESSOR_LOCAL_APIC_SAPIC_AFFINITY_STRUCTURE;
-# 551 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 551 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1734,7 +1734,7 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved3;
 } EFI_ACPI_4_0_MEMORY_AFFINITY_STRUCTURE;
-# 575 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 575 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1754,12 +1754,12 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT64 NumberOfSystemLocalities;
 } EFI_ACPI_4_0_SYSTEM_LOCALITY_DISTANCE_INFORMATION_TABLE_HEADER;
-# 603 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 603 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 Reserved[8];
 } EFI_ACPI_4_0_CORRECTED_PLATFORM_ERROR_POLLING_TABLE_HEADER;
-# 621 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 621 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -1778,7 +1778,7 @@ typedef struct {
   UINT32 MaximumNumberOfClockDomains;
   UINT64 MaximumPhysicalAddress;
 } EFI_ACPI_4_0_MAXIMUM_SYSTEM_CHARACTERISTICS_TABLE_HEADER;
-# 648 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 648 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 Revision;
   UINT8 Length;
@@ -1796,7 +1796,7 @@ typedef struct {
   UINT32 BootErrorRegionLength;
   UINT64 BootErrorRegion;
 } EFI_ACPI_4_0_BOOT_ERROR_RECORD_TABLE_HEADER;
-# 674 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 674 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT32 UncorrectableErrorValid : 1;
   UINT32 CorrectableErrorValid : 1;
@@ -1816,7 +1816,7 @@ typedef struct {
   UINT32 DataLength;
   UINT32 ErrorSeverity;
 } EFI_ACPI_4_0_BOOT_ERROR_REGION_STRUCTURE;
-# 706 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 706 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 SectionType[16];
   UINT32 ErrorSeverity;
@@ -1827,12 +1827,12 @@ typedef struct {
   UINT8 FruId[16];
   UINT8 FruText[20];
 } EFI_ACPI_4_0_GENERIC_ERROR_DATA_ENTRY_STRUCTURE;
-# 725 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 725 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 ErrorSourceCount;
 } EFI_ACPI_4_0_HARDWARE_ERROR_SOURCE_TABLE_HEADER;
-# 755 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 755 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT16 Type;
   UINT16 SourceId;
@@ -1861,7 +1861,7 @@ typedef struct {
   UINT32 AddressRegisterMsrAddress;
   UINT32 MiscRegisterMsrAddress;
 } EFI_ACPI_4_0_IA32_ARCHITECTURE_MACHINE_CHECK_ERROR_BANK_STRUCTURE;
-# 803 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 803 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT16 Type : 1;
   UINT16 PollInterval : 1;
@@ -2022,7 +2022,7 @@ typedef struct {
   UINT8 Reserved0[4];
   UINT32 InstructionEntryCount;
 } EFI_ACPI_4_0_ERROR_RECORD_SERIALIZATION_TABLE_HEADER;
-# 1029 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 1029 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 SerializationAction;
   UINT8 Instruction;
@@ -2043,7 +2043,7 @@ typedef struct {
   UINT8 Reserved0[3];
   UINT32 InjectionEntryCount;
 } EFI_ACPI_4_0_ERROR_INJECTION_TABLE_HEADER;
-# 1108 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 1108 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 typedef struct {
   UINT8 InjectionAction;
   UINT8 Instruction;
@@ -2063,10 +2063,10 @@ typedef struct {
   UINT32 TableSize;
   UINT32 EntryCount;
 } EFI_ACPI_4_0_EINJ_TRIGGER_ACTION_TABLE;
-# 1307 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi40.h"
+# 1307 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi40.h"
 #pragma pack()
-# 14 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h" 2
-# 36 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 14 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h" 2
+# 36 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 #pragma pack(1)
 
 
@@ -2115,7 +2115,7 @@ typedef struct {
   UINT16 TypeDataLength;
 
 } EFI_ACPI_SERIAL_BUS_RESOURCE_DESCRIPTOR;
-# 92 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 92 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   ACPI_LARGE_RESOURCE_HEADER Header;
   UINT8 RevisionId;
@@ -2184,7 +2184,7 @@ typedef struct {
   UINT8 AccessSize;
   UINT64 Address;
 } EFI_ACPI_5_0_GENERIC_ADDRESS_STRUCTURE;
-# 188 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 188 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT64 Signature;
   UINT8 Checksum;
@@ -2196,12 +2196,12 @@ typedef struct {
   UINT8 ExtendedChecksum;
   UINT8 Reserved[3];
 } EFI_ACPI_5_0_ROOT_SYSTEM_DESCRIPTION_POINTER;
-# 209 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 209 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
 } EFI_ACPI_5_0_COMMON_HEADER;
-# 239 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 239 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 FirmwareCtrl;
@@ -2258,7 +2258,7 @@ typedef struct {
   EFI_ACPI_5_0_GENERIC_ADDRESS_STRUCTURE SleepControlReg;
   EFI_ACPI_5_0_GENERIC_ADDRESS_STRUCTURE SleepStatusReg;
 } EFI_ACPI_5_0_FIXED_ACPI_DESCRIPTION_TABLE;
-# 355 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 355 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
@@ -2272,13 +2272,13 @@ typedef struct {
   UINT32 OspmFlags;
   UINT8 Reserved1[24];
 } EFI_ACPI_5_0_FIRMWARE_ACPI_CONTROL_STRUCTURE;
-# 401 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 401 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 LocalApicAddress;
   UINT32 Flags;
 } EFI_ACPI_5_0_MULTIPLE_APIC_DESCRIPTION_TABLE_HEADER;
-# 444 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 444 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2286,7 +2286,7 @@ typedef struct {
   UINT8 ApicId;
   UINT32 Flags;
 } EFI_ACPI_5_0_PROCESSOR_LOCAL_APIC_STRUCTURE;
-# 460 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 460 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2324,7 +2324,7 @@ typedef struct {
   UINT8 CpeiProcessorOverride;
   UINT8 Reserved[31];
 } EFI_ACPI_5_0_PLATFORM_INTERRUPT_APIC_STRUCTURE;
-# 508 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 508 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2394,7 +2394,7 @@ typedef struct {
   UINT32 GlobalSystemInterrupt;
   UINT32 PlatformInterruptSourceFlags;
 } EFI_ACPI_5_0_PLATFORM_INTERRUPT_SOURCES_STRUCTURE;
-# 587 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 587 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2431,7 +2431,7 @@ typedef struct {
   UINT64 ParkedAddress;
   UINT64 PhysicalBaseAddress;
 } EFI_ACPI_5_0_GIC_STRUCTURE;
-# 633 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 633 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2451,7 +2451,7 @@ typedef struct {
   UINT32 LowEnergyLevel;
   UINT32 CriticalEnergyLevel;
 } EFI_ACPI_5_0_SMART_BATTERY_DESCRIPTION_TABLE;
-# 663 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 663 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   EFI_ACPI_5_0_GENERIC_ADDRESS_STRUCTURE EcControl;
@@ -2459,13 +2459,13 @@ typedef struct {
   UINT32 Uid;
   UINT8 GpeBit;
 } EFI_ACPI_5_0_EMBEDDED_CONTROLLER_BOOT_RESOURCES_TABLE;
-# 680 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 680 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved1;
   UINT64 Reserved2;
 } EFI_ACPI_5_0_SYSTEM_RESOURCE_AFFINITY_TABLE_HEADER;
-# 703 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 703 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2476,7 +2476,7 @@ typedef struct {
   UINT8 ProximityDomain31To8[3];
   UINT32 ClockDomain;
 } EFI_ACPI_5_0_PROCESSOR_LOCAL_APIC_SAPIC_AFFINITY_STRUCTURE;
-# 722 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 722 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2490,7 +2490,7 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved3;
 } EFI_ACPI_5_0_MEMORY_AFFINITY_STRUCTURE;
-# 746 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 746 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2510,12 +2510,12 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT64 NumberOfSystemLocalities;
 } EFI_ACPI_5_0_SYSTEM_LOCALITY_DISTANCE_INFORMATION_TABLE_HEADER;
-# 774 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 774 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 Reserved[8];
 } EFI_ACPI_5_0_CORRECTED_PLATFORM_ERROR_POLLING_TABLE_HEADER;
-# 792 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 792 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -2534,7 +2534,7 @@ typedef struct {
   UINT32 MaximumNumberOfClockDomains;
   UINT64 MaximumPhysicalAddress;
 } EFI_ACPI_5_0_MAXIMUM_SYSTEM_CHARACTERISTICS_TABLE_HEADER;
-# 819 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 819 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Revision;
   UINT8 Length;
@@ -2551,7 +2551,7 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 PlatformCommunicationChannelIdentifier[12];
 } EFI_ACPI_5_0_RAS_FEATURE_TABLE;
-# 844 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 844 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT32 Signature;
   UINT16 Command;
@@ -2562,7 +2562,7 @@ typedef struct {
   UINT16 NumberOfRASFParameterBlocks;
   UINT32 SetRASCapabilitiesStatus;
 } EFI_ACPI_5_0_RASF_PLATFORM_COMMUNICATION_CHANNEL_SHARED_MEMORY_REGION;
-# 869 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 869 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT16 Type;
   UINT16 Version;
@@ -2573,7 +2573,7 @@ typedef struct {
   UINT16 Flags;
   UINT8 RequestedSpeed;
 } EFI_ACPI_5_0_RASF_PATROL_SCRUB_PLATFORM_BLOCK_STRUCTURE;
-# 890 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 890 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 PlatformCommunicationChannelIdentifier;
@@ -2581,7 +2581,7 @@ typedef struct {
 
 
 } EFI_ACPI_5_0_MEMORY_POWER_STATUS_TABLE;
-# 906 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 906 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT32 Signature;
   UINT16 Command;
@@ -2593,7 +2593,7 @@ typedef struct {
   UINT64 MemoryEnergyConsumed;
   UINT64 ExpectedAveragePowerComsuned;
 } EFI_ACPI_5_0_MPST_PLATFORM_COMMUNICATION_CHANNEL_SHARED_MEMORY_REGION;
-# 934 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 934 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 PowerStateValue;
   UINT8 PowerStateInformationIndex;
@@ -2649,7 +2649,7 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved;
 } EFI_ACPI_5_0_MEMORY_TOPOLOGY_TABLE;
-# 998 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 998 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Reserved;
@@ -2657,7 +2657,7 @@ typedef struct {
   UINT16 Flags;
   UINT16 Reserved1;
 } EFI_ACPI_5_0_PMMT_COMMON_MEMORY_AGGREGATOR_DEVICE_STRUCTURE;
-# 1016 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1016 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_5_0_PMMT_COMMON_MEMORY_AGGREGATOR_DEVICE_STRUCTURE Header;
   UINT16 SocketIdentifier;
@@ -2732,7 +2732,7 @@ typedef struct {
 
   UINT32 ImageOffsetY;
 } EFI_ACPI_5_0_BOOT_GRAPHICS_RESOURCE_TABLE;
-# 1148 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1148 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT16 Type;
   UINT8 Length;
@@ -2806,14 +2806,14 @@ typedef struct {
 
   UINT64 ExitBootServicesExit;
 } EFI_ACPI_5_0_FPDT_FIRMWARE_BASIC_BOOT_RECORD;
-# 1230 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1230 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_5_0_FPDT_PERFORMANCE_TABLE_HEADER Header;
 
 
 
 } EFI_ACPI_5_0_FPDT_FIRMWARE_BASIC_BOOT_TABLE;
-# 1245 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1245 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_5_0_FPDT_PERFORMANCE_TABLE_HEADER Header;
 
@@ -2884,13 +2884,13 @@ typedef struct {
   UINT32 NonSecurePL2TimerGSIV;
   UINT32 NonSecurePL2TimerFlags;
 } EFI_ACPI_5_0_GENERIC_TIMER_DESCRIPTION_TABLE;
-# 1336 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1336 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 BootErrorRegionLength;
   UINT64 BootErrorRegion;
 } EFI_ACPI_5_0_BOOT_ERROR_RECORD_TABLE_HEADER;
-# 1350 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1350 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT32 UncorrectableErrorValid : 1;
   UINT32 CorrectableErrorValid : 1;
@@ -2910,7 +2910,7 @@ typedef struct {
   UINT32 DataLength;
   UINT32 ErrorSeverity;
 } EFI_ACPI_5_0_BOOT_ERROR_REGION_STRUCTURE;
-# 1382 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1382 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 SectionType[16];
   UINT32 ErrorSeverity;
@@ -2921,12 +2921,12 @@ typedef struct {
   UINT8 FruId[16];
   UINT8 FruText[20];
 } EFI_ACPI_5_0_GENERIC_ERROR_DATA_ENTRY_STRUCTURE;
-# 1401 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1401 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 ErrorSourceCount;
 } EFI_ACPI_5_0_HARDWARE_ERROR_SOURCE_TABLE_HEADER;
-# 1431 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1431 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT16 Type;
   UINT16 SourceId;
@@ -2955,7 +2955,7 @@ typedef struct {
   UINT32 AddressRegisterMsrAddress;
   UINT32 MiscRegisterMsrAddress;
 } EFI_ACPI_5_0_IA32_ARCHITECTURE_MACHINE_CHECK_ERROR_BANK_STRUCTURE;
-# 1479 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1479 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT16 Type : 1;
   UINT16 PollInterval : 1;
@@ -3116,7 +3116,7 @@ typedef struct {
   UINT8 Reserved0[4];
   UINT32 InstructionEntryCount;
 } EFI_ACPI_5_0_ERROR_RECORD_SERIALIZATION_TABLE_HEADER;
-# 1705 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1705 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 SerializationAction;
   UINT8 Instruction;
@@ -3137,7 +3137,7 @@ typedef struct {
   UINT8 Reserved0[3];
   UINT32 InjectionEntryCount;
 } EFI_ACPI_5_0_ERROR_INJECTION_TABLE_HEADER;
-# 1784 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1784 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 InjectionAction;
   UINT8 Instruction;
@@ -3166,7 +3166,7 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved;
 } EFI_ACPI_5_0_PLATFORM_COMMUNICATION_CHANNEL_TABLE_HEADER;
-# 1831 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 1831 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3213,10 +3213,10 @@ typedef struct {
   EFI_ACPI_5_0_PCCT_GENERIC_SHARED_MEMORY_REGION_COMMAND Command;
   EFI_ACPI_5_0_PCCT_GENERIC_SHARED_MEMORY_REGION_STATUS Status;
 } EFI_ACPI_5_0_PCCT_GENERIC_SHARED_MEMORY_REGION_HEADER;
-# 2128 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi50.h"
+# 2128 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi50.h"
 #pragma pack()
-# 15 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h" 2
-# 29 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 15 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h" 2
+# 29 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 #pragma pack(1)
 
 
@@ -3229,7 +3229,7 @@ typedef struct {
   UINT8 AccessSize;
   UINT64 Address;
 } EFI_ACPI_5_1_GENERIC_ADDRESS_STRUCTURE;
-# 69 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 69 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT64 Signature;
   UINT8 Checksum;
@@ -3241,12 +3241,12 @@ typedef struct {
   UINT8 ExtendedChecksum;
   UINT8 Reserved[3];
 } EFI_ACPI_5_1_ROOT_SYSTEM_DESCRIPTION_POINTER;
-# 90 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 90 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
 } EFI_ACPI_5_1_COMMON_HEADER;
-# 120 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 120 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 FirmwareCtrl;
@@ -3304,7 +3304,7 @@ typedef struct {
   EFI_ACPI_5_1_GENERIC_ADDRESS_STRUCTURE SleepControlReg;
   EFI_ACPI_5_1_GENERIC_ADDRESS_STRUCTURE SleepStatusReg;
 } EFI_ACPI_5_1_FIXED_ACPI_DESCRIPTION_TABLE;
-# 245 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 245 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
@@ -3318,13 +3318,13 @@ typedef struct {
   UINT32 OspmFlags;
   UINT8 Reserved1[24];
 } EFI_ACPI_5_1_FIRMWARE_ACPI_CONTROL_STRUCTURE;
-# 291 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 291 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 LocalApicAddress;
   UINT32 Flags;
 } EFI_ACPI_5_1_MULTIPLE_APIC_DESCRIPTION_TABLE_HEADER;
-# 336 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 336 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3332,7 +3332,7 @@ typedef struct {
   UINT8 ApicId;
   UINT32 Flags;
 } EFI_ACPI_5_1_PROCESSOR_LOCAL_APIC_STRUCTURE;
-# 352 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 352 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3370,7 +3370,7 @@ typedef struct {
   UINT8 CpeiProcessorOverride;
   UINT8 Reserved[31];
 } EFI_ACPI_5_1_PLATFORM_INTERRUPT_APIC_STRUCTURE;
-# 400 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 400 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3440,7 +3440,7 @@ typedef struct {
   UINT32 GlobalSystemInterrupt;
   UINT32 PlatformInterruptSourceFlags;
 } EFI_ACPI_5_1_PLATFORM_INTERRUPT_SOURCES_STRUCTURE;
-# 479 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 479 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3482,7 +3482,7 @@ typedef struct {
   UINT64 GICRBaseAddress;
   UINT64 MPIDR;
 } EFI_ACPI_5_1_GIC_STRUCTURE;
-# 531 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 531 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3493,7 +3493,7 @@ typedef struct {
   UINT8 GicVersion;
   UINT8 Reserved2[3];
 } EFI_ACPI_5_1_GIC_DISTRIBUTOR_STRUCTURE;
-# 553 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 553 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3504,7 +3504,7 @@ typedef struct {
   UINT16 SPICount;
   UINT16 SPIBase;
 } EFI_ACPI_5_1_GIC_MSI_FRAME_STRUCTURE;
-# 572 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 572 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3522,7 +3522,7 @@ typedef struct {
   UINT32 LowEnergyLevel;
   UINT32 CriticalEnergyLevel;
 } EFI_ACPI_5_1_SMART_BATTERY_DESCRIPTION_TABLE;
-# 600 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 600 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   EFI_ACPI_5_1_GENERIC_ADDRESS_STRUCTURE EcControl;
@@ -3530,13 +3530,13 @@ typedef struct {
   UINT32 Uid;
   UINT8 GpeBit;
 } EFI_ACPI_5_1_EMBEDDED_CONTROLLER_BOOT_RESOURCES_TABLE;
-# 617 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 617 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved1;
   UINT64 Reserved2;
 } EFI_ACPI_5_1_SYSTEM_RESOURCE_AFFINITY_TABLE_HEADER;
-# 641 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 641 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3547,7 +3547,7 @@ typedef struct {
   UINT8 ProximityDomain31To8[3];
   UINT32 ClockDomain;
 } EFI_ACPI_5_1_PROCESSOR_LOCAL_APIC_SAPIC_AFFINITY_STRUCTURE;
-# 660 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 660 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3561,7 +3561,7 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved3;
 } EFI_ACPI_5_1_MEMORY_AFFINITY_STRUCTURE;
-# 684 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 684 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3584,17 +3584,17 @@ typedef struct {
   UINT32 Flags;
   UINT32 ClockDomain;
 } EFI_ACPI_5_1_GICC_AFFINITY_STRUCTURE;
-# 716 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 716 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT64 NumberOfSystemLocalities;
 } EFI_ACPI_5_1_SYSTEM_LOCALITY_DISTANCE_INFORMATION_TABLE_HEADER;
-# 729 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 729 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 Reserved[8];
 } EFI_ACPI_5_1_CORRECTED_PLATFORM_ERROR_POLLING_TABLE_HEADER;
-# 747 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 747 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -3613,7 +3613,7 @@ typedef struct {
   UINT32 MaximumNumberOfClockDomains;
   UINT64 MaximumPhysicalAddress;
 } EFI_ACPI_5_1_MAXIMUM_SYSTEM_CHARACTERISTICS_TABLE_HEADER;
-# 774 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 774 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Revision;
   UINT8 Length;
@@ -3630,7 +3630,7 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 PlatformCommunicationChannelIdentifier[12];
 } EFI_ACPI_5_1_RAS_FEATURE_TABLE;
-# 799 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 799 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT32 Signature;
   UINT16 Command;
@@ -3641,7 +3641,7 @@ typedef struct {
   UINT16 NumberOfRASFParameterBlocks;
   UINT32 SetRASCapabilitiesStatus;
 } EFI_ACPI_5_1_RASF_PLATFORM_COMMUNICATION_CHANNEL_SHARED_MEMORY_REGION;
-# 824 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 824 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT16 Type;
   UINT16 Version;
@@ -3652,7 +3652,7 @@ typedef struct {
   UINT16 Flags;
   UINT8 RequestedSpeed;
 } EFI_ACPI_5_1_RASF_PATROL_SCRUB_PLATFORM_BLOCK_STRUCTURE;
-# 845 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 845 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 PlatformCommunicationChannelIdentifier;
@@ -3660,7 +3660,7 @@ typedef struct {
 
 
 } EFI_ACPI_5_1_MEMORY_POWER_STATUS_TABLE;
-# 861 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 861 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT32 Signature;
   UINT16 Command;
@@ -3672,7 +3672,7 @@ typedef struct {
   UINT64 MemoryEnergyConsumed;
   UINT64 ExpectedAveragePowerComsuned;
 } EFI_ACPI_5_1_MPST_PLATFORM_COMMUNICATION_CHANNEL_SHARED_MEMORY_REGION;
-# 889 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 889 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 PowerStateValue;
   UINT8 PowerStateInformationIndex;
@@ -3728,7 +3728,7 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved;
 } EFI_ACPI_5_1_MEMORY_TOPOLOGY_TABLE;
-# 953 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 953 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Reserved;
@@ -3736,7 +3736,7 @@ typedef struct {
   UINT16 Flags;
   UINT16 Reserved1;
 } EFI_ACPI_5_1_PMMT_COMMON_MEMORY_AGGREGATOR_DEVICE_STRUCTURE;
-# 971 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 971 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_5_1_PMMT_COMMON_MEMORY_AGGREGATOR_DEVICE_STRUCTURE Header;
   UINT16 SocketIdentifier;
@@ -3811,7 +3811,7 @@ typedef struct {
 
   UINT32 ImageOffsetY;
 } EFI_ACPI_5_1_BOOT_GRAPHICS_RESOURCE_TABLE;
-# 1101 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1101 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT16 Type;
   UINT8 Length;
@@ -3885,14 +3885,14 @@ typedef struct {
 
   UINT64 ExitBootServicesExit;
 } EFI_ACPI_5_1_FPDT_FIRMWARE_BASIC_BOOT_RECORD;
-# 1183 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1183 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_5_1_FPDT_PERFORMANCE_TABLE_HEADER Header;
 
 
 
 } EFI_ACPI_5_1_FPDT_FIRMWARE_BASIC_BOOT_TABLE;
-# 1198 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1198 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_5_1_FPDT_PERFORMANCE_TABLE_HEADER Header;
 
@@ -3966,7 +3966,7 @@ typedef struct {
   UINT32 PlatformTimerCount;
   UINT32 PlatformTimerOffset;
 } EFI_ACPI_5_1_GENERIC_TIMER_DESCRIPTION_TABLE;
-# 1293 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1293 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT16 Length;
@@ -3990,7 +3990,7 @@ typedef struct {
   UINT32 GTxVirtualTimerFlags;
   UINT32 GTxCommonFlags;
 } EFI_ACPI_5_1_GTDT_GT_BLOCK_TIMER_STRUCTURE;
-# 1332 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1332 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT16 Length;
@@ -4000,13 +4000,13 @@ typedef struct {
   UINT32 WatchdogTimerGSIV;
   UINT32 WatchdogTimerFlags;
 } EFI_ACPI_5_1_GTDT_SBSA_GENERIC_WATCHDOG_STRUCTURE;
-# 1352 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1352 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 BootErrorRegionLength;
   UINT64 BootErrorRegion;
 } EFI_ACPI_5_1_BOOT_ERROR_RECORD_TABLE_HEADER;
-# 1366 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1366 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT32 UncorrectableErrorValid : 1;
   UINT32 CorrectableErrorValid : 1;
@@ -4026,7 +4026,7 @@ typedef struct {
   UINT32 DataLength;
   UINT32 ErrorSeverity;
 } EFI_ACPI_5_1_BOOT_ERROR_REGION_STRUCTURE;
-# 1403 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1403 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 SectionType[16];
   UINT32 ErrorSeverity;
@@ -4037,12 +4037,12 @@ typedef struct {
   UINT8 FruId[16];
   UINT8 FruText[20];
 } EFI_ACPI_5_1_GENERIC_ERROR_DATA_ENTRY_STRUCTURE;
-# 1422 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1422 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 ErrorSourceCount;
 } EFI_ACPI_5_1_HARDWARE_ERROR_SOURCE_TABLE_HEADER;
-# 1452 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1452 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT16 Type;
   UINT16 SourceId;
@@ -4071,7 +4071,7 @@ typedef struct {
   UINT32 AddressRegisterMsrAddress;
   UINT32 MiscRegisterMsrAddress;
 } EFI_ACPI_5_1_IA32_ARCHITECTURE_MACHINE_CHECK_ERROR_BANK_STRUCTURE;
-# 1500 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1500 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT16 Type : 1;
   UINT16 PollInterval : 1;
@@ -4232,7 +4232,7 @@ typedef struct {
   UINT8 Reserved0[4];
   UINT32 InstructionEntryCount;
 } EFI_ACPI_5_1_ERROR_RECORD_SERIALIZATION_TABLE_HEADER;
-# 1726 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1726 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 SerializationAction;
   UINT8 Instruction;
@@ -4253,7 +4253,7 @@ typedef struct {
   UINT8 Reserved0[3];
   UINT32 InjectionEntryCount;
 } EFI_ACPI_5_1_ERROR_INJECTION_TABLE_HEADER;
-# 1806 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1806 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 InjectionAction;
   UINT8 Instruction;
@@ -4282,7 +4282,7 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved;
 } EFI_ACPI_5_1_PLATFORM_COMMUNICATION_CHANNEL_TABLE_HEADER;
-# 1853 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 1853 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4329,10 +4329,10 @@ typedef struct {
   EFI_ACPI_5_1_PCCT_GENERIC_SHARED_MEMORY_REGION_COMMAND Command;
   EFI_ACPI_5_1_PCCT_GENERIC_SHARED_MEMORY_REGION_STATUS Status;
 } EFI_ACPI_5_1_PCCT_GENERIC_SHARED_MEMORY_REGION_HEADER;
-# 2154 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi51.h"
+# 2154 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi51.h"
 #pragma pack()
-# 14 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h" 2
-# 28 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 14 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h" 2
+# 28 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 #pragma pack(1)
 
 
@@ -4345,7 +4345,7 @@ typedef struct {
   UINT8 AccessSize;
   UINT64 Address;
 } EFI_ACPI_6_0_GENERIC_ADDRESS_STRUCTURE;
-# 68 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 68 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT64 Signature;
   UINT8 Checksum;
@@ -4357,12 +4357,12 @@ typedef struct {
   UINT8 ExtendedChecksum;
   UINT8 Reserved[3];
 } EFI_ACPI_6_0_ROOT_SYSTEM_DESCRIPTION_POINTER;
-# 89 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 89 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
 } EFI_ACPI_6_0_COMMON_HEADER;
-# 119 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 119 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 FirmwareCtrl;
@@ -4421,7 +4421,7 @@ typedef struct {
   EFI_ACPI_6_0_GENERIC_ADDRESS_STRUCTURE SleepStatusReg;
   UINT64 HypervisorVendorIdentity;
 } EFI_ACPI_6_0_FIXED_ACPI_DESCRIPTION_TABLE;
-# 245 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 245 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Length;
@@ -4435,13 +4435,13 @@ typedef struct {
   UINT32 OspmFlags;
   UINT8 Reserved1[24];
 } EFI_ACPI_6_0_FIRMWARE_ACPI_CONTROL_STRUCTURE;
-# 291 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 291 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 LocalApicAddress;
   UINT32 Flags;
 } EFI_ACPI_6_0_MULTIPLE_APIC_DESCRIPTION_TABLE_HEADER;
-# 337 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 337 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4449,7 +4449,7 @@ typedef struct {
   UINT8 ApicId;
   UINT32 Flags;
 } EFI_ACPI_6_0_PROCESSOR_LOCAL_APIC_STRUCTURE;
-# 353 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 353 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4487,7 +4487,7 @@ typedef struct {
   UINT8 CpeiProcessorOverride;
   UINT8 Reserved[31];
 } EFI_ACPI_6_0_PLATFORM_INTERRUPT_APIC_STRUCTURE;
-# 401 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 401 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4557,7 +4557,7 @@ typedef struct {
   UINT32 GlobalSystemInterrupt;
   UINT32 PlatformInterruptSourceFlags;
 } EFI_ACPI_6_0_PLATFORM_INTERRUPT_SOURCES_STRUCTURE;
-# 480 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 480 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4601,7 +4601,7 @@ typedef struct {
   UINT8 ProcessorPowerEfficiencyClass;
   UINT8 Reserved2[3];
 } EFI_ACPI_6_0_GIC_STRUCTURE;
-# 534 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 534 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4612,7 +4612,7 @@ typedef struct {
   UINT8 GicVersion;
   UINT8 Reserved2[3];
 } EFI_ACPI_6_0_GIC_DISTRIBUTOR_STRUCTURE;
-# 556 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 556 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4623,7 +4623,7 @@ typedef struct {
   UINT16 SPICount;
   UINT16 SPIBase;
 } EFI_ACPI_6_0_GIC_MSI_FRAME_STRUCTURE;
-# 575 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 575 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4653,7 +4653,7 @@ typedef struct {
   UINT32 LowEnergyLevel;
   UINT32 CriticalEnergyLevel;
 } EFI_ACPI_6_0_SMART_BATTERY_DESCRIPTION_TABLE;
-# 615 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 615 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   EFI_ACPI_6_0_GENERIC_ADDRESS_STRUCTURE EcControl;
@@ -4661,13 +4661,13 @@ typedef struct {
   UINT32 Uid;
   UINT8 GpeBit;
 } EFI_ACPI_6_0_EMBEDDED_CONTROLLER_BOOT_RESOURCES_TABLE;
-# 632 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 632 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved1;
   UINT64 Reserved2;
 } EFI_ACPI_6_0_SYSTEM_RESOURCE_AFFINITY_TABLE_HEADER;
-# 656 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 656 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4678,7 +4678,7 @@ typedef struct {
   UINT8 ProximityDomain31To8[3];
   UINT32 ClockDomain;
 } EFI_ACPI_6_0_PROCESSOR_LOCAL_APIC_SAPIC_AFFINITY_STRUCTURE;
-# 675 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 675 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4692,7 +4692,7 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved3;
 } EFI_ACPI_6_0_MEMORY_AFFINITY_STRUCTURE;
-# 699 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 699 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4715,17 +4715,17 @@ typedef struct {
   UINT32 Flags;
   UINT32 ClockDomain;
 } EFI_ACPI_6_0_GICC_AFFINITY_STRUCTURE;
-# 731 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 731 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT64 NumberOfSystemLocalities;
 } EFI_ACPI_6_0_SYSTEM_LOCALITY_DISTANCE_INFORMATION_TABLE_HEADER;
-# 744 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 744 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 Reserved[8];
 } EFI_ACPI_6_0_CORRECTED_PLATFORM_ERROR_POLLING_TABLE_HEADER;
-# 762 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 762 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -4744,7 +4744,7 @@ typedef struct {
   UINT32 MaximumNumberOfClockDomains;
   UINT64 MaximumPhysicalAddress;
 } EFI_ACPI_6_0_MAXIMUM_SYSTEM_CHARACTERISTICS_TABLE_HEADER;
-# 789 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 789 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Revision;
   UINT8 Length;
@@ -4761,7 +4761,7 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 PlatformCommunicationChannelIdentifier[12];
 } EFI_ACPI_6_0_RAS_FEATURE_TABLE;
-# 814 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 814 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT32 Signature;
   UINT16 Command;
@@ -4772,7 +4772,7 @@ typedef struct {
   UINT16 NumberOfRASFParameterBlocks;
   UINT32 SetRASCapabilitiesStatus;
 } EFI_ACPI_6_0_RASF_PLATFORM_COMMUNICATION_CHANNEL_SHARED_MEMORY_REGION;
-# 839 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 839 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT16 Type;
   UINT16 Version;
@@ -4783,7 +4783,7 @@ typedef struct {
   UINT16 Flags;
   UINT8 RequestedSpeed;
 } EFI_ACPI_6_0_RASF_PATROL_SCRUB_PLATFORM_BLOCK_STRUCTURE;
-# 860 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 860 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT8 PlatformCommunicationChannelIdentifier;
@@ -4791,7 +4791,7 @@ typedef struct {
 
 
 } EFI_ACPI_6_0_MEMORY_POWER_STATUS_TABLE;
-# 876 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 876 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT32 Signature;
   UINT16 Command;
@@ -4803,7 +4803,7 @@ typedef struct {
   UINT64 MemoryEnergyConsumed;
   UINT64 ExpectedAveragePowerComsuned;
 } EFI_ACPI_6_0_MPST_PLATFORM_COMMUNICATION_CHANNEL_SHARED_MEMORY_REGION;
-# 904 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 904 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 PowerStateValue;
   UINT8 PowerStateInformationIndex;
@@ -4859,7 +4859,7 @@ typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved;
 } EFI_ACPI_6_0_MEMORY_TOPOLOGY_TABLE;
-# 968 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 968 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Reserved;
@@ -4867,7 +4867,7 @@ typedef struct {
   UINT16 Flags;
   UINT16 Reserved1;
 } EFI_ACPI_6_0_PMMT_COMMON_MEMORY_AGGREGATOR_DEVICE_STRUCTURE;
-# 986 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 986 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_6_0_PMMT_COMMON_MEMORY_AGGREGATOR_DEVICE_STRUCTURE Header;
   UINT16 SocketIdentifier;
@@ -4942,7 +4942,7 @@ typedef struct {
 
   UINT32 ImageOffsetY;
 } EFI_ACPI_6_0_BOOT_GRAPHICS_RESOURCE_TABLE;
-# 1116 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1116 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT16 Type;
   UINT8 Length;
@@ -5016,14 +5016,14 @@ typedef struct {
 
   UINT64 ExitBootServicesExit;
 } EFI_ACPI_6_0_FPDT_FIRMWARE_BASIC_BOOT_RECORD;
-# 1198 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1198 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_6_0_FPDT_PERFORMANCE_TABLE_HEADER Header;
 
 
 
 } EFI_ACPI_6_0_FPDT_FIRMWARE_BASIC_BOOT_TABLE;
-# 1213 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1213 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_6_0_FPDT_PERFORMANCE_TABLE_HEADER Header;
 
@@ -5097,7 +5097,7 @@ typedef struct {
   UINT32 PlatformTimerCount;
   UINT32 PlatformTimerOffset;
 } EFI_ACPI_6_0_GENERIC_TIMER_DESCRIPTION_TABLE;
-# 1308 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1308 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT16 Length;
@@ -5121,7 +5121,7 @@ typedef struct {
   UINT32 GTxVirtualTimerFlags;
   UINT32 GTxCommonFlags;
 } EFI_ACPI_6_0_GTDT_GT_BLOCK_TIMER_STRUCTURE;
-# 1347 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1347 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT16 Length;
@@ -5131,17 +5131,17 @@ typedef struct {
   UINT32 WatchdogTimerGSIV;
   UINT32 WatchdogTimerFlags;
 } EFI_ACPI_6_0_GTDT_SBSA_GENERIC_WATCHDOG_STRUCTURE;
-# 1367 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1367 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 Reserved;
 } EFI_ACPI_6_0_NVDIMM_FIRMWARE_INTERFACE_TABLE;
-# 1391 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1391 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT16 Type;
   UINT16 Length;
 } EFI_ACPI_6_0_NFIT_STRUCTURE_HEADER;
-# 1409 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1409 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT16 Type;
   UINT16 Length;
@@ -5274,7 +5274,7 @@ typedef struct {
   UINT32 BootErrorRegionLength;
   UINT64 BootErrorRegion;
 } EFI_ACPI_6_0_BOOT_ERROR_RECORD_TABLE_HEADER;
-# 1550 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1550 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT32 UncorrectableErrorValid : 1;
   UINT32 CorrectableErrorValid : 1;
@@ -5294,7 +5294,7 @@ typedef struct {
   UINT32 DataLength;
   UINT32 ErrorSeverity;
 } EFI_ACPI_6_0_BOOT_ERROR_REGION_STRUCTURE;
-# 1587 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1587 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 SectionType[16];
   UINT32 ErrorSeverity;
@@ -5305,12 +5305,12 @@ typedef struct {
   UINT8 FruId[16];
   UINT8 FruText[20];
 } EFI_ACPI_6_0_GENERIC_ERROR_DATA_ENTRY_STRUCTURE;
-# 1606 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1606 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   EFI_ACPI_DESCRIPTION_HEADER Header;
   UINT32 ErrorSourceCount;
 } EFI_ACPI_6_0_HARDWARE_ERROR_SOURCE_TABLE_HEADER;
-# 1636 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1636 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT16 Type;
   UINT16 SourceId;
@@ -5339,7 +5339,7 @@ typedef struct {
   UINT32 AddressRegisterMsrAddress;
   UINT32 MiscRegisterMsrAddress;
 } EFI_ACPI_6_0_IA32_ARCHITECTURE_MACHINE_CHECK_ERROR_BANK_STRUCTURE;
-# 1687 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1687 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT16 Type : 1;
   UINT16 PollInterval : 1;
@@ -5500,7 +5500,7 @@ typedef struct {
   UINT8 Reserved0[4];
   UINT32 InstructionEntryCount;
 } EFI_ACPI_6_0_ERROR_RECORD_SERIALIZATION_TABLE_HEADER;
-# 1913 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1913 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 SerializationAction;
   UINT8 Instruction;
@@ -5521,7 +5521,7 @@ typedef struct {
   UINT8 Reserved0[3];
   UINT32 InjectionEntryCount;
 } EFI_ACPI_6_0_ERROR_INJECTION_TABLE_HEADER;
-# 1993 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 1993 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 InjectionAction;
   UINT8 Instruction;
@@ -5550,7 +5550,7 @@ typedef struct {
   UINT32 Flags;
   UINT64 Reserved;
 } EFI_ACPI_6_0_PLATFORM_COMMUNICATION_CHANNEL_TABLE_HEADER;
-# 2042 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 2042 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 typedef struct {
   UINT8 Type;
   UINT8 Length;
@@ -5641,12 +5641,12 @@ typedef struct {
   UINT64 DoorbellAckPreserve;
   UINT64 DoorbellAckWrite;
 } EFI_ACPI_6_0_PCCT_SUBSPACE_2_HW_REDUCED_COMMUNICATIONS;
-# 2407 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/Acpi60.h"
+# 2407 "$EDK_PATH/MdePkg/Include/IndustryStandard/Acpi60.h"
 #pragma pack()
-# 19 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h" 2
-# 33 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 19 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h" 2
+# 33 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 #pragma pack(1)
-# 43 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 43 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   UINT8 Type;
 
@@ -5668,7 +5668,7 @@ typedef struct {
 
 
 typedef EFI_DEVICE_PATH_PROTOCOL EFI_DEVICE_PATH;
-# 78 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 78 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5680,7 +5680,7 @@ typedef struct {
 
   UINT8 Device;
 } PCI_DEVICE_PATH;
-# 98 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 98 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5688,7 +5688,7 @@ typedef struct {
 
   UINT8 FunctionNumber;
 } PCCARD_DEVICE_PATH;
-# 114 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 114 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5704,7 +5704,7 @@ typedef struct {
 
   EFI_PHYSICAL_ADDRESS EndingAddress;
 } MEMMAP_DEVICE_PATH;
-# 140 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 140 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5715,7 +5715,7 @@ typedef struct {
 
 
 } VENDOR_DEVICE_PATH;
-# 159 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 159 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5723,7 +5723,7 @@ typedef struct {
 
   UINT32 ControllerNumber;
 } CONTROLLER_DEVICE_PATH;
-# 175 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 175 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5735,7 +5735,7 @@ typedef struct {
 
   UINT8 BaseAddress[8];
 } BMC_DEVICE_PATH;
-# 196 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 196 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5785,7 +5785,7 @@ typedef struct {
 
 
 } ACPI_EXTENDED_HID_DEVICE_PATH;
-# 271 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 271 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5813,7 +5813,7 @@ typedef struct {
 
   UINT32 NFITDeviceHandle;
 } ACPI_NVDIMM_DEVICE_PATH;
-# 327 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 327 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -5950,7 +5950,7 @@ typedef struct {
 
   UINT8 DeviceProtocol;
 } USB_CLASS_DEVICE_PATH;
-# 472 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 472 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6008,7 +6008,7 @@ typedef struct {
 
   UINT16 Lun;
 } SATA_DEVICE_PATH;
-# 539 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 539 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6124,7 +6124,7 @@ typedef struct {
 
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
-# 663 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 663 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
   UINT32 ResourceFlags;
 
 
@@ -6144,7 +6144,7 @@ typedef struct {
 
   UINT64 DeviceId;
 } INFINIBAND_DEVICE_PATH;
-# 693 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 693 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6161,7 +6161,7 @@ typedef struct {
 
 
   UINT8 DataBits;
-# 718 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 718 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
   UINT8 Parity;
 
 
@@ -6190,7 +6190,7 @@ typedef struct {
 
 
 typedef VENDOR_DEVICE_PATH VENDOR_DEFINED_DEVICE_PATH;
-# 756 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 756 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6205,7 +6205,7 @@ typedef struct {
 
   UINT32 FlowControlMap;
 } UART_FLOW_CONTROL_DEVICE_PATH;
-# 778 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 778 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6379,7 +6379,7 @@ typedef struct {
 
 
 } ISCSI_DEVICE_PATH;
-# 965 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 965 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6420,7 +6420,7 @@ typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
   BLUETOOTH_LE_ADDRESS Address;
 } BLUETOOTH_LE_DEVICE_PATH;
-# 1019 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1019 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6460,7 +6460,7 @@ typedef struct {
 
   UINT8 SignatureType;
 } HARDDRIVE_DEVICE_PATH;
-# 1074 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1074 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6476,7 +6476,7 @@ typedef struct {
 
   UINT64 PartitionSize;
 } CDROM_DEVICE_PATH;
-# 1099 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1099 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6484,7 +6484,7 @@ typedef struct {
 
   CHAR16 PathName[1];
 } FILEPATH_DEVICE_PATH;
-# 1119 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1119 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6492,7 +6492,7 @@ typedef struct {
 
   EFI_GUID Protocol;
 } MEDIA_PROTOCOL_DEVICE_PATH;
-# 1135 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1135 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6500,7 +6500,7 @@ typedef struct {
 
   EFI_GUID FvFileName;
 } MEDIA_FW_VOL_FILEPATH_DEVICE_PATH;
-# 1151 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1151 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6508,7 +6508,7 @@ typedef struct {
 
   EFI_GUID FvName;
 } MEDIA_FW_VOL_DEVICE_PATH;
-# 1167 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1167 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
   UINT32 Reserved;
@@ -6543,7 +6543,7 @@ extern EFI_GUID gEfiPersistentVirtualDiskGuid;
 
 
 extern EFI_GUID gEfiPersistentVirtualCdGuid;
-# 1210 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1210 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6563,7 +6563,7 @@ typedef struct {
 
   UINT16 Instance;
 } MEDIA_RAM_DISK_DEVICE_PATH;
-# 1243 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1243 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef struct {
   EFI_DEVICE_PATH_PROTOCOL Header;
 
@@ -6579,7 +6579,7 @@ typedef struct {
 
   CHAR8 String[1];
 } BBS_BBS_DEVICE_PATH;
-# 1274 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DevicePath.h"
+# 1274 "$EDK_PATH/MdePkg/Include/Protocol/DevicePath.h"
 typedef union {
   EFI_DEVICE_PATH_PROTOCOL DevPath;
   PCI_DEVICE_PATH Pci;
@@ -6702,11 +6702,11 @@ typedef union {
 
 
 extern EFI_GUID gEfiDevicePathProtocolGuid;
-# 22 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextIn.h" 1
-# 20 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextIn.h"
+# 22 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextIn.h" 1
+# 20 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextIn.h"
 typedef struct _EFI_SIMPLE_TEXT_INPUT_PROTOCOL EFI_SIMPLE_TEXT_INPUT_PROTOCOL;
-# 30 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextIn.h"
+# 30 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextIn.h"
 typedef struct _EFI_SIMPLE_TEXT_INPUT_PROTOCOL SIMPLE_INPUT_INTERFACE;
 
 
@@ -6716,14 +6716,14 @@ typedef struct {
   UINT16 ScanCode;
   CHAR16 UnicodeChar;
 } EFI_INPUT_KEY;
-# 84 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextIn.h"
+# 84 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextIn.h"
 typedef
 EFI_STATUS
 ( *EFI_INPUT_RESET)(
   EFI_SIMPLE_TEXT_INPUT_PROTOCOL *This,
   BOOLEAN ExtendedVerification
   );
-# 106 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextIn.h"
+# 106 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextIn.h"
 typedef
 EFI_STATUS
 ( *EFI_INPUT_READ_KEY)(
@@ -6745,11 +6745,11 @@ struct _EFI_SIMPLE_TEXT_INPUT_PROTOCOL {
 };
 
 extern EFI_GUID gEfiSimpleTextInProtocolGuid;
-# 23 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h" 1
-# 21 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h"
+# 23 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextInEx.h" 1
+# 21 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextInEx.h"
 typedef struct _EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL;
-# 48 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h"
+# 48 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextInEx.h"
 typedef
 EFI_STATUS
 ( *EFI_INPUT_RESET_EX)(
@@ -6791,14 +6791,14 @@ typedef struct {
 
   EFI_KEY_STATE KeyState;
 } EFI_KEY_DATA;
-# 193 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h"
+# 193 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextInEx.h"
 typedef
 EFI_STATUS
 ( *EFI_INPUT_READ_KEY_EX)(
   EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL *This,
   EFI_KEY_DATA *KeyData
   );
-# 220 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h"
+# 220 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextInEx.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_STATE)(
@@ -6814,7 +6814,7 @@ EFI_STATUS
 ( *EFI_KEY_NOTIFY_FUNCTION)(
   EFI_KEY_DATA *KeyData
   );
-# 262 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h"
+# 262 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextInEx.h"
 typedef
 EFI_STATUS
 ( *EFI_REGISTER_KEYSTROKE_NOTIFY)(
@@ -6823,7 +6823,7 @@ EFI_STATUS
   EFI_KEY_NOTIFY_FUNCTION KeyNotificationFunction,
   void **NotifyHandle
   );
-# 286 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextInEx.h"
+# 286 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextInEx.h"
 typedef
 EFI_STATUS
 ( *EFI_UNREGISTER_KEYSTROKE_NOTIFY)(
@@ -6850,37 +6850,37 @@ struct _EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL {
 };
 
 extern EFI_GUID gEfiSimpleTextInputExProtocolGuid;
-# 24 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h" 1
-# 27 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 24 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h" 1
+# 27 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef struct _EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL;
 
 
 
 
 typedef EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL SIMPLE_TEXT_OUTPUT_INTERFACE;
-# 165 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 165 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_RESET)(
   EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL *This,
   BOOLEAN ExtendedVerification
   );
-# 190 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 190 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_STRING)(
   EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL *This,
   CHAR16 *String
   );
-# 211 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 211 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_TEST_STRING)(
   EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL *This,
   CHAR16 *String
   );
-# 234 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 234 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_QUERY_MODE)(
@@ -6889,27 +6889,27 @@ EFI_STATUS
   UINTN *Columns,
   UINTN *Rows
   );
-# 254 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 254 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_SET_MODE)(
   EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL *This,
   UINTN ModeNumber
   );
-# 275 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 275 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_SET_ATTRIBUTE)(
   EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL *This,
   UINTN Attribute
   );
-# 293 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 293 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_CLEAR_SCREEN)(
   EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL *This
   );
-# 316 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 316 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_SET_CURSOR_POSITION)(
@@ -6917,7 +6917,7 @@ EFI_STATUS
   UINTN Column,
   UINTN Row
   );
-# 338 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 338 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
 typedef
 EFI_STATUS
 ( *EFI_TEXT_ENABLE_CURSOR)(
@@ -6934,7 +6934,7 @@ typedef struct {
 
 
   INT32 MaxMode;
-# 362 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/SimpleTextOut.h"
+# 362 "$EDK_PATH/MdePkg/Include/Protocol/SimpleTextOut.h"
   INT32 Mode;
 
 
@@ -6981,7 +6981,7 @@ struct _EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL {
 };
 
 extern EFI_GUID gEfiSimpleTextOutProtocolGuid;
-# 25 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 25 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
 
 
 
@@ -7005,7 +7005,7 @@ typedef enum {
 
   MaxAllocateType
 } EFI_ALLOCATE_TYPE;
-# 143 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 143 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef struct {
 
 
@@ -7039,7 +7039,7 @@ typedef struct {
 
   UINT64 Attribute;
 } EFI_MEMORY_DESCRIPTOR;
-# 201 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 201 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_ALLOCATE_PAGES)(
@@ -7048,14 +7048,14 @@ EFI_STATUS
   UINTN Pages,
   EFI_PHYSICAL_ADDRESS *Memory
   );
-# 222 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 222 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_FREE_PAGES)(
   EFI_PHYSICAL_ADDRESS Memory,
   UINTN Pages
   );
-# 254 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 254 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_MEMORY_MAP)(
@@ -7065,7 +7065,7 @@ EFI_STATUS
   UINTN *DescriptorSize,
   UINT32 *DescriptorVersion
   );
-# 283 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 283 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_ALLOCATE_POOL)(
@@ -7073,13 +7073,13 @@ EFI_STATUS
   UINTN Size,
   void **Buffer
   );
-# 300 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 300 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_FREE_POOL)(
   void *Buffer
   );
-# 328 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 328 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_VIRTUAL_ADDRESS_MAP)(
@@ -7088,7 +7088,7 @@ EFI_STATUS
   UINT32 DescriptorVersion,
   EFI_MEMORY_DESCRIPTOR *VirtualMap
   );
-# 362 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 362 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CONNECT_CONTROLLER)(
@@ -7097,7 +7097,7 @@ EFI_STATUS
   EFI_DEVICE_PATH_PROTOCOL *RemainingDevicePath ,
   BOOLEAN Recursive
   );
-# 395 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 395 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_DISCONNECT_CONTROLLER)(
@@ -7105,21 +7105,21 @@ EFI_STATUS
   EFI_HANDLE DriverImageHandle ,
   EFI_HANDLE ChildHandle
   );
-# 426 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 426 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CONVERT_POINTER)(
   UINTN DebugDisposition,
   void **Address
   );
-# 461 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 461 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 void
 ( *EFI_EVENT_NOTIFY)(
   EFI_EVENT Event,
   void *Context
   );
-# 484 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 484 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CREATE_EVENT)(
@@ -7129,7 +7129,7 @@ EFI_STATUS
   void *NotifyContext ,
   EFI_EVENT *Event
   );
-# 513 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 513 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CREATE_EVENT_EX)(
@@ -7158,7 +7158,7 @@ typedef enum {
 
   TimerRelative
 } EFI_TIMER_DELAY;
-# 558 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 558 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_TIMER)(
@@ -7166,13 +7166,13 @@ EFI_STATUS
   EFI_TIMER_DELAY Type,
   UINT64 TriggerTime
   );
-# 574 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 574 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_SIGNAL_EVENT)(
   EFI_EVENT Event
   );
-# 594 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 594 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_WAIT_FOR_EVENT)(
@@ -7180,19 +7180,19 @@ EFI_STATUS
   EFI_EVENT *Event,
   UINTN *Index
   );
-# 610 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 610 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CLOSE_EVENT)(
   EFI_EVENT Event
   );
-# 626 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 626 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CHECK_EVENT)(
   EFI_EVENT Event
   );
-# 648 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 648 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_TPL
 ( *EFI_RAISE_TPL)(
@@ -7210,7 +7210,7 @@ void
 ( *EFI_RESTORE_TPL)(
   EFI_TPL OldTpl
   );
-# 694 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 694 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_VARIABLE)(
@@ -7220,7 +7220,7 @@ EFI_STATUS
   UINTN *DataSize,
   void *Data
   );
-# 734 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 734 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_NEXT_VARIABLE_NAME)(
@@ -7228,7 +7228,7 @@ EFI_STATUS
   CHAR16 *VariableName,
   EFI_GUID *VendorGuid
   );
-# 779 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 779 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_VARIABLE)(
@@ -7267,20 +7267,20 @@ typedef struct {
 
   BOOLEAN SetsToZero;
 } EFI_TIME_CAPABILITIES;
-# 834 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 834 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_TIME)(
   EFI_TIME *Time,
   EFI_TIME_CAPABILITIES *Capabilities
   );
-# 854 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 854 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_TIME)(
   EFI_TIME *Time
   );
-# 877 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 877 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_WAKEUP_TIME)(
@@ -7288,14 +7288,14 @@ EFI_STATUS
   BOOLEAN *Pending,
   EFI_TIME *Time
   );
-# 901 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 901 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_WAKEUP_TIME)(
   BOOLEAN Enable,
   EFI_TIME *Time
   );
-# 938 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 938 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_IMAGE_LOAD)(
@@ -7306,7 +7306,7 @@ EFI_STATUS
   UINTN SourceSize,
   EFI_HANDLE *ImageHandle
   );
-# 963 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 963 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_IMAGE_START)(
@@ -7314,7 +7314,7 @@ EFI_STATUS
   UINTN *ExitDataSize,
   CHAR16 **ExitData
   );
-# 991 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 991 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_EXIT)(
@@ -7323,26 +7323,26 @@ EFI_STATUS
   UINTN ExitDataSize,
   CHAR16 *ExitData
   );
-# 1009 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1009 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_IMAGE_UNLOAD)(
   EFI_HANDLE ImageHandle
   );
-# 1025 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1025 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_EXIT_BOOT_SERVICES)(
   EFI_HANDLE ImageHandle,
   UINTN MapKey
   );
-# 1041 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1041 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_STALL)(
   UINTN Microseconds
   );
-# 1063 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1063 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_WATCHDOG_TIMER)(
@@ -7351,7 +7351,7 @@ EFI_STATUS
   UINTN DataSize,
   CHAR16 *WatchdogData
   );
-# 1087 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1087 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 void
 ( *EFI_RESET_SYSTEM)(
@@ -7360,19 +7360,19 @@ void
   UINTN DataSize,
   void *ResetData
   );
-# 1106 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1106 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_NEXT_MONOTONIC_COUNT)(
   UINT64 *Count
   );
-# 1125 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1125 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_NEXT_HIGH_MONO_COUNT)(
   UINT32 *HighCount
   );
-# 1146 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1146 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CALCULATE_CRC32)(
@@ -7380,7 +7380,7 @@ EFI_STATUS
   UINTN DataSize,
   UINT32 *Crc32
   );
-# 1162 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1162 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 void
 ( *EFI_COPY_MEM)(
@@ -7388,7 +7388,7 @@ void
   void *Source,
   UINTN Length
   );
-# 1178 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1178 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 void
 ( *EFI_SET_MEM)(
@@ -7406,7 +7406,7 @@ typedef enum {
 
   EFI_NATIVE_INTERFACE
 } EFI_INTERFACE_TYPE;
-# 1216 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1216 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_INSTALL_PROTOCOL_INTERFACE)(
@@ -7415,14 +7415,14 @@ EFI_STATUS
   EFI_INTERFACE_TYPE InterfaceType,
   void *Interface
   );
-# 1241 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1241 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_INSTALL_MULTIPLE_PROTOCOL_INTERFACES)(
   EFI_HANDLE *Handle,
   ...
   );
-# 1266 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1266 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_REINSTALL_PROTOCOL_INTERFACE)(
@@ -7431,7 +7431,7 @@ EFI_STATUS
   void *OldInterface,
   void *NewInterface
   );
-# 1292 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1292 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_UNINSTALL_PROTOCOL_INTERFACE)(
@@ -7439,14 +7439,14 @@ EFI_STATUS
   EFI_GUID *Protocol,
   void *Interface
   );
-# 1311 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1311 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_UNINSTALL_MULTIPLE_PROTOCOL_INTERFACES)(
   EFI_HANDLE Handle,
   ...
   );
-# 1333 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1333 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_HANDLE_PROTOCOL)(
@@ -7454,7 +7454,7 @@ EFI_STATUS
   EFI_GUID *Protocol,
   void **Interface
   );
-# 1375 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1375 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_OPEN_PROTOCOL)(
@@ -7465,7 +7465,7 @@ EFI_STATUS
   EFI_HANDLE ControllerHandle,
   UINT32 Attributes
   );
-# 1407 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1407 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_CLOSE_PROTOCOL)(
@@ -7484,7 +7484,7 @@ typedef struct {
   UINT32 Attributes;
   UINT32 OpenCount;
 } EFI_OPEN_PROTOCOL_INFORMATION_ENTRY;
-# 1441 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1441 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_OPEN_PROTOCOL_INFORMATION)(
@@ -7493,7 +7493,7 @@ EFI_STATUS
   EFI_OPEN_PROTOCOL_INFORMATION_ENTRY **EntryBuffer,
   UINTN *EntryCount
   );
-# 1471 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1471 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_PROTOCOLS_PER_HANDLE)(
@@ -7501,7 +7501,7 @@ EFI_STATUS
   EFI_GUID ***ProtocolBuffer,
   UINTN *ProtocolBufferCount
   );
-# 1494 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1494 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_REGISTER_PROTOCOL_NOTIFY)(
@@ -7528,7 +7528,7 @@ typedef enum {
 
   ByProtocol
 } EFI_LOCATE_SEARCH_TYPE;
-# 1543 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1543 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_LOCATE_HANDLE)(
@@ -7538,7 +7538,7 @@ EFI_STATUS
   UINTN *BufferSize,
   EFI_HANDLE *Buffer
   );
-# 1569 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1569 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_LOCATE_DEVICE_PATH)(
@@ -7546,14 +7546,14 @@ EFI_STATUS
   EFI_DEVICE_PATH_PROTOCOL **DevicePath,
   EFI_HANDLE *Device
   );
-# 1590 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1590 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_INSTALL_CONFIGURATION_TABLE)(
   EFI_GUID *Guid,
   void *Table
   );
-# 1616 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1616 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_LOCATE_HANDLE_BUFFER)(
@@ -7563,7 +7563,7 @@ EFI_STATUS
   UINTN *NoHandles,
   EFI_HANDLE **Buffer
   );
-# 1643 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1643 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_LOCATE_PROTOCOL)(
@@ -7637,7 +7637,7 @@ typedef struct {
 
   void *CapsulePtr[1];
 } EFI_CAPSULE_TABLE;
-# 1754 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1754 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_UPDATE_CAPSULE)(
@@ -7645,7 +7645,7 @@ EFI_STATUS
   UINTN CapsuleCount,
   EFI_PHYSICAL_ADDRESS ScatterGatherList
   );
-# 1788 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1788 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_QUERY_CAPSULE_CAPABILITIES)(
@@ -7654,7 +7654,7 @@ EFI_STATUS
   UINT64 *MaximumCapsuleSize,
   EFI_RESET_TYPE *ResetType
   );
-# 1819 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1819 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_QUERY_VARIABLE_INFO)(
@@ -7663,7 +7663,7 @@ EFI_STATUS
   UINT64 *RemainingVariableStorageSize,
   UINT64 *MaximumVariableSize
   );
-# 1864 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 1864 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef struct {
 
 
@@ -7894,14 +7894,14 @@ typedef struct {
 
   EFI_CONFIGURATION_TABLE *ConfigurationTable;
 } EFI_SYSTEM_TABLE;
-# 2106 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 2106 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef
 EFI_STATUS
 ( *EFI_IMAGE_ENTRY_POINT)(
   EFI_HANDLE ImageHandle,
   EFI_SYSTEM_TABLE *SystemTable
   );
-# 2121 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 2121 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 #pragma pack(1)
 typedef struct _EFI_LOAD_OPTION {
 
@@ -7915,10 +7915,10 @@ typedef struct _EFI_LOAD_OPTION {
 
 
   UINT16 FilePathListLength;
-# 2159 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 2159 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 } EFI_LOAD_OPTION;
 #pragma pack()
-# 2181 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
+# 2181 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
 typedef union {
   struct {
 
@@ -7988,11 +7988,11 @@ typedef struct {
 
 } EFI_KEY_OPTION;
 #pragma pack()
-# 2286 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h" 1
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 2286 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h"
+# 1 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h" 1
+# 18 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 #pragma pack(1)
-# 65 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 65 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef void PXE_VOID;
 typedef UINT8 PXE_UINT8;
 typedef UINT16 PXE_UINT16;
@@ -8009,19 +8009,19 @@ typedef PXE_UINT8 PXE_BOOL;
 
 
 typedef PXE_UINT16 PXE_OPCODE;
-# 177 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 177 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef PXE_UINT16 PXE_OPFLAGS;
-# 401 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 401 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef PXE_UINT16 PXE_STATFLAGS;
-# 594 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 594 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef PXE_UINT16 PXE_STATCODE;
-# 624 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 624 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef PXE_UINT16 PXE_IFNUM;
-# 637 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 637 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef PXE_UINT16 PXE_CONTROL;
-# 658 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 658 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef PXE_UINT8 PXE_FRAME_TYPE;
-# 669 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 669 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef PXE_UINT32 PXE_IPV4;
 
 typedef PXE_UINT32 PXE_IPV6[4];
@@ -8031,7 +8031,7 @@ typedef PXE_UINT8 PXE_MAC_ADDR[32];
 
 typedef PXE_UINT8 PXE_IFTYPE;
 typedef UINT16 PXE_MEDIA_PROTOCOL;
-# 710 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 710 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_hw_undi {
   PXE_UINT32 Signature;
   PXE_UINT8 Len;
@@ -8049,7 +8049,7 @@ typedef struct s_pxe_hw_undi {
 
 
 } PXE_HW_UNDI;
-# 807 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 807 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_sw_undi {
   PXE_UINT32 Signature;
   PXE_UINT8 Len;
@@ -8071,7 +8071,7 @@ typedef union u_pxe_undi {
   PXE_HW_UNDI hw;
   PXE_SW_UNDI sw;
 } PXE_UNDI;
-# 873 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 873 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_cdb {
   PXE_OPCODE OpCode;
   PXE_OPFLAGS OpFlags;
@@ -8112,32 +8112,32 @@ typedef union pxe_device {
     PXE_UINT8 Function;
   } PCI, PCC;
 } PXE_DEVICE;
-# 922 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 922 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_cpb_start_30 {
-# 933 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 933 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Delay;
-# 949 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 949 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Block;
-# 963 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 963 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Virt2Phys;
-# 974 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 974 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Mem_IO;
 } PXE_CPB_START_30;
 
 typedef struct s_pxe_cpb_start_31 {
-# 988 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 988 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Delay;
-# 1004 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1004 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Block;
-# 1018 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1018 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Virt2Phys;
-# 1029 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1029 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Mem_IO;
-# 1046 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1046 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Map_Mem;
-# 1057 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1057 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 UnMap_Mem;
-# 1069 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1069 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   UINT64 Sync_Mem;
 
 
@@ -8148,9 +8148,9 @@ typedef struct s_pxe_cpb_start_31 {
 
   UINT64 Unique_ID;
 } PXE_CPB_START_31;
-# 1091 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1091 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_db_get_init_info {
-# 1100 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1100 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   PXE_UINT32 MemoryRequired;
 
 
@@ -8192,7 +8192,7 @@ typedef struct s_pxe_db_get_init_info {
 
 
   PXE_UINT16 MCastFilterCnt;
-# 1149 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1149 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   PXE_UINT16 TxBufCnt;
   PXE_UINT16 TxBufSize;
   PXE_UINT16 RxBufCnt;
@@ -8215,7 +8215,7 @@ typedef struct s_pxe_db_get_init_info {
 
   PXE_UINT8 SupportedLoopBackModes;
 } PXE_DB_GET_INIT_INFO;
-# 1183 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1183 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_pci_config_info {
 
 
@@ -8293,7 +8293,7 @@ typedef struct s_pxe_cpb_initialize {
 
 
   PXE_UINT32 LinkSpeed;
-# 1271 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1271 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   PXE_UINT16 TxBufCnt;
   PXE_UINT16 TxBufSize;
   PXE_UINT16 RxBufCnt;
@@ -8307,9 +8307,9 @@ typedef struct s_pxe_cpb_initialize {
 
   PXE_UINT8 LoopBackMode;
 } PXE_CPB_INITIALIZE;
-# 1295 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1295 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_db_initialize {
-# 1304 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1304 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   PXE_UINT32 MemoryUsed;
 
 
@@ -8363,7 +8363,7 @@ typedef struct s_pxe_dpb_station_address {
 } PXE_DB_STATION_ADDRESS;
 
 typedef struct s_pxe_db_statistics {
-# 1366 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1366 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
   PXE_UINT64 Supported;
 
 
@@ -8371,7 +8371,7 @@ typedef struct s_pxe_db_statistics {
 
   PXE_UINT64 Data[64];
 } PXE_DB_STATISTICS;
-# 1472 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiPxe.h"
+# 1472 "$EDK_PATH/MdePkg/Include/Uefi/UefiPxe.h"
 typedef struct s_pxe_cpb_mcast_ip_to_mac {
 
 
@@ -8679,9 +8679,9 @@ typedef struct s_pxe_db_receive {
 } PXE_DB_RECEIVE;
 
 #pragma pack()
-# 2287 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiGpt.h" 1
-# 26 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiGpt.h"
+# 2287 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Uefi/UefiGpt.h" 1
+# 26 "$EDK_PATH/MdePkg/Include/Uefi/UefiGpt.h"
 #pragma pack(1)
 
 
@@ -8762,7 +8762,7 @@ typedef struct {
 
 
   EFI_LBA EndingLBA;
-# 129 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiGpt.h"
+# 129 "$EDK_PATH/MdePkg/Include/Uefi/UefiGpt.h"
   UINT64 Attributes;
 
 
@@ -8771,13 +8771,13 @@ typedef struct {
 } EFI_PARTITION_ENTRY;
 
 #pragma pack()
-# 2288 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h" 1
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/HiiFormMapMethodGuid.h" 1
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Guid/HiiFormMapMethodGuid.h"
+# 2288 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h" 1
+# 18 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1 "$EDK_PATH/MdePkg/Include/Guid/HiiFormMapMethodGuid.h" 1
+# 17 "$EDK_PATH/MdePkg/Include/Guid/HiiFormMapMethodGuid.h"
 extern EFI_GUID gEfiHiiStandardFormGuid;
-# 19 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h" 2
+# 19 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h" 2
 
 
 
@@ -8796,7 +8796,7 @@ typedef UINT16 EFI_DEFAULT_ID;
 typedef UINT32 EFI_HII_FONT_STYLE;
 
 #pragma pack(1)
-# 46 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 46 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct {
   EFI_GUID PackageListGuid;
   UINT32 PackageLength;
@@ -8810,7 +8810,7 @@ typedef struct {
   UINT32 Type : 8;
 
 } EFI_HII_PACKAGE_HEADER;
-# 93 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 93 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct {
 
 
@@ -8874,7 +8874,7 @@ typedef struct _EFI_HII_SIMPLE_FONT_PACKAGE_HDR {
 
 
 } EFI_HII_SIMPLE_FONT_PACKAGE_HDR;
-# 174 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 174 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_GLYPH_INFO {
   UINT16 Width;
   UINT16 Height;
@@ -8897,7 +8897,7 @@ typedef struct _EFI_HII_FONT_PACKAGE_HDR {
   EFI_HII_FONT_STYLE FontStyle;
   CHAR16 FontFamily[1];
 } EFI_HII_FONT_PACKAGE_HDR;
-# 214 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 214 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_GLYPH_BLOCK {
   UINT8 BlockType;
 } EFI_HII_GLYPH_BLOCK;
@@ -8978,18 +8978,18 @@ typedef struct _EFI_HII_GIBT_SKIP2_BLOCK {
   EFI_HII_GLYPH_BLOCK Header;
   UINT16 SkipCount;
 } EFI_HII_GIBT_SKIP2_BLOCK;
-# 304 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 304 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_DEVICE_PATH_PACKAGE_HDR {
   EFI_HII_PACKAGE_HEADER Header;
 
 } EFI_HII_DEVICE_PATH_PACKAGE_HDR;
-# 317 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 317 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_GUID_PACKAGE_HDR {
   EFI_HII_PACKAGE_HEADER Header;
   EFI_GUID Guid;
 
 } EFI_HII_GUID_PACKAGE_HDR;
-# 335 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 335 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_STRING_PACKAGE_HDR {
   EFI_HII_PACKAGE_HEADER Header;
   UINT32 HdrSize;
@@ -9002,7 +9002,7 @@ typedef struct _EFI_HII_STRING_PACKAGE_HDR {
 typedef struct {
   UINT8 BlockType;
 } EFI_HII_STRING_BLOCK;
-# 372 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 372 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_SIBT_DUPLICATE_BLOCK {
   EFI_HII_STRING_BLOCK Header;
   EFI_STRING_ID StringId;
@@ -9110,7 +9110,7 @@ typedef struct _EFI_HII_IMAGE_PACKAGE_HDR {
 typedef struct _EFI_HII_IMAGE_BLOCK {
   UINT8 BlockType;
 } EFI_HII_IMAGE_BLOCK;
-# 505 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 505 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_IIBT_END_BLOCK {
   EFI_HII_IMAGE_BLOCK Header;
 } EFI_HII_IIBT_END_BLOCK;
@@ -9248,7 +9248,7 @@ typedef struct _EFI_HII_IMAGE_PALETTE_INFO {
   UINT16 PaletteSize;
   EFI_HII_RGB_PIXEL PaletteValue[1];
 } EFI_HII_IMAGE_PALETTE_INFO;
-# 651 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 651 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_FORM_PACKAGE_HDR {
   EFI_HII_PACKAGE_HEADER Header;
 
@@ -9286,7 +9286,7 @@ typedef union {
   EFI_HII_REF ref;
 
 } EFI_IFR_TYPE_VALUE;
-# 798 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 798 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_OP_HEADER {
   UINT8 OpCode;
   UINT8 Length : 7;
@@ -9308,13 +9308,13 @@ typedef struct _EFI_IFR_QUESTION_HEADER {
   } VarStoreInfo;
   UINT8 Flags;
 } EFI_IFR_QUESTION_HEADER;
-# 834 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 834 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_DEFAULTSTORE {
   EFI_IFR_OP_HEADER Header;
   EFI_STRING_ID DefaultName;
   UINT16 DefaultId;
 } EFI_IFR_DEFAULTSTORE;
-# 853 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 853 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_VARSTORE {
   EFI_IFR_OP_HEADER Header;
   EFI_GUID Guid;
@@ -9472,7 +9472,7 @@ typedef struct _EFI_IFR_DATE {
   EFI_IFR_QUESTION_HEADER Question;
   UINT8 Flags;
 } EFI_IFR_DATE;
-# 1023 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1023 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef union {
   struct {
     UINT8 MinValue;
@@ -9502,7 +9502,7 @@ typedef struct _EFI_IFR_NUMERIC {
   UINT8 Flags;
   MINMAXSTEP_DATA data;
 } EFI_IFR_NUMERIC;
-# 1067 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1067 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_ONE_OF {
   EFI_IFR_OP_HEADER Header;
   EFI_IFR_QUESTION_HEADER Question;
@@ -9542,7 +9542,7 @@ typedef struct _EFI_IFR_TIME {
   EFI_IFR_QUESTION_HEADER Question;
   UINT8 Flags;
 } EFI_IFR_TIME;
-# 1119 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1119 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_DISABLE_IF {
   EFI_IFR_OP_HEADER Header;
 } EFI_IFR_DISABLE_IF;
@@ -9588,7 +9588,7 @@ typedef struct _EFI_IFR_ONE_OF_OPTION {
   UINT8 Type;
   EFI_IFR_TYPE_VALUE Value;
 } EFI_IFR_ONE_OF_OPTION;
-# 1185 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1185 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_GUID {
   EFI_IFR_OP_HEADER Header;
   EFI_GUID Guid;
@@ -9728,7 +9728,7 @@ typedef struct _EFI_IFR_BITWISE_NOT {
 typedef struct _EFI_IFR_TO_BOOLEAN {
   EFI_IFR_OP_HEADER Header;
 } EFI_IFR_TO_BOOLEAN;
-# 1348 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1348 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_TO_STRING {
   EFI_IFR_OP_HEADER Header;
   UINT8 Format;
@@ -9849,7 +9849,7 @@ typedef struct _EFI_IFR_MID {
 typedef struct _EFI_IFR_TOKEN {
   EFI_IFR_OP_HEADER Header;
 } EFI_IFR_TOKEN;
-# 1476 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1476 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_SPAN {
   EFI_IFR_OP_HEADER Header;
   UINT8 Flags;
@@ -9960,7 +9960,7 @@ typedef struct _EFI_IFR_WRITE {
 typedef struct _EFI_IFR_MAP {
   EFI_IFR_OP_HEADER Header;
 } EFI_IFR_MAP;
-# 1594 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1594 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef enum {
   EfiKeyLCtrl,
   EfiKeyA0,
@@ -10108,7 +10108,7 @@ typedef struct {
   UINT16 Modifier;
   UINT16 AffectedAttribute;
 } EFI_KEY_DESCRIPTOR;
-# 1762 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1762 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct {
   UINT16 LayoutLength;
   EFI_GUID Guid;
@@ -10122,7 +10122,7 @@ typedef struct {
   UINT16 LayoutCount;
 
 } EFI_HII_KEYBOARD_PACKAGE_HDR;
-# 1834 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1834 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_IFR_ANIMATION {
 
 
@@ -10158,7 +10158,7 @@ typedef struct _EFI_HII_ANIMATION_BLOCK {
   UINT8 BlockType;
 
 } EFI_HII_ANIMATION_BLOCK;
-# 1892 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1892 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
 typedef struct _EFI_HII_AIBT_EXT1_BLOCK {
 
 
@@ -10233,7 +10233,7 @@ typedef struct _EFI_HII_ANIMATION_CELL {
 
 
 typedef struct _EFI_HII_AIBT_OVERLAY_IMAGES_BLOCK {
-# 1974 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 1974 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
   EFI_IMAGE_ID DftImageId;
 
 
@@ -10260,7 +10260,7 @@ typedef struct _EFI_HII_AIBT_OVERLAY_IMAGES_BLOCK {
 
 
 typedef struct _EFI_HII_AIBT_CLEAR_IMAGES_BLOCK {
-# 2008 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 2008 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
   EFI_IMAGE_ID DftImageId;
 
 
@@ -10292,7 +10292,7 @@ typedef struct _EFI_HII_AIBT_CLEAR_IMAGES_BLOCK {
 
 
 typedef struct _EFI_HII_AIBT_RESTORE_SCRN_BLOCK {
-# 2047 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
+# 2047 "$EDK_PATH/MdePkg/Include/Uefi/UefiInternalFormRepresentation.h"
   EFI_IMAGE_ID DftImageId;
 
 
@@ -10365,19 +10365,19 @@ typedef struct _EFI_HII_AIBT_SKIP2_BLOCK {
 } EFI_HII_AIBT_SKIP2_BLOCK;
 
 #pragma pack()
-# 2289 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Uefi/UefiSpec.h" 2
-# 15 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/PiDxe.h" 2
+# 2289 "$EDK_PATH/MdePkg/Include/Uefi/UefiSpec.h" 2
+# 15 "$EDK_PATH/MdePkg/Include/PiDxe.h" 2
 
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h" 1
-# 16 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 1
-# 15 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h" 1
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h" 1
+# 16 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 1
+# 15 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h"
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareVolume.h" 1
+# 18 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef UINT32 EFI_FV_FILE_ATTRIBUTES;
-# 30 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 30 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef UINT32 EFI_FVB_ATTRIBUTES_2;
-# 85 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 85 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef struct {
 
 
@@ -10442,7 +10442,7 @@ typedef struct {
 
   EFI_FV_BLOCK_MAP_ENTRY BlockMap[1];
 } EFI_FIRMWARE_VOLUME_HEADER;
-# 160 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 160 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef struct {
 
 
@@ -10529,9 +10529,9 @@ typedef struct {
 
   UINT32 UsedSize;
 } EFI_FIRMWARE_VOLUME_EXT_ENTRY_USED_SIZE_TYPE;
-# 16 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h" 1
-# 15 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 16 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h" 1
+# 15 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 #pragma pack(1)
 
 
@@ -10544,7 +10544,7 @@ typedef union {
 
 
     UINT8 Header;
-# 36 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 36 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
     UINT8 File;
   } Checksum;
 
@@ -10562,7 +10562,7 @@ typedef union {
 typedef UINT8 EFI_FV_FILETYPE;
 typedef UINT8 EFI_FFS_FILE_ATTRIBUTES;
 typedef UINT8 EFI_FFS_FILE_STATE;
-# 106 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 106 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -10612,7 +10612,7 @@ typedef struct {
 
 
   EFI_FFS_FILE_ATTRIBUTES Attributes;
-# 163 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 163 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
   UINT8 Size[3];
 
 
@@ -10626,9 +10626,9 @@ typedef struct {
 
   UINT64 ExtendedSize;
 } EFI_FFS_FILE_HEADER2;
-# 193 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 193 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef UINT8 EFI_SECTION_TYPE;
-# 230 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 230 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -10663,7 +10663,7 @@ typedef struct {
 
 typedef EFI_COMMON_SECTION_HEADER EFI_COMPATIBILITY16_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_COMPATIBILITY16_SECTION2;
-# 274 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 274 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -10693,7 +10693,7 @@ typedef struct {
 
   UINT8 CompressionType;
 } EFI_COMPRESSION_SECTION2;
-# 313 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 313 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef EFI_COMMON_SECTION_HEADER EFI_DISPOSABLE_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_DISPOSABLE_SECTION2;
 
@@ -10733,7 +10733,7 @@ typedef struct {
 
   EFI_GUID SubTypeGuid;
 } EFI_FREEFORM_SUBTYPE_GUID_SECTION2;
-# 361 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 361 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -10783,7 +10783,7 @@ typedef EFI_COMMON_SECTION_HEADER2 EFI_PE32_SECTION2;
 
 typedef EFI_COMMON_SECTION_HEADER EFI_PEI_DEPEX_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_PEI_DEPEX_SECTION2;
-# 420 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 420 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef EFI_COMMON_SECTION_HEADER EFI_PIC_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_PIC_SECTION2;
 
@@ -10798,7 +10798,7 @@ typedef EFI_COMMON_SECTION_HEADER2 EFI_TE_SECTION2;
 
 typedef EFI_COMMON_SECTION_HEADER EFI_RAW_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_RAW_SECTION2;
-# 443 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 443 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef EFI_COMMON_SECTION_HEADER EFI_SMM_DEPEX_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_SMM_DEPEX_SECTION2;
 
@@ -10843,15 +10843,15 @@ typedef struct {
   UINT16 BuildNumber;
   CHAR16 VersionString[1];
 } EFI_VERSION_SECTION2;
-# 504 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 504 "$EDK_PATH/MdePkg/Include/Pi/PiFirmwareFile.h"
 #pragma pack()
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiBootMode.h" 1
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiBootMode.h"
+# 17 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiBootMode.h" 1
+# 18 "$EDK_PATH/MdePkg/Include/Pi/PiBootMode.h"
 typedef UINT32 EFI_BOOT_MODE;
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiHob.h" 1
-# 36 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiHob.h"
+# 18 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiHob.h" 1
+# 36 "$EDK_PATH/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -10866,7 +10866,7 @@ typedef struct {
 
   UINT32 Reserved;
 } EFI_HOB_GENERIC_HEADER;
-# 60 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiHob.h"
+# 60 "$EDK_PATH/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -11031,9 +11031,9 @@ typedef struct {
 
 
 typedef UINT32 EFI_RESOURCE_TYPE;
-# 241 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiHob.h"
+# 241 "$EDK_PATH/MdePkg/Include/Pi/PiHob.h"
 typedef UINT32 EFI_RESOURCE_ATTRIBUTE_TYPE;
-# 307 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiHob.h"
+# 307 "$EDK_PATH/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -11194,7 +11194,7 @@ typedef struct {
 
   EFI_HOB_GENERIC_HEADER Header;
 } EFI_HOB_MEMORY_POOL;
-# 475 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiHob.h"
+# 475 "$EDK_PATH/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -11230,15 +11230,15 @@ typedef union {
   EFI_HOB_UEFI_CAPSULE *Capsule;
   UINT8 *Raw;
 } EFI_PEI_HOB_POINTERS;
-# 19 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDependency.h" 1
-# 20 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiStatusCode.h" 1
-# 19 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiStatusCode.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h" 1
-# 19 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h" 1
-# 57 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 19 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiDependency.h" 1
+# 20 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiStatusCode.h" 1
+# 19 "$EDK_PATH/MdePkg/Include/Pi/PiStatusCode.h"
+# 1 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h" 1
+# 19 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
+# 1 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h" 1
+# 57 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT16 e_magic;
   UINT16 e_cblp;
@@ -11273,12 +11273,12 @@ typedef struct {
   UINT16 SizeOfOptionalHeader;
   UINT16 Characteristics;
 } EFI_IMAGE_FILE_HEADER;
-# 115 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 115 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 VirtualAddress;
   UINT32 Size;
 } EFI_IMAGE_DATA_DIRECTORY;
-# 148 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 148 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
 
 
@@ -11318,7 +11318,7 @@ typedef struct {
   UINT32 NumberOfRvaAndSizes;
   EFI_IMAGE_DATA_DIRECTORY DataDirectory[16];
 } EFI_IMAGE_OPTIONAL_HEADER32;
-# 199 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 199 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
 
 
@@ -11379,7 +11379,7 @@ typedef struct {
   EFI_IMAGE_FILE_HEADER FileHeader;
   EFI_IMAGE_OPTIONAL_HEADER64 OptionalHeader;
 } EFI_IMAGE_NT_HEADERS64;
-# 295 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 295 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT8 Name[8];
   union {
@@ -11395,18 +11395,18 @@ typedef struct {
   UINT16 NumberOfLinenumbers;
   UINT32 Characteristics;
 } EFI_IMAGE_SECTION_HEADER;
-# 445 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 445 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 VirtualAddress;
   UINT32 SymbolTableIndex;
   UINT16 Type;
 } EFI_IMAGE_RELOCATION;
-# 493 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 493 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 VirtualAddress;
   UINT32 SizeOfBlock;
 } EFI_IMAGE_BASE_RELOCATION;
-# 534 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 534 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   union {
     UINT32 SymbolTableIndex;
@@ -11414,7 +11414,7 @@ typedef struct {
   } Type;
   UINT16 Linenumber;
 } EFI_IMAGE_LINENUMBER;
-# 560 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 560 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT8 Name[16];
   UINT8 Date[12];
@@ -11424,7 +11424,7 @@ typedef struct {
   UINT8 Size[10];
   UINT8 EndHeader[2];
 } EFI_IMAGE_ARCHIVE_MEMBER_HEADER;
-# 582 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 582 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 Characteristics;
   UINT32 TimeDateStamp;
@@ -11438,7 +11438,7 @@ typedef struct {
   UINT32 AddressOfNames;
   UINT32 AddressOfNameOrdinals;
 } EFI_IMAGE_EXPORT_DIRECTORY;
-# 606 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 606 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT16 Hint;
   UINT8 Name[1];
@@ -11454,7 +11454,7 @@ typedef struct {
     EFI_IMAGE_IMPORT_BY_NAME *AddressOfData;
   } u1;
 } EFI_IMAGE_THUNK_DATA;
-# 629 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 629 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 Characteristics;
   UINT32 TimeDateStamp;
@@ -11476,7 +11476,7 @@ typedef struct {
   UINT32 RVA;
   UINT32 FileOffset;
 } EFI_IMAGE_DEBUG_DIRECTORY_ENTRY;
-# 658 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 658 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Unknown;
@@ -11610,7 +11610,7 @@ typedef struct {
   UINT64 ImageBase;
   EFI_IMAGE_DATA_DIRECTORY DataDirectory[2];
 } EFI_TE_IMAGE_HEADER;
-# 803 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 803 "$EDK_PATH/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef union {
   EFI_IMAGE_NT_HEADERS32 Pe32;
   EFI_IMAGE_NT_HEADERS64 Pe32Plus;
@@ -11623,12 +11623,12 @@ typedef union {
   EFI_TE_IMAGE_HEADER *Te;
   EFI_IMAGE_OPTIONAL_HEADER_UNION *Union;
 } EFI_IMAGE_OPTIONAL_HEADER_PTR_UNION;
-# 20 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h" 2
+# 20 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h" 2
 
 typedef struct _EFI_DEBUG_SUPPORT_PROTOCOL EFI_DEBUG_SUPPORT_PROTOCOL;
-# 35 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 35 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef INTN EFI_EXCEPTION_TYPE;
-# 62 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 62 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT16 Fcw;
   UINT16 Fsw;
@@ -11697,7 +11697,7 @@ typedef struct {
   UINT32 Ecx;
   UINT32 Eax;
 } EFI_SYSTEM_CONTEXT_IA32;
-# 156 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 156 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT16 Fcw;
   UINT16 Fsw;
@@ -11775,7 +11775,7 @@ typedef struct {
   UINT64 R14;
   UINT64 R15;
 } EFI_SYSTEM_CONTEXT_X64;
-# 282 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 282 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
 
 
@@ -11927,7 +11927,7 @@ typedef struct {
 
   UINT64 IntNat;
 } EFI_SYSTEM_CONTEXT_IPF;
-# 456 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 456 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT64 R0;
   UINT64 R1;
@@ -11941,7 +11941,7 @@ typedef struct {
   UINT64 ControlFlags;
   UINT64 Ip;
 } EFI_SYSTEM_CONTEXT_EBC;
-# 490 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 490 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT32 R0;
   UINT32 R1;
@@ -11965,7 +11965,7 @@ typedef struct {
   UINT32 IFSR;
   UINT32 IFAR;
 } EFI_SYSTEM_CONTEXT_ARM;
-# 527 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 527 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
 
   UINT64 X0;
@@ -12041,7 +12041,7 @@ typedef struct {
   UINT64 ESR;
   UINT64 FAR;
 } EFI_SYSTEM_CONTEXT_AARCH64;
-# 645 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 645 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT64 X0;
   UINT64 X1;
@@ -12079,7 +12079,7 @@ typedef struct {
   UINT32 SSTATUS;
   UINT32 STVAL;
 } EFI_SYSTEM_CONTEXT_RISCV64;
-# 744 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 744 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT64 R0;
   UINT64 R1;
@@ -12138,7 +12138,7 @@ typedef union {
   EFI_SYSTEM_CONTEXT_RISCV64 *SystemContextRiscV64;
   EFI_SYSTEM_CONTEXT_LOONGARCH64 *SystemContextLoongArch64;
 } EFI_SYSTEM_CONTEXT;
-# 814 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 814 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 void
 ( *EFI_EXCEPTION_CALLBACK)(
@@ -12169,14 +12169,14 @@ typedef enum {
   IsaArm = 0x01c2,
   IsaAArch64 = 0xAA64
 } EFI_INSTRUCTION_SET_ARCHITECTURE;
-# 860 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 860 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_MAXIMUM_PROCESSOR_INDEX)(
   EFI_DEBUG_SUPPORT_PROTOCOL *This,
   UINTN *MaxProcessorIndex
   );
-# 882 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 882 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_REGISTER_PERIODIC_CALLBACK)(
@@ -12184,7 +12184,7 @@ EFI_STATUS
   UINTN ProcessorIndex,
   EFI_PERIODIC_CALLBACK PeriodicCallback
   );
-# 906 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 906 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_REGISTER_EXCEPTION_CALLBACK)(
@@ -12193,7 +12193,7 @@ EFI_STATUS
   EFI_EXCEPTION_CALLBACK ExceptionCallback,
   EFI_EXCEPTION_TYPE ExceptionType
   );
-# 928 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 928 "$EDK_PATH/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_INVALIDATE_INSTRUCTION_CACHE)(
@@ -12220,15 +12220,15 @@ struct _EFI_DEBUG_SUPPORT_PROTOCOL {
 };
 
 extern EFI_GUID gEfiDebugSupportProtocolGuid;
-# 20 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiStatusCode.h" 2
+# 20 "$EDK_PATH/MdePkg/Include/Pi/PiStatusCode.h" 2
 
 
 
 
 typedef UINT32 EFI_STATUS_CODE_TYPE;
-# 67 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiStatusCode.h"
+# 67 "$EDK_PATH/MdePkg/Include/Pi/PiStatusCode.h"
 typedef UINT32 EFI_STATUS_CODE_VALUE;
-# 84 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiStatusCode.h"
+# 84 "$EDK_PATH/MdePkg/Include/Pi/PiStatusCode.h"
 typedef struct {
 
 
@@ -12243,9 +12243,9 @@ typedef struct {
 
   EFI_GUID Type;
 } EFI_STATUS_CODE_DATA;
-# 21 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiS3BootScript.h" 1
-# 37 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiS3BootScript.h"
+# 21 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Pi/PiS3BootScript.h" 1
+# 37 "$EDK_PATH/MdePkg/Include/Pi/PiS3BootScript.h"
 typedef enum {
   EfiBootScriptWidthUint8,
   EfiBootScriptWidthUint16,
@@ -12261,8 +12261,8 @@ typedef enum {
   EfiBootScriptWidthFillUint64,
   EfiBootScriptWidthMaximum
 } EFI_BOOT_SCRIPT_WIDTH;
-# 22 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 109 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
+# 22 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 109 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h"
 typedef struct {
 
 
@@ -12334,19 +12334,19 @@ typedef struct {
 
   CHAR8 *PcdName;
 } EFI_PCD_INFO;
-# 189 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
+# 189 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h"
 typedef
 void
 ( *EFI_AP_PROCEDURE)(
   void *Buffer
   );
-# 205 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
+# 205 "$EDK_PATH/MdePkg/Include/Pi/PiMultiPhase.h"
 typedef
 EFI_STATUS
 ( *EFI_AP_PROCEDURE2)(
   void *ProcedureArgument
   );
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h" 2
+# 17 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h" 2
 
 
 
@@ -12491,7 +12491,7 @@ typedef struct {
 
 
   EFI_HANDLE ImageHandle;
-# 169 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 169 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
   EFI_HANDLE DeviceHandle;
 } EFI_GCD_MEMORY_SPACE_DESCRIPTOR;
 
@@ -12524,10 +12524,10 @@ typedef struct {
 
 
   EFI_HANDLE ImageHandle;
-# 209 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 209 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
   EFI_HANDLE DeviceHandle;
 } EFI_GCD_IO_SPACE_DESCRIPTOR;
-# 243 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 243 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_ADD_MEMORY_SPACE)(
@@ -12536,7 +12536,7 @@ EFI_STATUS
   UINT64 Length,
   UINT64 Capabilities
   );
-# 282 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 282 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_ALLOCATE_MEMORY_SPACE)(
@@ -12548,28 +12548,28 @@ EFI_STATUS
   EFI_HANDLE ImageHandle,
   EFI_HANDLE DeviceHandle
   );
-# 312 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 312 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_FREE_MEMORY_SPACE)(
   EFI_PHYSICAL_ADDRESS BaseAddress,
   UINT64 Length
   );
-# 340 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 340 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_REMOVE_MEMORY_SPACE)(
   EFI_PHYSICAL_ADDRESS BaseAddress,
   UINT64 Length
   );
-# 359 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 359 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_MEMORY_SPACE_DESCRIPTOR)(
   EFI_PHYSICAL_ADDRESS BaseAddress,
   EFI_GCD_MEMORY_SPACE_DESCRIPTOR *Descriptor
   );
-# 387 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 387 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_MEMORY_SPACE_ATTRIBUTES)(
@@ -12577,7 +12577,7 @@ EFI_STATUS
   UINT64 Length,
   UINT64 Attributes
   );
-# 412 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 412 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_SET_MEMORY_SPACE_CAPABILITIES)(
@@ -12585,14 +12585,14 @@ EFI_STATUS
   UINT64 Length,
   UINT64 Capabilities
   );
-# 435 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 435 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_MEMORY_SPACE_MAP)(
   UINTN *NumberOfDescriptors,
   EFI_GCD_MEMORY_SPACE_DESCRIPTOR **MemorySpaceMap
   );
-# 466 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 466 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_ADD_IO_SPACE)(
@@ -12600,7 +12600,7 @@ EFI_STATUS
   EFI_PHYSICAL_ADDRESS BaseAddress,
   UINT64 Length
   );
-# 498 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 498 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_ALLOCATE_IO_SPACE)(
@@ -12612,55 +12612,55 @@ EFI_STATUS
   EFI_HANDLE ImageHandle,
   EFI_HANDLE DeviceHandle
   );
-# 528 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 528 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_FREE_IO_SPACE)(
   EFI_PHYSICAL_ADDRESS BaseAddress,
   UINT64 Length
   );
-# 558 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 558 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_REMOVE_IO_SPACE)(
   EFI_PHYSICAL_ADDRESS BaseAddress,
   UINT64 Length
   );
-# 577 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 577 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_IO_SPACE_DESCRIPTOR)(
   EFI_PHYSICAL_ADDRESS BaseAddress,
   EFI_GCD_IO_SPACE_DESCRIPTOR *Descriptor
   );
-# 599 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 599 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_IO_SPACE_MAP)(
   UINTN *NumberOfDescriptors,
   EFI_GCD_IO_SPACE_DESCRIPTOR **IoSpaceMap
   );
-# 622 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 622 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_DISPATCH)(
   void
   );
-# 639 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 639 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_SCHEDULE)(
   EFI_HANDLE FirmwareVolumeHandle,
   const EFI_GUID *FileName
   );
-# 657 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 657 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_TRUST)(
   EFI_HANDLE FirmwareVolumeHandle,
   const EFI_GUID *FileName
   );
-# 682 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 682 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PROCESS_FIRMWARE_VOLUME)(
@@ -12668,7 +12668,7 @@ EFI_STATUS
   UINTN Size,
   EFI_HANDLE *FirmwareVolumeHandle
   );
-# 698 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Pi/PiDxeCis.h"
+# 698 "$EDK_PATH/MdePkg/Include/Pi/PiDxeCis.h"
 typedef struct {
 
 
@@ -12710,135 +12710,135 @@ typedef struct {
 } DXE_SERVICES;
 
 typedef DXE_SERVICES EFI_DXE_SERVICES;
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/PiDxe.h" 2
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h" 1
-# 809 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 17 "$EDK_PATH/MdePkg/Include/PiDxe.h" 2
+# 17 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h" 1
+# 809 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdSetSku (
   UINTN SkuId
   );
-# 825 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 825 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
 LibPcdGet8 (
   UINTN TokenNumber
   );
-# 841 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 841 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
 LibPcdGet16 (
   UINTN TokenNumber
   );
-# 857 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 857 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
 LibPcdGet32 (
   UINTN TokenNumber
   );
-# 873 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 873 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
 LibPcdGet64 (
   UINTN TokenNumber
   );
-# 889 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 889 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPcdGetPtr (
   UINTN TokenNumber
   );
-# 905 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 905 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
 LibPcdGetBool (
   UINTN TokenNumber
   );
-# 919 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 919 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetSize (
   UINTN TokenNumber
   );
-# 939 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 939 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
 LibPcdGetEx8 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 960 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 960 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
 LibPcdGetEx16 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 978 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 978 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
 LibPcdGetEx32 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 999 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 999 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
 LibPcdGetEx64 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1020 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1020 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPcdGetExPtr (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1041 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1041 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
 LibPcdGetExBool (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1062 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1062 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetExSize (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1081 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1081 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet8S (
   UINTN TokenNumber,
   UINT8 Value
   );
-# 1100 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1100 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet16S (
   UINTN TokenNumber,
   UINT16 Value
   );
-# 1119 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1119 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet32S (
   UINTN TokenNumber,
   UINT32 Value
   );
-# 1138 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1138 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet64S (
   UINTN TokenNumber,
   UINT64 Value
   );
-# 1167 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1167 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetPtrS (
@@ -12846,14 +12846,14 @@ LibPcdSetPtrS (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1187 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1187 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetBoolS (
   UINTN TokenNumber,
   BOOLEAN Value
   );
-# 1210 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1210 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx8S (
@@ -12861,7 +12861,7 @@ LibPcdSetEx8S (
   UINTN TokenNumber,
   UINT8 Value
   );
-# 1234 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1234 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx16S (
@@ -12869,7 +12869,7 @@ LibPcdSetEx16S (
   UINTN TokenNumber,
   UINT16 Value
   );
-# 1258 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1258 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx32S (
@@ -12877,7 +12877,7 @@ LibPcdSetEx32S (
   UINTN TokenNumber,
   UINT32 Value
   );
-# 1282 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1282 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx64S (
@@ -12885,7 +12885,7 @@ LibPcdSetEx64S (
   UINTN TokenNumber,
   UINT64 Value
   );
-# 1312 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1312 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetExPtrS (
@@ -12894,7 +12894,7 @@ LibPcdSetExPtrS (
   UINTN *SizeOfBuffer,
   void *Buffer
   );
-# 1337 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1337 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetExBoolS (
@@ -12902,7 +12902,7 @@ LibPcdSetExBoolS (
   UINTN TokenNumber,
   BOOLEAN Value
   );
-# 1361 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1361 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 typedef
 void
 ( *PCD_CALLBACK)(
@@ -12911,7 +12911,7 @@ void
   void *TokenData,
   UINTN TokenDataSize
   );
-# 1386 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1386 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdCallbackOnSet (
@@ -12919,7 +12919,7 @@ LibPcdCallbackOnSet (
   UINTN TokenNumber,
   PCD_CALLBACK NotificationFunction
   );
-# 1407 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1407 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdCancelCallback (
@@ -12927,20 +12927,20 @@ LibPcdCancelCallback (
   UINTN TokenNumber,
   PCD_CALLBACK NotificationFunction
   );
-# 1434 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1434 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetNextToken (
   const GUID *Guid ,
   UINTN TokenNumber
   );
-# 1454 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1454 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 GUID *
 
 LibPcdGetNextTokenSpace (
   const GUID *TokenSpaceGuid
   );
-# 1483 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1483 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPatchPcdSetPtr (
@@ -12949,7 +12949,7 @@ LibPatchPcdSetPtr (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1515 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1515 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPatchPcdSetPtrS (
@@ -12958,7 +12958,7 @@ LibPatchPcdSetPtrS (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1549 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1549 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPatchPcdSetPtrAndSize (
@@ -12968,7 +12968,7 @@ LibPatchPcdSetPtrAndSize (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1584 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1584 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPatchPcdSetPtrAndSizeS (
@@ -13007,14 +13007,14 @@ typedef struct {
 
   CHAR8 *PcdName;
 } PCD_INFO;
-# 1635 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1635 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdGetInfo (
   UINTN TokenNumber,
   PCD_INFO *PcdInfo
   );
-# 1655 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1655 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdGetInfoEx (
@@ -13022,13 +13022,13 @@ LibPcdGetInfoEx (
   UINTN TokenNumber,
   PCD_INFO *PcdInfo
   );
-# 1670 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1670 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetSku (
   void
   );
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 2
+# 18 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 2
 
 extern GUID gEfiCallerIdGuid;
 extern GUID gEdkiiDscPlatformGuid;
@@ -13105,7 +13105,7 @@ extern UINT64 _gPcd_SkuId_Array[];
 
 
 extern const UINT8 _gPcd_FixedAtBuild_PcdAcpiDefaultOemId[7];
-# 103 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h"
+# 103 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h"
 extern const UINT64 _gPcd_FixedAtBuild_PcdAcpiDefaultOemTableId;
 
 
@@ -13152,13 +13152,13 @@ RamDiskDxeUnload (
   EFI_HANDLE ImageHandle
   );
 
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/RamDiskDxeStrDefs.h" 1
-# 43 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/RamDiskDxeStrDefs.h"
+# 1 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/RamDiskDxeStrDefs.h" 1
+# 43 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/RamDiskDxeStrDefs.h"
 extern unsigned char RamDiskDxeStrings[];
-# 150 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 2
+# 150 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/AutoGen.h" 2
 # 0 "<command-line>" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/./RamDisk.i"
-# 11 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/./RamDisk.i"
+# 1 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/./RamDisk.i"
+# 11 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/./RamDisk.i"
 DefinitionBlock (
   "RamDisk.aml",
   "SSDT",

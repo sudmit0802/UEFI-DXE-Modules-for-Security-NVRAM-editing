@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = UiApp
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Application/UiApp
 PACKAGE_RELATIVE_DIR = Application/UiApp
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/UiApp
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Application/UiApp
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeUserInterface
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -238,8 +238,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/static_library_files.lst
 
 
 #
@@ -249,7 +249,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi \
               
 
 #
@@ -357,62 +357,62 @@ $(DEBUG_DIR)/FrontPageVfr.c : $(MAKE_FILE)
 $(DEBUG_DIR)/FrontPageVfr.c : $(DEBUG_DIR)/AutoGen.h
 $(DEBUG_DIR)/FrontPageVfr.c : $(DEBUG_DIR)/UiAppStrDefs.h
 $(DEBUG_DIR)/FrontPageVfr.c : $(WORKSPACE)/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr > $(OUTPUT_DIR)/FrontPageVfr.i
-	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/. $(OUTPUT_DIR)/FrontPageVfr.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) $EDK_PATH/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr > $(OUTPUT_DIR)/FrontPageVfr.i
+	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/. $(OUTPUT_DIR)/FrontPageVfr.i
 
 $(OUTPUT_DIR)/FrontPageCustomizedUi.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/FrontPageCustomizedUi.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/FrontPageCustomizedUi.obj : $(DEBUG_DIR)/UiAppStrDefs.h
 $(OUTPUT_DIR)/FrontPageCustomizedUi.obj : $(WORKSPACE)/MdeModulePkg/Application/UiApp/FrontPageCustomizedUi.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPageCustomizedUi.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/UiApp/FrontPageCustomizedUi.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPageCustomizedUi.obj $(INC) $EDK_PATH/MdeModulePkg/Application/UiApp/FrontPageCustomizedUi.c
 
 $(OUTPUT_DIR)/FrontPage.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/FrontPage.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/FrontPage.obj : $(DEBUG_DIR)/UiAppStrDefs.h
 $(OUTPUT_DIR)/FrontPage.obj : $(WORKSPACE)/MdeModulePkg/Application/UiApp/FrontPage.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPage.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/UiApp/FrontPage.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPage.obj $(INC) $EDK_PATH/MdeModulePkg/Application/UiApp/FrontPage.c
 
 $(OUTPUT_DIR)/String.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/String.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/String.obj : $(DEBUG_DIR)/UiAppStrDefs.h
 $(OUTPUT_DIR)/String.obj : $(WORKSPACE)/MdeModulePkg/Application/UiApp/String.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./String.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/UiApp/String.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./String.obj $(INC) $EDK_PATH/MdeModulePkg/Application/UiApp/String.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/UiAppStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/FrontPageCustomizedUiSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/FrontPageCustomizedUiSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/FrontPageCustomizedUiSupport.obj : $(DEBUG_DIR)/UiAppStrDefs.h
 $(OUTPUT_DIR)/FrontPageCustomizedUiSupport.obj : $(WORKSPACE)/MdeModulePkg/Application/UiApp/FrontPageCustomizedUiSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPageCustomizedUiSupport.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/UiApp/FrontPageCustomizedUiSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPageCustomizedUiSupport.obj $(INC) $EDK_PATH/MdeModulePkg/Application/UiApp/FrontPageCustomizedUiSupport.c
 
 $(OUTPUT_DIR)/FrontPageVfr.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/FrontPageVfr.obj : $(DEBUG_DIR)/FrontPageVfr.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPageVfr.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/FrontPageVfr.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/./FrontPageVfr.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/FrontPageVfr.c
 
 $(OUTPUT_DIR)/UiApp.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UiApp.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/UiApp.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/UiApp.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/UiApp.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll
 
 $(OUTPUT_DIR)/UiApp.efi : $(DEBUG_DIR)/UiApp.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiApp.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/OUTPUT/UiApp.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/UiApp.map : $(OUTPUT_DIR)/UiApp.efi

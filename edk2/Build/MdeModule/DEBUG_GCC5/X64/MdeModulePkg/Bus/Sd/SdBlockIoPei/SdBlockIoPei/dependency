@@ -1,13 +1,13 @@
 
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/AutoGen.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/AutoGen.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdHcMem.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdHcMem.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdHci.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdHci.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/DmaMem.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/DmaMem.obj.deps
 
                

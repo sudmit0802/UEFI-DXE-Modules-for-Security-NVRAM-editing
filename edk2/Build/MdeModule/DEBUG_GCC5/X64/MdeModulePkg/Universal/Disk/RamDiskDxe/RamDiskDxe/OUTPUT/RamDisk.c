@@ -1,9 +1,9 @@
 
 // This file has been generated from:
 //   -Python script:
-//   /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/RamDisk.amli
+//   $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/RamDisk.amli
 //   -Input AML file:
-//   /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/BaseTools/Source/Python/AmlToC/AmlToC.py
+//   $EDK_PATH/BaseTools/Source/Python/AmlToC/AmlToC.py
 
 unsigned char ramdisk_aml_code[] = {
     0x53, 0x53, 0x44, 0x54, 0x7C, 0x00, 0x00, 0x00, 0x02, 0xA1, 0x49, 0x4E,

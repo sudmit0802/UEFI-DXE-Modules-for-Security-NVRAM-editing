@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = SdBlockIoPei
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Bus/Sd/SdBlockIoPei
 PACKAGE_RELATIVE_DIR = Bus/Sd/SdBlockIoPei
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Sd/SdBlockIoPei
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Bus/Sd/SdBlockIoPei
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeSdBlockIoPeim
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -220,8 +220,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/static_library_files.lst
 
 
 #
@@ -231,7 +231,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi \
               
 
 #
@@ -321,47 +321,47 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/SdHci.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SdHci.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SdHci.obj : $(WORKSPACE)/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdHci.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./SdHci.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdHci.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./SdHci.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdHci.c
 
 $(OUTPUT_DIR)/SdBlockIoPei.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SdBlockIoPei.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SdBlockIoPei.obj : $(WORKSPACE)/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./SdBlockIoPei.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./SdBlockIoPei.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/SdHcMem.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SdHcMem.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SdHcMem.obj : $(WORKSPACE)/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdHcMem.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./SdHcMem.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdHcMem.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./SdHcMem.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdHcMem.c
 
 $(OUTPUT_DIR)/DmaMem.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DmaMem.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DmaMem.obj : $(WORKSPACE)/MdeModulePkg/Bus/Sd/SdBlockIoPei/DmaMem.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./DmaMem.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Sd/SdBlockIoPei/DmaMem.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/./DmaMem.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Sd/SdBlockIoPei/DmaMem.c
 
 $(OUTPUT_DIR)/SdBlockIoPei.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/SdBlockIoPei.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/SdBlockIoPei.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/SdBlockIoPei.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/SdBlockIoPei.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll
 
 $(OUTPUT_DIR)/SdBlockIoPei.efi : $(DEBUG_DIR)/SdBlockIoPei.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/DEBUG/SdBlockIoPei.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei/OUTPUT/SdBlockIoPei.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/SdBlockIoPei.map : $(OUTPUT_DIR)/SdBlockIoPei.efi
