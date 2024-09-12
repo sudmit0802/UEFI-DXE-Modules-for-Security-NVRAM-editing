@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = MemoryProfileInfo
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Application/MemoryProfileInfo
 PACKAGE_RELATIVE_DIR = Application/MemoryProfileInfo
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Application/MemoryProfileInfo
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/MemoryProfileInfo
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = UefiMain
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -220,8 +220,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/static_library_files.lst
 
 
 #
@@ -231,7 +231,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi \
               
 
 #
@@ -324,32 +324,32 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/MemoryProfileInfo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/MemoryProfileInfo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/MemoryProfileInfo.obj : $(WORKSPACE)/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/./MemoryProfileInfo.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/./MemoryProfileInfo.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/MemoryProfileInfo.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/MemoryProfileInfo.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/MemoryProfileInfo.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/MemoryProfileInfo.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/MemoryProfileInfo.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll
 
 $(OUTPUT_DIR)/MemoryProfileInfo.efi : $(DEBUG_DIR)/MemoryProfileInfo.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/DEBUG/MemoryProfileInfo.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo/OUTPUT/MemoryProfileInfo.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/MemoryProfileInfo.map : $(OUTPUT_DIR)/MemoryProfileInfo.efi

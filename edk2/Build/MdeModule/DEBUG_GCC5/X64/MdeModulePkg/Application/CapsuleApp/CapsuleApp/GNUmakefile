@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = CapsuleApp
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Application/CapsuleApp
 PACKAGE_RELATIVE_DIR = Application/CapsuleApp
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Application/CapsuleApp
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/CapsuleApp
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = UefiMain
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -235,8 +235,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/static_library_files.lst
 
 
 #
@@ -246,7 +246,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi \
               
 
 #
@@ -351,47 +351,47 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/CapsuleDump.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CapsuleDump.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CapsuleDump.obj : $(WORKSPACE)/MdeModulePkg/Application/CapsuleApp/CapsuleDump.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./CapsuleDump.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Application/CapsuleApp/CapsuleDump.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./CapsuleDump.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/CapsuleApp/CapsuleDump.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/CapsuleOnDisk.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CapsuleOnDisk.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CapsuleOnDisk.obj : $(WORKSPACE)/MdeModulePkg/Application/CapsuleApp/CapsuleOnDisk.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./CapsuleOnDisk.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Application/CapsuleApp/CapsuleOnDisk.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./CapsuleOnDisk.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/CapsuleApp/CapsuleOnDisk.c
 
 $(OUTPUT_DIR)/AppSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AppSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AppSupport.obj : $(WORKSPACE)/MdeModulePkg/Application/CapsuleApp/AppSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./AppSupport.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Application/CapsuleApp/AppSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./AppSupport.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/CapsuleApp/AppSupport.c
 
 $(OUTPUT_DIR)/CapsuleApp.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CapsuleApp.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CapsuleApp.obj : $(WORKSPACE)/MdeModulePkg/Application/CapsuleApp/CapsuleApp.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./CapsuleApp.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Application/CapsuleApp/CapsuleApp.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/./CapsuleApp.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Application/CapsuleApp/CapsuleApp.c
 
 $(OUTPUT_DIR)/CapsuleApp.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/CapsuleApp.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/CapsuleApp.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/CapsuleApp.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/CapsuleApp.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll
 
 $(OUTPUT_DIR)/CapsuleApp.efi : $(DEBUG_DIR)/CapsuleApp.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/CapsuleApp.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/OUTPUT/CapsuleApp.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/CapsuleApp.map : $(OUTPUT_DIR)/CapsuleApp.efi

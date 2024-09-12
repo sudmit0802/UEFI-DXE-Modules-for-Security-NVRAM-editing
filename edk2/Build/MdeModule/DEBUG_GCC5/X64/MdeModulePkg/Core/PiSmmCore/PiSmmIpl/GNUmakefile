@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = PiSmmIpl
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Core/PiSmmCore
 PACKAGE_RELATIVE_DIR = Core/PiSmmCore
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Core/PiSmmCore
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/PiSmmCore
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = SmmIplEntry
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -227,8 +227,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/static_library_files.lst
 
 
 #
@@ -238,7 +238,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi \
               
 
 #
@@ -338,32 +338,32 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/PiSmmIpl.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PiSmmIpl.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PiSmmIpl.obj : $(WORKSPACE)/MdeModulePkg/Core/PiSmmCore/PiSmmIpl.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/./PiSmmIpl.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Core/PiSmmCore/PiSmmIpl.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/./PiSmmIpl.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/PiSmmCore/PiSmmIpl.c
 
 $(OUTPUT_DIR)/PiSmmIpl.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PiSmmIpl.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/PiSmmIpl.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/PiSmmIpl.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/PiSmmIpl.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll
 
 $(OUTPUT_DIR)/PiSmmIpl.efi : $(DEBUG_DIR)/PiSmmIpl.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/DEBUG/PiSmmIpl.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmIpl/OUTPUT/PiSmmIpl.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/PiSmmIpl.map : $(OUTPUT_DIR)/PiSmmIpl.efi
