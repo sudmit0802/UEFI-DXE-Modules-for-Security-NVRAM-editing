@@ -12,5 +12,12 @@ pip install -r requirements.txt
 
 ```bash
 cd edk2/
+```
+
+```bash
+. edksetup.sh
+```
+
+```bash
 export EDK_PATH=$(pwd)
 ```
