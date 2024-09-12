@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.py": "python",
+        "uefi.h": "c",
+        "securesetvariableprotocol.h": "c",
+        "uefibootservicestablelib.h": "c"
+    }
+}

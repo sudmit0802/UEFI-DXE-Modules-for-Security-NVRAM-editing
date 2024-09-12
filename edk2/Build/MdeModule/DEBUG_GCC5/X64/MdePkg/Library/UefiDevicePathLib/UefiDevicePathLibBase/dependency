@@ -1,0 +1,13 @@
+
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLibBase/OUTPUT/UefiDevicePathLib.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLibBase/OUTPUT/DevicePathUtilitiesBase.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLibBase/OUTPUT/DevicePathFromText.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLibBase/OUTPUT/DevicePathUtilities.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLibBase/OUTPUT/DevicePathToText.obj.deps
+
+               

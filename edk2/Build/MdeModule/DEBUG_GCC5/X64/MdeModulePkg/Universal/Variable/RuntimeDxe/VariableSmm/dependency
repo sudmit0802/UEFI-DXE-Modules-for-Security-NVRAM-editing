@@ -1,0 +1,29 @@
+
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableNonVolatile.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/AutoGen.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/TcgMorLockSmm.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/Variable.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableTraditionalMm.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableLockRequestToLock.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableRuntimeCache.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableParsing.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VarCheck.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/SpeculationBarrierSmm.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/Reclaim.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableExLib.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.obj.deps
+
+               

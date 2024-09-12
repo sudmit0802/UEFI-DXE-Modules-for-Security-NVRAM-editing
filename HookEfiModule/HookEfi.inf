@@ -1,0 +1,32 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = hook
+  FILE_GUID                      = 4057a7a8-4baa-49f9-8495-1c8a37d58da5
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = HookDxeEntryPoint
+
+[Sources]
+  HookEfi.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  UefiLib
+  BaseLib
+  MemoryAllocationLib
+  PrintLib
+  BaseMemoryLib
+
+[Guids]
+
+[Protocols]
+
+[Ppis]
+
+[Depex]
+  TRUE

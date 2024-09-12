@@ -1,0 +1,33 @@
+
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Page.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/AutoGen.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Notify.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/SmiHandlerProfile.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Handle.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/InstallConfigurationTable.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Smi.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/SmramProfileRecord.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Pool.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Dispatcher.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Locate.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/Dependency.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/PiSmmCore.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/HeapGuard.obj.deps
+
+-include /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/PiSmmCore/PiSmmCore/OUTPUT/MemoryAttributesTable.obj.deps
+
+               

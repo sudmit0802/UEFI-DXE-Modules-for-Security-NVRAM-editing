@@ -1,0 +1,29 @@
+[Defines]
+  INF_VERSION = 1.25
+  BASE_NAME = editor
+  FILE_GUID = 4057a7a8-4baa-49f9-8495-1c8a37d58da4
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = EditorEntry
+
+[Sources]
+  EditorEfi.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  UefiLib
+  BaseLib
+  MemoryAllocationLib
+  PrintLib
+  BaseMemoryLib
+
+[Guids]
+
+[Protocols]
+
+[Ppis]
