@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = VariablePolicyLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Library/VariablePolicyLib
 PACKAGE_RELATIVE_DIR = Library/VariablePolicyLib
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Library/VariablePolicyLib
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/VariablePolicyLib
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
@@ -59,13 +59,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -201,7 +201,7 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/object_files.lst
 
 
 #
@@ -211,7 +211,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/VariablePolicyLib.lib \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/VariablePolicyLib.lib \
               
 
 #
@@ -289,17 +289,17 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/VariablePolicyExtraInitNull.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariablePolicyExtraInitNull.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariablePolicyExtraInitNull.obj : $(WORKSPACE)/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyExtraInitNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/./VariablePolicyExtraInitNull.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyExtraInitNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/./VariablePolicyExtraInitNull.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyExtraInitNull.c
 
 $(OUTPUT_DIR)/VariablePolicyLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariablePolicyLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariablePolicyLib.obj : $(WORKSPACE)/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/./VariablePolicyLib.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/./VariablePolicyLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib.c
 
 $(OUTPUT_DIR)/VariablePolicyLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/VariablePolicyLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/VariablePolicyLib.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/VariablePolicyLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/VariablePolicyLib.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib/OUTPUT/VariablePolicyLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = BrotliCustomDecompressLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Library/BrotliCustomDecompressLib
 PACKAGE_RELATIVE_DIR = Library/BrotliCustomDecompressLib
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -212,7 +212,7 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/object_files.lst
 
 
 #
@@ -222,7 +222,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/BrotliDecompressLib.lib \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/BrotliDecompressLib.lib \
               
 
 #
@@ -300,52 +300,52 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/GuidedSectionExtraction.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/GuidedSectionExtraction.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/GuidedSectionExtraction.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/GuidedSectionExtraction.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/./GuidedSectionExtraction.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/GuidedSectionExtraction.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/./GuidedSectionExtraction.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/GuidedSectionExtraction.c
 
 $(OUTPUT_DIR)/brotli/c/common/dictionary.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/brotli/c/common/dictionary.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/brotli/c/common/dictionary.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/common/dictionary.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/common/dictionary.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/common/dictionary.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/common/dictionary.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/common/dictionary.c
 
 $(OUTPUT_DIR)/BrotliDecompress.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/BrotliDecompress.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/BrotliDecompress.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecompress.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/./BrotliDecompress.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecompress.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/./BrotliDecompress.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecompress.c
 
 $(OUTPUT_DIR)/brotli/c/dec/bit_reader.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/brotli/c/dec/bit_reader.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/brotli/c/dec/bit_reader.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/bit_reader.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/bit_reader.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/bit_reader.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/bit_reader.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/bit_reader.c
 
 $(OUTPUT_DIR)/brotli/c/dec/decode.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/brotli/c/dec/decode.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/brotli/c/dec/decode.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/decode.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/decode.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/decode.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/decode.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/decode.c
 
 $(OUTPUT_DIR)/brotli/c/dec/state.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/brotli/c/dec/state.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/brotli/c/dec/state.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/state.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/state.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/state.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/state.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/state.c
 
 $(OUTPUT_DIR)/brotli/c/common/transform.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/brotli/c/common/transform.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/brotli/c/common/transform.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/common/transform.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/common/transform.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/common/transform.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/common/transform.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/common/transform.c
 
 $(OUTPUT_DIR)/brotli/c/dec/huffman.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/brotli/c/dec/huffman.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/brotli/c/dec/huffman.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/huffman.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/huffman.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/huffman.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/brotli/c/dec/huffman.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/dec/huffman.c
 
 $(OUTPUT_DIR)/BrotliDecUefiSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/BrotliDecUefiSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/BrotliDecUefiSupport.obj : $(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecUefiSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/./BrotliDecUefiSupport.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecUefiSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/./BrotliDecUefiSupport.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliDecUefiSupport.c
 
 $(OUTPUT_DIR)/BrotliDecompressLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/BrotliDecompressLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/BrotliDecompressLib.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/BrotliDecompressLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/BrotliDecompressLib.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib/OUTPUT/BrotliDecompressLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 
