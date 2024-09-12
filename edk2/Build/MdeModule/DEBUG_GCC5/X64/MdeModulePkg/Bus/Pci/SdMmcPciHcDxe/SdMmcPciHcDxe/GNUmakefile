@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = SdMmcPciHcDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Bus/Pci/SdMmcPciHcDxe
 PACKAGE_RELATIVE_DIR = Bus/Pci/SdMmcPciHcDxe
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeSdMmcPciHcDxe
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -222,8 +222,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -233,7 +233,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi \
               
 
 #
@@ -324,52 +324,52 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/SdDevice.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SdDevice.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SdDevice.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdDevice.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./SdDevice.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdDevice.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./SdDevice.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdDevice.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/EmmcDevice.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EmmcDevice.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EmmcDevice.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/EmmcDevice.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./EmmcDevice.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/EmmcDevice.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./EmmcDevice.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/EmmcDevice.c
 
 $(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/ComponentName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./ComponentName.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/ComponentName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./ComponentName.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/ComponentName.c
 
 $(OUTPUT_DIR)/SdMmcPciHci.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SdMmcPciHci.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SdMmcPciHci.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHci.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./SdMmcPciHci.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHci.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./SdMmcPciHci.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHci.c
 
 $(OUTPUT_DIR)/SdMmcPciHcDxe.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SdMmcPciHcDxe.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SdMmcPciHcDxe.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./SdMmcPciHcDxe.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/./SdMmcPciHcDxe.obj $(INC) $EDK_PATH/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.c
 
 $(OUTPUT_DIR)/SdMmcPciHcDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/SdMmcPciHcDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/SdMmcPciHcDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/SdMmcPciHcDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/SdMmcPciHcDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll
 
 $(OUTPUT_DIR)/SdMmcPciHcDxe.efi : $(DEBUG_DIR)/SdMmcPciHcDxe.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/DEBUG/SdMmcPciHcDxe.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe/OUTPUT/SdMmcPciHcDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/SdMmcPciHcDxe.map : $(OUTPUT_DIR)/SdMmcPciHcDxe.efi

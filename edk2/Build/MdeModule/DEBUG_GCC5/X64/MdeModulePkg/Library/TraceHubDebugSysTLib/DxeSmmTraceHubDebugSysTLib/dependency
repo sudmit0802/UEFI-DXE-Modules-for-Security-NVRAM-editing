@@ -1,9 +1,9 @@
 
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/TraceHubDebugSysTLib/DxeSmmTraceHubDebugSysTLib/OUTPUT/DxeSmmTraceHubDebugSysTLib.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/TraceHubDebugSysTLib/DxeSmmTraceHubDebugSysTLib/OUTPUT/DxeSmmTraceHubDebugSysTLib.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/TraceHubDebugSysTLib/DxeSmmTraceHubDebugSysTLib/OUTPUT/InternalTraceHubApi.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/TraceHubDebugSysTLib/DxeSmmTraceHubDebugSysTLib/OUTPUT/InternalTraceHubApi.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/TraceHubDebugSysTLib/DxeSmmTraceHubDebugSysTLib/OUTPUT/InternalTraceHubApiCommon.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Library/TraceHubDebugSysTLib/DxeSmmTraceHubDebugSysTLib/OUTPUT/InternalTraceHubApiCommon.obj.deps
 
                
