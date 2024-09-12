@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = DriverHealthManagerDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/DriverHealthManagerDxe
 PACKAGE_RELATIVE_DIR = Universal/DriverHealthManagerDxe
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeDriverHealthManager
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -230,8 +230,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -241,7 +241,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi \
               
 
 #
@@ -341,43 +341,43 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 $(OUTPUT_DIR)/DriverHealthConfigureVfr.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DriverHealthConfigureVfr.obj : $(DEBUG_DIR)/DriverHealthConfigureVfr.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./DriverHealthConfigureVfr.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthConfigureVfr.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./DriverHealthConfigureVfr.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthConfigureVfr.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/DriverHealthManagerDxeStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/DriverHealthManagerVfr.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DriverHealthManagerVfr.obj : $(DEBUG_DIR)/DriverHealthManagerVfr.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./DriverHealthManagerVfr.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerVfr.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./DriverHealthManagerVfr.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerVfr.c
 
 $(OUTPUT_DIR)/DriverHealthManagerDxe.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DriverHealthManagerDxe.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DriverHealthManagerDxe.obj : $(DEBUG_DIR)/DriverHealthManagerDxeStrDefs.h
 $(OUTPUT_DIR)/DriverHealthManagerDxe.obj : $(WORKSPACE)/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./DriverHealthManagerDxe.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/./DriverHealthManagerDxe.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.c
 
 $(OUTPUT_DIR)/DriverHealthManagerDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/DriverHealthManagerDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/DriverHealthManagerDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/DriverHealthManagerDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/DriverHealthManagerDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll
 
 $(OUTPUT_DIR)/DriverHealthManagerDxe.efi : $(DEBUG_DIR)/DriverHealthManagerDxe.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/OUTPUT/DriverHealthManagerDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/DriverHealthManagerDxe.map : $(OUTPUT_DIR)/DriverHealthManagerDxe.efi
@@ -387,15 +387,15 @@ $(DEBUG_DIR)/DriverHealthConfigureVfr.c : $(MAKE_FILE)
 $(DEBUG_DIR)/DriverHealthConfigureVfr.c : $(DEBUG_DIR)/AutoGen.h
 $(DEBUG_DIR)/DriverHealthConfigureVfr.c : $(DEBUG_DIR)/DriverHealthManagerDxeStrDefs.h
 $(DEBUG_DIR)/DriverHealthConfigureVfr.c : $(WORKSPACE)/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthConfigureVfr.Vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthConfigureVfr.Vfr > $(OUTPUT_DIR)/DriverHealthConfigureVfr.i
-	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/. $(OUTPUT_DIR)/DriverHealthConfigureVfr.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthConfigureVfr.Vfr > $(OUTPUT_DIR)/DriverHealthConfigureVfr.i
+	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/. $(OUTPUT_DIR)/DriverHealthConfigureVfr.i
 
 $(DEBUG_DIR)/DriverHealthManagerVfr.c : $(MAKE_FILE)
 $(DEBUG_DIR)/DriverHealthManagerVfr.c : $(DEBUG_DIR)/AutoGen.h
 $(DEBUG_DIR)/DriverHealthManagerVfr.c : $(DEBUG_DIR)/DriverHealthManagerDxeStrDefs.h
 $(DEBUG_DIR)/DriverHealthManagerVfr.c : $(WORKSPACE)/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerVfr.Vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerVfr.Vfr > $(OUTPUT_DIR)/DriverHealthManagerVfr.i
-	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/. $(OUTPUT_DIR)/DriverHealthManagerVfr.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerVfr.Vfr > $(OUTPUT_DIR)/DriverHealthManagerVfr.i
+	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/. $(OUTPUT_DIR)/DriverHealthManagerVfr.i
 
 
 

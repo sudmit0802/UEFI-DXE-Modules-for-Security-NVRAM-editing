@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = EbcDebugger
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/EbcDxe
 PACKAGE_RELATIVE_DIR = Universal/EbcDxe
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = InitializeEbcDriver
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -263,9 +263,9 @@ NASM_INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include/
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/static_library_files.lst
-INC_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/inc.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/static_library_files.lst
+INC_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/inc.lst
 
 
 #
@@ -275,7 +275,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi \
               
 
 #
@@ -368,152 +368,152 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBreak.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBreak.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBreak.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBreak.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreak.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBreak.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreak.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBreak.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportUI.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportUI.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportUI.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportUI.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportUI.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportUI.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportUI.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportUI.c
 
 $(OUTPUT_DIR)/X64/EbcSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/EbcSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/EbcSupport.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/X64/EbcSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcSupport.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/X64/EbcSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcSupport.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/X64/EbcSupport.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdExtPci.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdExtPci.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdExtPci.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdExtPci.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtPci.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdExtPci.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtPci.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdExtPci.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbSymbol.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbSymbol.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbSymbol.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSymbol.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSymbol.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSymbol.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSymbol.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSymbol.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdExtIo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdExtIo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdExtIo.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdExtIo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtIo.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdExtIo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtIo.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdExtIo.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdScope.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdScope.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdScope.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdScope.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdScope.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdScope.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdScope.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdScope.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportFile.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportFile.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportFile.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportFile.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportFile.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportFile.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportFile.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportFile.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBreakpoint.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBreakpoint.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBreakpoint.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBreakpoint.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreakpoint.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBreakpoint.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreakpoint.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBreakpoint.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdRegister.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdRegister.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdRegister.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdRegister.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdRegister.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdRegister.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdRegister.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdRegister.c
 
 $(OUTPUT_DIR)/EbcExecute.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcExecute.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcExecute.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcExecute.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/./EbcExecute.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcExecute.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/./EbcExecute.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcExecute.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBranch.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBranch.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdBranch.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBranch.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBranch.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBranch.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBranch.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdBranch.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbHook.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbHook.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbHook.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbHook.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbHook.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbHook.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbHook.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbHook.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbDisasmSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbDisasmSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbDisasmSupport.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbDisasmSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasmSupport.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbDisasmSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasmSupport.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbDisasmSupport.c
 
 $(OUTPUT_DIR)/EbcDebugger/Edb.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/Edb.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/Edb.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/Edb.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/Edb.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/Edb.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/Edb.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/Edb.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCommand.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCommand.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCommand.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCommand.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCommand.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCommand.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCommand.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCommand.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdGo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdGo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdGo.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdGo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdGo.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdGo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdGo.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdGo.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdSymbol.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdSymbol.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdSymbol.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdSymbol.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdSymbol.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdSymbol.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdSymbol.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdSymbol.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdHelp.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdHelp.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdHelp.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdHelp.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdHelp.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdHelp.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdHelp.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdHelp.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdQuit.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdQuit.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdQuit.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdQuit.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdQuit.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdQuit.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdQuit.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdQuit.c
 
 $(OUTPUT_DIR)/EbcInt.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcInt.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcInt.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcInt.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/./EbcInt.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcInt.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/./EbcInt.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcInt.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdStep.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdStep.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdStep.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdStep.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdStep.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdStep.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdStep.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdStep.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportString.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportString.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbSupportString.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportString.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportString.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportString.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportString.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbSupportString.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdMemory.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdMemory.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbCmdMemory.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdMemory.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdMemory.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdMemory.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdMemory.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbCmdMemory.c
 
 $(OUTPUT_DIR)/EbcDebugger/EdbDisasm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EbcDebugger/EdbDisasm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EbcDebugger/EdbDisasm.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbDisasm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasm.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbDisasm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/EbcDebugger/EdbDisasm.c
 
 $(OUTPUT_DIR)/EbcDebugger.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/EbcDebugger.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/EbcDebugger.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/EbcDebugger.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/EbcDebugger.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll
 
 $(OUTPUT_DIR)/EbcDebugger.efi : $(DEBUG_DIR)/EbcDebugger.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/DEBUG/EbcDebugger.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/EbcDebugger.map : $(OUTPUT_DIR)/EbcDebugger.efi
@@ -522,10 +522,10 @@ $(OUTPUT_DIR)/EbcDebugger.map : $(OUTPUT_DIR)/EbcDebugger.efi
 $(OUTPUT_DIR)/X64/EbcLowLevel.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/EbcLowLevel.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/EbcLowLevel.obj : $(WORKSPACE)/MdeModulePkg/Universal/EbcDxe/X64/EbcLowLevel.nasm
-	Trim --asm-file -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.i -i $(INC_LIST) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/X64/EbcLowLevel.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/X64/EbcLowLevel.nasm > /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.ii
-	Trim --trim-long --source-code -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.iii /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.ii
-	"$(NASM)" -I/home/sudmi/workspace/edk2/MdeModulePkg/Universal/EbcDxe/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.obj /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.iii
+	Trim --asm-file -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.i -i $(INC_LIST) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/X64/EbcLowLevel.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/X64/EbcLowLevel.nasm > /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.ii
+	Trim --trim-long --source-code -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.iii /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.ii
+	"$(NASM)" -I/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/EbcDxe/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.obj /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.iii
 
 
 
