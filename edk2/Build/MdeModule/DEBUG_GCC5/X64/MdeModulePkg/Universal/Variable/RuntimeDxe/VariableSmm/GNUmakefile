@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = VariableSmm
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/Variable/RuntimeDxe
 PACKAGE_RELATIVE_DIR = Universal/Variable/RuntimeDxe
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = VariableServiceInitialize
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -246,8 +246,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/static_library_files.lst
 
 
 #
@@ -257,7 +257,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi \
               
 
 #
@@ -365,87 +365,87 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/VarCheck.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VarCheck.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VarCheck.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VarCheck.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VarCheck.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VarCheck.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VarCheck.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VarCheck.c
 
 $(OUTPUT_DIR)/VariableExLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariableExLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariableExLib.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableExLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableExLib.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableExLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableExLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableExLib.c
 
 $(OUTPUT_DIR)/VariableTraditionalMm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariableTraditionalMm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariableTraditionalMm.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableTraditionalMm.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableTraditionalMm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableTraditionalMm.c
 
 $(OUTPUT_DIR)/VariableSmm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariableSmm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariableSmm.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableSmm.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableSmm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.c
 
 $(OUTPUT_DIR)/VariableParsing.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariableParsing.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariableParsing.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableParsing.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableParsing.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableParsing.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableParsing.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableParsing.c
 
 $(OUTPUT_DIR)/TcgMorLockSmm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/TcgMorLockSmm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/TcgMorLockSmm.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/TcgMorLockSmm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./TcgMorLockSmm.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/TcgMorLockSmm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./TcgMorLockSmm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/TcgMorLockSmm.c
 
 $(OUTPUT_DIR)/SpeculationBarrierSmm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SpeculationBarrierSmm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SpeculationBarrierSmm.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/SpeculationBarrierSmm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./SpeculationBarrierSmm.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/SpeculationBarrierSmm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./SpeculationBarrierSmm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/SpeculationBarrierSmm.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/VariableNonVolatile.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariableNonVolatile.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariableNonVolatile.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableNonVolatile.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableNonVolatile.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableNonVolatile.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableNonVolatile.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableNonVolatile.c
 
 $(OUTPUT_DIR)/VariableRuntimeCache.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariableRuntimeCache.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariableRuntimeCache.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeCache.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableRuntimeCache.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeCache.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableRuntimeCache.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeCache.c
 
 $(OUTPUT_DIR)/Reclaim.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Reclaim.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Reclaim.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/Reclaim.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./Reclaim.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/Reclaim.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./Reclaim.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/Reclaim.c
 
 $(OUTPUT_DIR)/VariableLockRequestToLock.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VariableLockRequestToLock.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VariableLockRequestToLock.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableLockRequestToLock.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableLockRequestToLock.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableLockRequestToLock.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./VariableLockRequestToLock.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableLockRequestToLock.c
 
 $(OUTPUT_DIR)/Variable.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Variable.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Variable.obj : $(WORKSPACE)/MdeModulePkg/Universal/Variable/RuntimeDxe/Variable.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./Variable.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/Variable.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/./Variable.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/Variable.c
 
 $(OUTPUT_DIR)/VariableSmm.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/VariableSmm.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/VariableSmm.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/VariableSmm.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/VariableSmm.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll
 
 $(OUTPUT_DIR)/VariableSmm.efi : $(DEBUG_DIR)/VariableSmm.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/DEBUG/VariableSmm.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm/OUTPUT/VariableSmm.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/VariableSmm.map : $(OUTPUT_DIR)/VariableSmm.efi

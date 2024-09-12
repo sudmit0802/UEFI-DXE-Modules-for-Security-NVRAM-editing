@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = StatusCodeHandlerSmm
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Universal/StatusCodeHandler/Smm
 PACKAGE_RELATIVE_DIR = Universal/StatusCodeHandler/Smm
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = StatusCodeHandlerTraditionalMmEntry
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -221,8 +221,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/static_library_files.lst
 
 
 #
@@ -232,7 +232,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi \
               
 
 #
@@ -323,47 +323,47 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/SerialStatusCodeWorker.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SerialStatusCodeWorker.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SerialStatusCodeWorker.obj : $(WORKSPACE)/MdeModulePkg/Universal/StatusCodeHandler/Smm/SerialStatusCodeWorker.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./SerialStatusCodeWorker.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/SerialStatusCodeWorker.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./SerialStatusCodeWorker.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/SerialStatusCodeWorker.c
 
 $(OUTPUT_DIR)/StatusCodeHandlerTraditional.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/StatusCodeHandlerTraditional.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/StatusCodeHandlerTraditional.obj : $(WORKSPACE)/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerTraditional.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./StatusCodeHandlerTraditional.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerTraditional.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./StatusCodeHandlerTraditional.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerTraditional.c
 
 $(OUTPUT_DIR)/StatusCodeHandlerMm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/StatusCodeHandlerMm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/StatusCodeHandlerMm.obj : $(WORKSPACE)/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerMm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./StatusCodeHandlerMm.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerMm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./StatusCodeHandlerMm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerMm.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/MemoryStatusCodeWorker.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/MemoryStatusCodeWorker.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/MemoryStatusCodeWorker.obj : $(WORKSPACE)/MdeModulePkg/Universal/StatusCodeHandler/Smm/MemoryStatusCodeWorker.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./MemoryStatusCodeWorker.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/MemoryStatusCodeWorker.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/./MemoryStatusCodeWorker.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Universal/StatusCodeHandler/Smm/MemoryStatusCodeWorker.c
 
 $(OUTPUT_DIR)/StatusCodeHandlerSmm.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/StatusCodeHandlerSmm.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/StatusCodeHandlerSmm.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/StatusCodeHandlerSmm.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/StatusCodeHandlerSmm.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll
 
 $(OUTPUT_DIR)/StatusCodeHandlerSmm.efi : $(DEBUG_DIR)/StatusCodeHandlerSmm.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/DEBUG/StatusCodeHandlerSmm.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm/OUTPUT/StatusCodeHandlerSmm.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/StatusCodeHandlerSmm.map : $(OUTPUT_DIR)/StatusCodeHandlerSmm.efi
