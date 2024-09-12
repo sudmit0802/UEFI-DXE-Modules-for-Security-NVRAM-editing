@@ -19,6 +19,10 @@ export EDK_PATH=$(pwd)
 ```
 
 ```bash
+$(pwd)/BaseTools
+```
+
+```bash
 source edksetup.sh
 ```
 
