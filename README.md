@@ -19,7 +19,7 @@ export EDK_PATH=$(pwd)
 ```
 
 ```bash
-$(pwd)/BaseTools
+export EDK_TOOLS_PATH=$(pwd)/BaseTools
 ```
 
 ```bash
