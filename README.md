@@ -15,12 +15,13 @@ cd edk2/
 ```
 
 ```bash
-. edksetup.sh
+export EDK_PATH=$(pwd)
 ```
 
 ```bash
-export EDK_PATH=$(pwd)
+source edksetup.sh
 ```
+
 To build hook.efi module run following:
 
 ```bash
