@@ -1,57 +1,57 @@
 
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcSupport.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcSupport.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/X64/EbcLowLevel.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasmSupport.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasmSupport.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBranch.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBranch.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdRegister.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdRegister.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdSymbol.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdSymbol.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdGo.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdGo.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdScope.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdScope.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCommand.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCommand.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreak.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreak.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdMemory.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdMemory.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbHook.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbHook.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtPci.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtPci.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdQuit.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdQuit.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/Edb.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/Edb.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasm.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbDisasm.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreakpoint.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdBreakpoint.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportUI.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportUI.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtIo.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdExtIo.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdStep.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdStep.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportFile.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportFile.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdHelp.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbCmdHelp.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportString.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSupportString.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSymbol.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcDebugger/EdbSymbol.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/AutoGen.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/AutoGen.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcInt.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcInt.obj.deps
 
--include /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcExecute.obj.deps
+-include $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Universal/EbcDxe/EbcDebugger/OUTPUT/EbcExecute.obj.deps
 
                

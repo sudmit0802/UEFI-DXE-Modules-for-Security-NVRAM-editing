@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
+PLATFORM_DIR = $EDK_PATH/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = PeiMain
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Core/Pei
 PACKAGE_RELATIVE_DIR = Core/Pei
-MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei
+MODULE_DIR = $EDK_PATH/MdeModulePkg/Core/Pei
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = PeiCore
@@ -60,13 +60,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain
-OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT
-DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG
+MODULE_BUILD_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain
+OUTPUT_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT
+DEBUG_DIR = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -248,8 +248,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/static_library_files.lst
 
 
 #
@@ -259,7 +259,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi \
+CODA_TARGET = $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi \
               
 
 #
@@ -353,97 +353,97 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/CpuIo/CpuIo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CpuIo/CpuIo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CpuIo/CpuIo.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/CpuIo/CpuIo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/CpuIo/CpuIo.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/CpuIo/CpuIo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/CpuIo/CpuIo.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/CpuIo/CpuIo.c
 
 $(OUTPUT_DIR)/StatusCode/StatusCode.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/StatusCode/StatusCode.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/StatusCode/StatusCode.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/StatusCode/StatusCode.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/StatusCode/StatusCode.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/StatusCode/StatusCode.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/StatusCode/StatusCode.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/StatusCode/StatusCode.c
 
 $(OUTPUT_DIR)/Dependency/Dependency.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Dependency/Dependency.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Dependency/Dependency.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Dependency/Dependency.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Dependency/Dependency.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Dependency/Dependency.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Dependency/Dependency.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Dependency/Dependency.c
 
 $(OUTPUT_DIR)/Dispatcher/Dispatcher.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Dispatcher/Dispatcher.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Dispatcher/Dispatcher.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Dispatcher/Dispatcher.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Dispatcher/Dispatcher.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Dispatcher/Dispatcher.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Dispatcher/Dispatcher.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Dispatcher/Dispatcher.c
 
 $(OUTPUT_DIR)/Ppi/Ppi.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Ppi/Ppi.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Ppi/Ppi.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Ppi/Ppi.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Ppi/Ppi.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Ppi/Ppi.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Ppi/Ppi.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Ppi/Ppi.c
 
 $(OUTPUT_DIR)/PeiMain/PeiMain.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PeiMain/PeiMain.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PeiMain/PeiMain.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/PeiMain/PeiMain.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiMain/PeiMain.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/PeiMain/PeiMain.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiMain/PeiMain.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/PeiMain/PeiMain.c
 
 $(OUTPUT_DIR)/FwVol/FwVol.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/FwVol/FwVol.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/FwVol/FwVol.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/FwVol/FwVol.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/FwVol/FwVol.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/FwVol/FwVol.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/FwVol/FwVol.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/FwVol/FwVol.c
 
 $(OUTPUT_DIR)/BootMode/BootMode.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/BootMode/BootMode.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/BootMode/BootMode.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/BootMode/BootMode.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/BootMode/BootMode.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/BootMode/BootMode.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/BootMode/BootMode.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/BootMode/BootMode.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/./AutoGen.obj $(INC) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/Memory/MemoryServices.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Memory/MemoryServices.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Memory/MemoryServices.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Memory/MemoryServices.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Memory/MemoryServices.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Memory/MemoryServices.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Memory/MemoryServices.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Memory/MemoryServices.c
 
 $(OUTPUT_DIR)/Hob/Hob.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Hob/Hob.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Hob/Hob.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Hob/Hob.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Hob/Hob.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Hob/Hob.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Hob/Hob.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Hob/Hob.c
 
 $(OUTPUT_DIR)/PciCfg2/PciCfg2.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PciCfg2/PciCfg2.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PciCfg2/PciCfg2.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/PciCfg2/PciCfg2.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PciCfg2/PciCfg2.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/PciCfg2/PciCfg2.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PciCfg2/PciCfg2.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/PciCfg2/PciCfg2.c
 
 $(OUTPUT_DIR)/Security/Security.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Security/Security.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Security/Security.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Security/Security.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Security/Security.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Security/Security.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Security/Security.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Security/Security.c
 
 $(OUTPUT_DIR)/Reset/Reset.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Reset/Reset.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Reset/Reset.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Reset/Reset.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Reset/Reset.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Reset/Reset.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Reset/Reset.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Reset/Reset.c
 
 $(OUTPUT_DIR)/Image/Image.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Image/Image.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Image/Image.obj : $(WORKSPACE)/MdeModulePkg/Core/Pei/Image/Image.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Image/Image.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Core/Pei/Image/Image.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/Image/Image.obj $(INC) $EDK_PATH/MdeModulePkg/Core/Pei/Image/Image.c
 
 $(OUTPUT_DIR)/PeiCore.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PeiCore.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.lib
-	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.lib
+	"$(SLINK)" cr $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/PeiCore.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/PeiCore.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/PeiCore.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll
+	"$(DLINK)" -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll
 
 $(OUTPUT_DIR)/PeiCore.efi : $(DEBUG_DIR)/PeiCore.dll
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi $(DEBUG_DIR)
-	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll $(GENFW_FLAGS)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi $(DEBUG_DIR)
+	$(CP) $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Core/Pei/PeiMain/OUTPUT/PeiCore.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/PeiCore.map : $(OUTPUT_DIR)/PeiCore.efi
