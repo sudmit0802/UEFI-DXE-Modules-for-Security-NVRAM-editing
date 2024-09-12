@@ -1,0 +1,1 @@
+Prepare evrything befor build:
