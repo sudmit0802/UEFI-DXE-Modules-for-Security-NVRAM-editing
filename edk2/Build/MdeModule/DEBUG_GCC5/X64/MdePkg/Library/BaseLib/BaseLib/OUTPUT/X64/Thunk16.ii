@@ -11,27 +11,57 @@
 # 162 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/X64/ProcessorBind.h"
 typedef unsigned long long UINT64;
 
+
+
 typedef long long INT64;
+
+
 
 typedef unsigned int UINT32;
 
+
+
 typedef int INT32;
+
+
 
 typedef unsigned short UINT16;
 
+
+
+
 typedef unsigned short CHAR16;
+
+
 
 typedef short INT16;
 
+
+
+
 typedef unsigned char BOOLEAN;
+
+
 
 typedef unsigned char UINT8;
 
+
+
 typedef char CHAR8;
+
+
 
 typedef signed char INT8;
 
+
+
+
+
+
 typedef UINT64 UINTN;
+
+
+
 
 typedef INT64 INTN;
 # 22 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h" 2
@@ -43,17 +73,32 @@ typedef struct {
   UINT8 Data4[8];
 } GUID;
 
+
+
+
 typedef struct {
   UINT8 Addr[4];
 } IPv4_ADDRESS;
+
+
+
 
 typedef struct {
   UINT8 Addr[16];
 } IPv6_ADDRESS;
 
+
+
+
 typedef UINT64 PHYSICAL_ADDRESS;
 
+
+
+
 typedef struct _LIST_ENTRY LIST_ENTRY;
+
+
+
 
 struct _LIST_ENTRY {
   LIST_ENTRY *ForwardLink;
@@ -64,117 +109,54 @@ typedef __builtin_ms_va_list VA_LIST;
 # 711 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
 typedef UINTN *BASE_LIST;
 # 816 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
-_Static_assert(
-    sizeof(BOOLEAN) == 1,
-    "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(INT8) == 1,
-    "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(UINT8) == 1,
-    "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(INT16) == 2,
-    "sizeof (INT16) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(UINT16) == 2,
-    "sizeof (UINT16) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(INT32) == 4,
-    "sizeof (INT32) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(UINT32) == 4,
-    "sizeof (UINT32) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(INT64) == 8,
-    "sizeof (INT64) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(UINT64) == 8,
-    "sizeof (UINT64) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(CHAR8) == 1,
-    "sizeof (CHAR8) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(CHAR16) == 2,
-    "sizeof (CHAR16) does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(L'A') == 2,
-    "sizeof (L'A') does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(L"A") == 4,
-    "sizeof (L\"A\") does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT8) == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT8) == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT16) == 2, "sizeof (INT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT16) == 2, "sizeof (UINT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT32) == 4, "sizeof (INT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT32) == 4, "sizeof (UINT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT64) == 8, "sizeof (INT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT64) == 8, "sizeof (UINT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR8) == 1, "sizeof (CHAR8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR16) == 2, "sizeof (CHAR16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L'A') == 2, "sizeof (L'A') does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L"A") == 4, "sizeof (L\"A\") does not meet UEFI Specification Data Type requirements");
 
-_Static_assert(_Alignof(BOOLEAN) == sizeof(BOOLEAN),
-               "Alignment of BOOLEAN does not meet UEFI Specification Data "
-               "Type requirements");
-_Static_assert(_Alignof(INT8) == sizeof(INT8),
-               "Alignment of INT8 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(UINT8) == sizeof(UINT8),
-               "Alignment of INT16 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(INT16) == sizeof(INT16),
-               "Alignment of INT16 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(UINT16) == sizeof(UINT16),
-               "Alignment of UINT16 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(INT32) == sizeof(INT32),
-               "Alignment of INT32 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(UINT32) == sizeof(UINT32),
-               "Alignment of UINT32 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(INT64) == sizeof(INT64),
-               "Alignment of INT64 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(UINT64) == sizeof(UINT64),
-               "Alignment of UINT64 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(CHAR8) == sizeof(CHAR8),
-               "Alignment of CHAR8 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(CHAR16) == sizeof(CHAR16),
-               "Alignment of CHAR16 does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(INTN) == sizeof(INTN),
-               "Alignment of INTN does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(UINTN) == sizeof(UINTN),
-               "Alignment of UINTN does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(void *) == sizeof(void *),
-               "Alignment of VOID * does not meet UEFI Specification Data Type "
-               "requirements");
+_Static_assert (_Alignof (BOOLEAN) == sizeof (BOOLEAN), "Alignment of BOOLEAN does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (INT8) == sizeof (INT8), "Alignment of INT8 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (UINT8) == sizeof (UINT8), "Alignment of INT16 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (INT16) == sizeof (INT16), "Alignment of INT16 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (UINT16) == sizeof (UINT16), "Alignment of UINT16 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (INT32) == sizeof (INT32), "Alignment of INT32 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (UINT32) == sizeof (UINT32), "Alignment of UINT32 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (INT64) == sizeof (INT64), "Alignment of INT64 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (UINT64) == sizeof (UINT64), "Alignment of UINT64 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (CHAR8) == sizeof (CHAR8), "Alignment of CHAR8 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (CHAR16) == sizeof (CHAR16), "Alignment of CHAR16 does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (INTN) == sizeof (INTN), "Alignment of INTN does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (UINTN) == sizeof (UINTN), "Alignment of UINTN does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (void *) == sizeof (void *), "Alignment of VOID * does not meet UEFI Specification Data Type requirements");
 # 852 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
-typedef enum { __VerifyUint8EnumValue = 0xff } __VERIFY_UINT8_ENUM_SIZE;
+typedef enum {
+  __VerifyUint8EnumValue = 0xff
+} __VERIFY_UINT8_ENUM_SIZE;
 
-typedef enum { __VerifyUint16EnumValue = 0xffff } __VERIFY_UINT16_ENUM_SIZE;
+typedef enum {
+  __VerifyUint16EnumValue = 0xffff
+} __VERIFY_UINT16_ENUM_SIZE;
 
-typedef enum { __VerifyInt32EnumValue = 0x7fffffff } __VERIFY_INT32_ENUM_SIZE;
+typedef enum {
+  __VerifyInt32EnumValue = 0x7fffffff
+} __VERIFY_INT32_ENUM_SIZE;
 
-_Static_assert(
-    sizeof(__VERIFY_UINT8_ENUM_SIZE) == 4,
-    "Size of enum does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(__VERIFY_UINT16_ENUM_SIZE) == 4,
-    "Size of enum does not meet UEFI Specification Data Type requirements");
-_Static_assert(
-    sizeof(__VERIFY_INT32_ENUM_SIZE) == 4,
-    "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT8_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT16_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_INT32_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
 
-_Static_assert(_Alignof(__VERIFY_UINT8_ENUM_SIZE) ==
-                   sizeof(__VERIFY_UINT8_ENUM_SIZE),
-               "Alignment of enum does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(__VERIFY_UINT16_ENUM_SIZE) ==
-                   sizeof(__VERIFY_UINT16_ENUM_SIZE),
-               "Alignment of enum does not meet UEFI Specification Data Type "
-               "requirements");
-_Static_assert(_Alignof(__VERIFY_INT32_ENUM_SIZE) ==
-                   sizeof(__VERIFY_INT32_ENUM_SIZE),
-               "Alignment of enum does not meet UEFI Specification Data Type "
-               "requirements");
+_Static_assert (_Alignof (__VERIFY_UINT8_ENUM_SIZE) == sizeof (__VERIFY_UINT8_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (__VERIFY_UINT16_ENUM_SIZE) == sizeof (__VERIFY_UINT16_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (_Alignof (__VERIFY_INT32_ENUM_SIZE) == sizeof (__VERIFY_INT32_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
 # 1026 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
 typedef UINTN RETURN_STATUS;
 # 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 2
@@ -182,115 +164,201 @@ typedef UINTN RETURN_STATUS;
 # 809 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
-LibPcdSetSku(UINTN SkuId);
+LibPcdSetSku (
+  UINTN SkuId
+  );
 # 825 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
-LibPcdGet8(UINTN TokenNumber);
+LibPcdGet8 (
+  UINTN TokenNumber
+  );
 # 841 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
-LibPcdGet16(UINTN TokenNumber);
+LibPcdGet16 (
+  UINTN TokenNumber
+  );
 # 857 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
-LibPcdGet32(UINTN TokenNumber);
+LibPcdGet32 (
+  UINTN TokenNumber
+  );
 # 873 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
-LibPcdGet64(UINTN TokenNumber);
+LibPcdGet64 (
+  UINTN TokenNumber
+  );
 # 889 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
-LibPcdGetPtr(UINTN TokenNumber);
+LibPcdGetPtr (
+  UINTN TokenNumber
+  );
 # 905 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
-LibPcdGetBool(UINTN TokenNumber);
+LibPcdGetBool (
+  UINTN TokenNumber
+  );
 # 919 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
-LibPcdGetSize(UINTN TokenNumber);
+LibPcdGetSize (
+  UINTN TokenNumber
+  );
 # 939 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
-LibPcdGetEx8(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetEx8 (
+  const GUID *Guid,
+  UINTN TokenNumber
+  );
 # 960 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
-LibPcdGetEx16(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetEx16 (
+  const GUID *Guid,
+  UINTN TokenNumber
+  );
 # 978 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
-LibPcdGetEx32(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetEx32 (
+  const GUID *Guid,
+  UINTN TokenNumber
+  );
 # 999 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
-LibPcdGetEx64(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetEx64 (
+  const GUID *Guid,
+  UINTN TokenNumber
+  );
 # 1020 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
-LibPcdGetExPtr(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetExPtr (
+  const GUID *Guid,
+  UINTN TokenNumber
+  );
 # 1041 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
-LibPcdGetExBool(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetExBool (
+  const GUID *Guid,
+  UINTN TokenNumber
+  );
 # 1062 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
-LibPcdGetExSize(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetExSize (
+  const GUID *Guid,
+  UINTN TokenNumber
+  );
 # 1081 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSet8S(UINTN TokenNumber, UINT8 Value);
+LibPcdSet8S (
+  UINTN TokenNumber,
+  UINT8 Value
+  );
 # 1100 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSet16S(UINTN TokenNumber, UINT16 Value);
+LibPcdSet16S (
+  UINTN TokenNumber,
+  UINT16 Value
+  );
 # 1119 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSet32S(UINTN TokenNumber, UINT32 Value);
+LibPcdSet32S (
+  UINTN TokenNumber,
+  UINT32 Value
+  );
 # 1138 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSet64S(UINTN TokenNumber, UINT64 Value);
+LibPcdSet64S (
+  UINTN TokenNumber,
+  UINT64 Value
+  );
 # 1167 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetPtrS(UINTN TokenNumber, UINTN *SizeOfBuffer, const void *Buffer);
+LibPcdSetPtrS (
+  UINTN TokenNumber,
+  UINTN *SizeOfBuffer,
+  const void *Buffer
+  );
 # 1187 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetBoolS(UINTN TokenNumber, BOOLEAN Value);
+LibPcdSetBoolS (
+  UINTN TokenNumber,
+  BOOLEAN Value
+  );
 # 1210 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetEx8S(const GUID *Guid, UINTN TokenNumber, UINT8 Value);
+LibPcdSetEx8S (
+  const GUID *Guid,
+  UINTN TokenNumber,
+  UINT8 Value
+  );
 # 1234 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetEx16S(const GUID *Guid, UINTN TokenNumber, UINT16 Value);
+LibPcdSetEx16S (
+  const GUID *Guid,
+  UINTN TokenNumber,
+  UINT16 Value
+  );
 # 1258 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetEx32S(const GUID *Guid, UINTN TokenNumber, UINT32 Value);
+LibPcdSetEx32S (
+  const GUID *Guid,
+  UINTN TokenNumber,
+  UINT32 Value
+  );
 # 1282 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetEx64S(const GUID *Guid, UINTN TokenNumber, UINT64 Value);
+LibPcdSetEx64S (
+  const GUID *Guid,
+  UINTN TokenNumber,
+  UINT64 Value
+  );
 # 1312 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetExPtrS(const GUID *Guid, UINTN TokenNumber, UINTN *SizeOfBuffer,
-                void *Buffer);
+LibPcdSetExPtrS (
+  const GUID *Guid,
+  UINTN TokenNumber,
+  UINTN *SizeOfBuffer,
+  void *Buffer
+  );
 # 1337 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPcdSetExBoolS(const GUID *Guid, UINTN TokenNumber, BOOLEAN Value);
+LibPcdSetExBoolS (
+  const GUID *Guid,
+  UINTN TokenNumber,
+  BOOLEAN Value
+  );
 # 1361 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
-typedef void (*PCD_CALLBACK)(const GUID *CallBackGuid, UINTN CallBackToken,
-                             void *TokenData, UINTN TokenDataSize);
+typedef
+void
+( *PCD_CALLBACK)(
+  const GUID *CallBackGuid ,
+  UINTN CallBackToken,
+  void *TokenData,
+  UINTN TokenDataSize
+  );
 # 1386 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 void
 
@@ -310,33 +378,54 @@ LibPcdCancelCallback (
 # 1434 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
-LibPcdGetNextToken(const GUID *Guid, UINTN TokenNumber);
+LibPcdGetNextToken (
+  const GUID *Guid ,
+  UINTN TokenNumber
+  );
 # 1454 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 GUID *
 
-LibPcdGetNextTokenSpace(const GUID *TokenSpaceGuid);
+LibPcdGetNextTokenSpace (
+  const GUID *TokenSpaceGuid
+  );
 # 1483 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
-LibPatchPcdSetPtr(void *PatchVariable, UINTN MaximumDatumSize,
-                  UINTN *SizeOfBuffer, const void *Buffer);
+LibPatchPcdSetPtr (
+  void *PatchVariable,
+  UINTN MaximumDatumSize,
+  UINTN *SizeOfBuffer,
+  const void *Buffer
+  );
 # 1515 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPatchPcdSetPtrS(void *PatchVariable, UINTN MaximumDatumSize,
-                   UINTN *SizeOfBuffer, const void *Buffer);
+LibPatchPcdSetPtrS (
+  void *PatchVariable,
+  UINTN MaximumDatumSize,
+  UINTN *SizeOfBuffer,
+  const void *Buffer
+  );
 # 1549 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
-LibPatchPcdSetPtrAndSize(void *PatchVariable, UINTN *SizeOfPatchVariable,
-                         UINTN MaximumDatumSize, UINTN *SizeOfBuffer,
-                         const void *Buffer);
+LibPatchPcdSetPtrAndSize (
+  void *PatchVariable,
+  UINTN *SizeOfPatchVariable,
+  UINTN MaximumDatumSize,
+  UINTN *SizeOfBuffer,
+  const void *Buffer
+  );
 # 1584 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
-LibPatchPcdSetPtrAndSizeS(void *PatchVariable, UINTN *SizeOfPatchVariable,
-                          UINTN MaximumDatumSize, UINTN *SizeOfBuffer,
-                          const void *Buffer);
+LibPatchPcdSetPtrAndSizeS (
+  void *PatchVariable,
+  UINTN *SizeOfPatchVariable,
+  UINTN MaximumDatumSize,
+  UINTN *SizeOfBuffer,
+  const void *Buffer
+  );
 
 typedef enum {
   PCD_TYPE_8,
@@ -349,9 +438,20 @@ typedef enum {
 
 typedef struct {
 
+
+
+
   PCD_TYPE PcdType;
 
+
+
+
   UINTN PcdSize;
+
+
+
+
+
 
   CHAR8 *PcdName;
 } PCD_INFO;
@@ -373,26 +473,55 @@ LibPcdGetInfoEx (
 # 1670 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
-LibPcdGetSku(void);
+LibPcdGetSku (
+  void
+  );
 # 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 2
 
 extern GUID gEfiCallerIdGuid;
 extern GUID gEdkiiDscPlatformGuid;
 extern CHAR8 *gEfiCallerBaseName;
 
+
+
 extern GUID gEfiMdePkgTokenSpaceGuid;
+
 
 extern UINT64 _gPcd_SkuId_Array[];
 
+
+
 extern const BOOLEAN _gPcd_FixedAtBuild_PcdVerifyNodeInList;
+
+
 
 extern const UINT32 _gPcd_FixedAtBuild_PcdMaximumLinkedListLength;
 
+
+
+
+
+
 extern const UINT32 _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength;
+
+
+
+
+
 
 extern const UINT32 _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength;
 
+
+
+
+
+
 extern const UINT32 _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask;
+
+
+
+
+
 
 extern const UINT8 _gPcd_FixedAtBuild_PcdSpeculationBarrierType;
 # 0 "<command-line>" 2
@@ -420,95 +549,175 @@ typedef struct {
 # 620 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-StrnLenS(const CHAR16 *String, UINTN MaxSize);
+StrnLenS (
+  const CHAR16 *String,
+  UINTN MaxSize
+  );
 # 648 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-StrnSizeS(const CHAR16 *String, UINTN MaxSize);
+StrnSizeS (
+  const CHAR16 *String,
+  UINTN MaxSize
+  );
 # 681 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrCpyS(CHAR16 *Destination, UINTN DestMax, const CHAR16 *Source);
+StrCpyS (
+  CHAR16 *Destination,
+  UINTN DestMax,
+  const CHAR16 *Source
+  );
 # 718 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrnCpyS(CHAR16 *Destination, UINTN DestMax, const CHAR16 *Source,
-         UINTN Length);
+StrnCpyS (
+  CHAR16 *Destination,
+  UINTN DestMax,
+  const CHAR16 *Source,
+  UINTN Length
+  );
 # 756 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrCatS(CHAR16 *Destination, UINTN DestMax, const CHAR16 *Source);
+StrCatS (
+  CHAR16 *Destination,
+  UINTN DestMax,
+  const CHAR16 *Source
+  );
 # 796 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrnCatS(CHAR16 *Destination, UINTN DestMax, const CHAR16 *Source,
-         UINTN Length);
+StrnCatS (
+  CHAR16 *Destination,
+  UINTN DestMax,
+  const CHAR16 *Source,
+  UINTN Length
+  );
 # 848 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrDecimalToUintnS(const CHAR16 *String, CHAR16 **EndPointer, UINTN *Data);
+StrDecimalToUintnS (
+  const CHAR16 *String,
+  CHAR16 **EndPointer ,
+  UINTN *Data
+  );
 # 899 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrDecimalToUint64S(const CHAR16 *String, CHAR16 **EndPointer, UINT64 *Data);
+StrDecimalToUint64S (
+  const CHAR16 *String,
+  CHAR16 **EndPointer ,
+  UINT64 *Data
+  );
 # 955 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrHexToUintnS(const CHAR16 *String, CHAR16 **EndPointer, UINTN *Data);
+StrHexToUintnS (
+  const CHAR16 *String,
+  CHAR16 **EndPointer ,
+  UINTN *Data
+  );
 # 1011 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrHexToUint64S(const CHAR16 *String, CHAR16 **EndPointer, UINT64 *Data);
+StrHexToUint64S (
+  const CHAR16 *String,
+  CHAR16 **EndPointer ,
+  UINT64 *Data
+  );
 # 1033 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsciiStrnLenS(const CHAR8 *String, UINTN MaxSize);
+AsciiStrnLenS (
+  const CHAR8 *String,
+  UINTN MaxSize
+  );
 # 1059 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsciiStrnSizeS(const CHAR8 *String, UINTN MaxSize);
+AsciiStrnSizeS (
+  const CHAR8 *String,
+  UINTN MaxSize
+  );
 # 1089 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrCpyS(CHAR8 *Destination, UINTN DestMax, const CHAR8 *Source);
+AsciiStrCpyS (
+  CHAR8 *Destination,
+  UINTN DestMax,
+  const CHAR8 *Source
+  );
 # 1123 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrnCpyS(CHAR8 *Destination, UINTN DestMax, const CHAR8 *Source,
-              UINTN Length);
+AsciiStrnCpyS (
+  CHAR8 *Destination,
+  UINTN DestMax,
+  const CHAR8 *Source,
+  UINTN Length
+  );
 # 1158 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrCatS(CHAR8 *Destination, UINTN DestMax, const CHAR8 *Source);
+AsciiStrCatS (
+  CHAR8 *Destination,
+  UINTN DestMax,
+  const CHAR8 *Source
+  );
 # 1195 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrnCatS(CHAR8 *Destination, UINTN DestMax, const CHAR8 *Source,
-              UINTN Length);
+AsciiStrnCatS (
+  CHAR8 *Destination,
+  UINTN DestMax,
+  const CHAR8 *Source,
+  UINTN Length
+  );
 # 1245 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrDecimalToUintnS(const CHAR8 *String, CHAR8 **EndPointer, UINTN *Data);
+AsciiStrDecimalToUintnS (
+  const CHAR8 *String,
+  CHAR8 **EndPointer ,
+  UINTN *Data
+  );
 # 1294 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrDecimalToUint64S(const CHAR8 *String, CHAR8 **EndPointer, UINT64 *Data);
+AsciiStrDecimalToUint64S (
+  const CHAR8 *String,
+  CHAR8 **EndPointer ,
+  UINT64 *Data
+  );
 # 1347 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrHexToUintnS(const CHAR8 *String, CHAR8 **EndPointer, UINTN *Data);
+AsciiStrHexToUintnS (
+  const CHAR8 *String,
+  CHAR8 **EndPointer ,
+  UINTN *Data
+  );
 # 1400 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrHexToUint64S(const CHAR8 *String, CHAR8 **EndPointer, UINT64 *Data);
+AsciiStrHexToUint64S (
+  const CHAR8 *String,
+  CHAR8 **EndPointer ,
+  UINT64 *Data
+  );
 # 1425 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-StrLen(const CHAR16 *String);
+StrLen (
+  const CHAR16 *String
+  );
 # 1449 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-StrSize(const CHAR16 *String);
+StrSize (
+  const CHAR16 *String
+  );
 # 1483 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
@@ -527,59 +736,98 @@ StrnCmp (
 # 1555 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR16 *
 
-StrStr(const CHAR16 *String, const CHAR16 *SearchString);
+StrStr (
+  const CHAR16 *String,
+  const CHAR16 *SearchString
+  );
 # 1596 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-StrDecimalToUintn(const CHAR16 *String);
+StrDecimalToUintn (
+  const CHAR16 *String
+  );
 # 1636 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-StrDecimalToUint64(const CHAR16 *String);
+StrDecimalToUint64 (
+  const CHAR16 *String
+  );
 # 1677 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-StrHexToUintn(const CHAR16 *String);
+StrHexToUintn (
+  const CHAR16 *String
+  );
 # 1718 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-StrHexToUint64(const CHAR16 *String);
+StrHexToUint64 (
+  const CHAR16 *String
+  );
 # 1774 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrToIpv6Address(const CHAR16 *String, CHAR16 **EndPointer,
-                 IPv6_ADDRESS *Address, UINT8 *PrefixLength);
+StrToIpv6Address (
+  const CHAR16 *String,
+  CHAR16 **EndPointer ,
+  IPv6_ADDRESS *Address,
+  UINT8 *PrefixLength
+  );
 # 1824 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrToIpv4Address(const CHAR16 *String, CHAR16 **EndPointer,
-                 IPv4_ADDRESS *Address, UINT8 *PrefixLength);
+StrToIpv4Address (
+  const CHAR16 *String,
+  CHAR16 **EndPointer ,
+  IPv4_ADDRESS *Address,
+  UINT8 *PrefixLength
+  );
 # 1877 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrToGuid(const CHAR16 *String, GUID *Guid);
+StrToGuid (
+  const CHAR16 *String,
+  GUID *Guid
+  );
 # 1917 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-StrHexToBytes(const CHAR16 *String, UINTN Length, UINT8 *Buffer,
-              UINTN MaxBufferSize);
+StrHexToBytes (
+  const CHAR16 *String,
+  UINTN Length,
+  UINT8 *Buffer,
+  UINTN MaxBufferSize
+  );
 # 1966 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-UnicodeStrToAsciiStrS(const CHAR16 *Source, CHAR8 *Destination, UINTN DestMax);
+UnicodeStrToAsciiStrS (
+  const CHAR16 *Source,
+  CHAR8 *Destination,
+  UINTN DestMax
+  );
 # 2017 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-UnicodeStrnToAsciiStrS(const CHAR16 *Source, UINTN Length, CHAR8 *Destination,
-                       UINTN DestMax, UINTN *DestinationLength);
+UnicodeStrnToAsciiStrS (
+  const CHAR16 *Source,
+  UINTN Length,
+  CHAR8 *Destination,
+  UINTN DestMax,
+  UINTN *DestinationLength
+  );
 # 2044 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsciiStrLen(const CHAR8 *String);
+AsciiStrLen (
+  const CHAR8 *String
+  );
 # 2067 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsciiStrSize(const CHAR8 *String);
+AsciiStrSize (
+  const CHAR8 *String
+  );
 # 2099 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
@@ -605,135 +853,227 @@ AsciiStrnCmp (
 # 2204 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR8 *
 
-AsciiStrStr(const CHAR8 *String, const CHAR8 *SearchString);
+AsciiStrStr (
+  const CHAR8 *String,
+  const CHAR8 *SearchString
+  );
 # 2241 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsciiStrDecimalToUintn(const CHAR8 *String);
+AsciiStrDecimalToUintn (
+  const CHAR8 *String
+  );
 # 2277 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsciiStrDecimalToUint64(const CHAR8 *String);
+AsciiStrDecimalToUint64 (
+  const CHAR8 *String
+  );
 # 2317 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsciiStrHexToUintn(const CHAR8 *String);
+AsciiStrHexToUintn (
+  const CHAR8 *String
+  );
 # 2357 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsciiStrHexToUint64(const CHAR8 *String);
+AsciiStrHexToUint64 (
+  const CHAR8 *String
+  );
 # 2411 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrToIpv6Address(const CHAR8 *String, CHAR8 **EndPointer,
-                      IPv6_ADDRESS *Address, UINT8 *PrefixLength);
+AsciiStrToIpv6Address (
+  const CHAR8 *String,
+  CHAR8 **EndPointer ,
+  IPv6_ADDRESS *Address,
+  UINT8 *PrefixLength
+  );
 # 2459 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrToIpv4Address(const CHAR8 *String, CHAR8 **EndPointer,
-                      IPv4_ADDRESS *Address, UINT8 *PrefixLength);
+AsciiStrToIpv4Address (
+  const CHAR8 *String,
+  CHAR8 **EndPointer ,
+  IPv4_ADDRESS *Address,
+  UINT8 *PrefixLength
+  );
 # 2508 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrToGuid(const CHAR8 *String, GUID *Guid);
+AsciiStrToGuid (
+  const CHAR8 *String,
+  GUID *Guid
+  );
 # 2546 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrHexToBytes(const CHAR8 *String, UINTN Length, UINT8 *Buffer,
-                   UINTN MaxBufferSize);
+AsciiStrHexToBytes (
+  const CHAR8 *String,
+  UINTN Length,
+  UINT8 *Buffer,
+  UINTN MaxBufferSize
+  );
 # 2591 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrToUnicodeStrS(const CHAR8 *Source, CHAR16 *Destination, UINTN DestMax);
+AsciiStrToUnicodeStrS (
+  const CHAR8 *Source,
+  CHAR16 *Destination,
+  UINTN DestMax
+  );
 # 2641 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-AsciiStrnToUnicodeStrS(const CHAR8 *Source, UINTN Length, CHAR16 *Destination,
-                       UINTN DestMax, UINTN *DestinationLength);
+AsciiStrnToUnicodeStrS (
+  const CHAR8 *Source,
+  UINTN Length,
+  CHAR16 *Destination,
+  UINTN DestMax,
+  UINTN *DestinationLength
+  );
 # 2666 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR16
 
-CharToUpper(CHAR16 Char);
+CharToUpper (
+  CHAR16 Char
+  );
 # 2685 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR8
 
-AsciiCharToUpper(CHAR8 Chr);
+AsciiCharToUpper (
+  CHAR8 Chr
+  );
 # 2710 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-Base64Encode(const UINT8 *Source, UINTN SourceLength, CHAR8 *Destination,
-             UINTN *DestinationSize);
+Base64Encode (
+  const UINT8 *Source,
+  UINTN SourceLength,
+  CHAR8 *Destination ,
+  UINTN *DestinationSize
+  );
 # 2801 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
-Base64Decode(const CHAR8 *Source, UINTN SourceSize, UINT8 *Destination,
-             UINTN *DestinationSize);
+Base64Decode (
+  const CHAR8 *Source ,
+  UINTN SourceSize,
+  UINT8 *Destination ,
+  UINTN *DestinationSize
+  );
 # 2823 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-DecimalToBcd8(UINT8 Value);
+DecimalToBcd8 (
+  UINT8 Value
+  );
 # 2843 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BcdToDecimal8(UINT8 Value);
+BcdToDecimal8 (
+  UINT8 Value
+  );
 # 2861 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-PathRemoveLastItem(CHAR16 *Path);
+PathRemoveLastItem (
+  CHAR16 *Path
+  );
 # 2880 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR16 *
 
-PathCleanUpDirectories(CHAR16 *Path);
+PathCleanUpDirectories (
+  CHAR16 *Path
+  );
 # 2952 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-IsNodeInList(const LIST_ENTRY *FirstEntry, const LIST_ENTRY *SecondEntry);
+IsNodeInList (
+  const LIST_ENTRY *FirstEntry,
+  const LIST_ENTRY *SecondEntry
+  );
 # 2975 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-InitializeListHead(LIST_ENTRY *ListHead);
+InitializeListHead (
+  LIST_ENTRY *ListHead
+  );
 # 3003 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-InsertHeadList(LIST_ENTRY *ListHead, LIST_ENTRY *Entry);
+InsertHeadList (
+  LIST_ENTRY *ListHead,
+  LIST_ENTRY *Entry
+  );
 # 3032 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-InsertTailList(LIST_ENTRY *ListHead, LIST_ENTRY *Entry);
+InsertTailList (
+  LIST_ENTRY *ListHead,
+  LIST_ENTRY *Entry
+  );
 # 3059 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-GetFirstNode(const LIST_ENTRY *List);
+GetFirstNode (
+  const LIST_ENTRY *List
+  );
 # 3086 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-GetNextNode(const LIST_ENTRY *List, const LIST_ENTRY *Node);
+GetNextNode (
+  const LIST_ENTRY *List,
+  const LIST_ENTRY *Node
+  );
 # 3114 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-GetPreviousNode(const LIST_ENTRY *List, const LIST_ENTRY *Node);
+GetPreviousNode (
+  const LIST_ENTRY *List,
+  const LIST_ENTRY *Node
+  );
 # 3140 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-IsListEmpty(const LIST_ENTRY *ListHead);
+IsListEmpty (
+  const LIST_ENTRY *ListHead
+  );
 # 3172 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-IsNull(const LIST_ENTRY *List, const LIST_ENTRY *Node);
+IsNull (
+  const LIST_ENTRY *List,
+  const LIST_ENTRY *Node
+  );
 # 3202 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-IsNodeAtEnd(const LIST_ENTRY *List, const LIST_ENTRY *Node);
+IsNodeAtEnd (
+  const LIST_ENTRY *List,
+  const LIST_ENTRY *Node
+  );
 # 3235 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-SwapListEntries(LIST_ENTRY *FirstEntry, LIST_ENTRY *SecondEntry);
+SwapListEntries (
+  LIST_ENTRY *FirstEntry,
+  LIST_ENTRY *SecondEntry
+  );
 # 3263 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
-RemoveEntryList(const LIST_ENTRY *Entry);
+RemoveEntryList (
+  const LIST_ENTRY *Entry
+  );
 # 3283 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
-typedef INTN (*BASE_SORT_COMPARE)(const void *Buffer1, const void *Buffer2);
+typedef
+INTN
+( *BASE_SORT_COMPARE)(
+  const void *Buffer1,
+  const void *Buffer2
+  );
 # 3313 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -747,31 +1087,52 @@ QuickSort (
 # 3338 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-LShiftU64(UINT64 Operand, UINTN Count);
+LShiftU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 3360 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-RShiftU64(UINT64 Operand, UINTN Count);
+RShiftU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 3382 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-ARShiftU64(UINT64 Operand, UINTN Count);
+ARShiftU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 3405 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-LRotU32(UINT32 Operand, UINTN Count);
+LRotU32 (
+  UINT32 Operand,
+  UINTN Count
+  );
 # 3428 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-RRotU32(UINT32 Operand, UINTN Count);
+RRotU32 (
+  UINT32 Operand,
+  UINTN Count
+  );
 # 3451 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-LRotU64(UINT64 Operand, UINTN Count);
+LRotU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 3474 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-RRotU64(UINT64 Operand, UINTN Count);
+RRotU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 3494 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
@@ -799,229 +1160,434 @@ HighBitSet64 (
 # 3573 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-GetPowerOfTwo32(UINT32 Operand);
+GetPowerOfTwo32 (
+  UINT32 Operand
+  );
 # 3592 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-GetPowerOfTwo64(UINT64 Operand);
+GetPowerOfTwo64 (
+  UINT64 Operand
+  );
 # 3610 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-SwapBytes16(UINT16 Value);
+SwapBytes16 (
+  UINT16 Value
+  );
 # 3628 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-SwapBytes32(UINT32 Value);
+SwapBytes32 (
+  UINT32 Value
+  );
 # 3646 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-SwapBytes64(UINT64 Value);
+SwapBytes64 (
+  UINT64 Value
+  );
 # 3666 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-MultU64x32(UINT64 Multiplicand, UINT32 Multiplier);
+MultU64x32 (
+  UINT64 Multiplicand,
+  UINT32 Multiplier
+  );
 # 3687 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-MultU64x64(UINT64 Multiplicand, UINT64 Multiplier);
+MultU64x64 (
+  UINT64 Multiplicand,
+  UINT64 Multiplier
+  );
 # 3708 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 INT64
 
-MultS64x64(INT64 Multiplicand, INT64 Multiplier);
+MultS64x64 (
+  INT64 Multiplicand,
+  INT64 Multiplier
+  );
 # 3731 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-DivU64x32(UINT64 Dividend, UINT32 Divisor);
+DivU64x32 (
+  UINT64 Dividend,
+  UINT32 Divisor
+  );
 # 3754 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-ModU64x32(UINT64 Dividend, UINT32 Divisor);
+ModU64x32 (
+  UINT64 Dividend,
+  UINT32 Divisor
+  );
 # 3780 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-DivU64x32Remainder(UINT64 Dividend, UINT32 Divisor, UINT32 *Remainder);
+DivU64x32Remainder (
+  UINT64 Dividend,
+  UINT32 Divisor,
+  UINT32 *Remainder
+  );
 # 3807 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-DivU64x64Remainder(UINT64 Dividend, UINT64 Divisor, UINT64 *Remainder);
+DivU64x64Remainder (
+  UINT64 Dividend,
+  UINT64 Divisor,
+  UINT64 *Remainder
+  );
 # 3838 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 INT64
 
-DivS64x64Remainder(INT64 Dividend, INT64 Divisor, INT64 *Remainder);
+DivS64x64Remainder (
+  INT64 Dividend,
+  INT64 Divisor,
+  INT64 *Remainder
+  );
 # 3859 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-ReadUnaligned16(const UINT16 *Buffer);
+ReadUnaligned16 (
+  const UINT16 *Buffer
+  );
 # 3880 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-WriteUnaligned16(UINT16 *Buffer, UINT16 Value);
+WriteUnaligned16 (
+  UINT16 *Buffer,
+  UINT16 Value
+  );
 # 3900 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-ReadUnaligned24(const UINT32 *Buffer);
+ReadUnaligned24 (
+  const UINT32 *Buffer
+  );
 # 3921 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-WriteUnaligned24(UINT32 *Buffer, UINT32 Value);
+WriteUnaligned24 (
+  UINT32 *Buffer,
+  UINT32 Value
+  );
 # 3941 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-ReadUnaligned32(const UINT32 *Buffer);
+ReadUnaligned32 (
+  const UINT32 *Buffer
+  );
 # 3962 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-WriteUnaligned32(UINT32 *Buffer, UINT32 Value);
+WriteUnaligned32 (
+  UINT32 *Buffer,
+  UINT32 Value
+  );
 # 3982 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-ReadUnaligned64(const UINT64 *Buffer);
+ReadUnaligned64 (
+  const UINT64 *Buffer
+  );
 # 4003 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-WriteUnaligned64(UINT64 *Buffer, UINT64 Value);
+WriteUnaligned64 (
+  UINT64 *Buffer,
+  UINT64 Value
+  );
 # 4033 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BitFieldRead8(UINT8 Operand, UINTN StartBit, UINTN EndBit);
+BitFieldRead8 (
+  UINT8 Operand,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 4064 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BitFieldWrite8(UINT8 Operand, UINTN StartBit, UINTN EndBit, UINT8 Value);
+BitFieldWrite8 (
+  UINT8 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT8 Value
+  );
 # 4097 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BitFieldOr8(UINT8 Operand, UINTN StartBit, UINTN EndBit, UINT8 OrData);
+BitFieldOr8 (
+  UINT8 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT8 OrData
+  );
 # 4130 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BitFieldAnd8(UINT8 Operand, UINTN StartBit, UINTN EndBit, UINT8 AndData);
+BitFieldAnd8 (
+  UINT8 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT8 AndData
+  );
 # 4166 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BitFieldAndThenOr8(UINT8 Operand, UINTN StartBit, UINTN EndBit, UINT8 AndData,
-                   UINT8 OrData);
+BitFieldAndThenOr8 (
+  UINT8 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT8 AndData,
+  UINT8 OrData
+  );
 # 4195 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-BitFieldRead16(UINT16 Operand, UINTN StartBit, UINTN EndBit);
+BitFieldRead16 (
+  UINT16 Operand,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 4226 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-BitFieldWrite16(UINT16 Operand, UINTN StartBit, UINTN EndBit, UINT16 Value);
+BitFieldWrite16 (
+  UINT16 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT16 Value
+  );
 # 4259 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-BitFieldOr16(UINT16 Operand, UINTN StartBit, UINTN EndBit, UINT16 OrData);
+BitFieldOr16 (
+  UINT16 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT16 OrData
+  );
 # 4292 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-BitFieldAnd16(UINT16 Operand, UINTN StartBit, UINTN EndBit, UINT16 AndData);
+BitFieldAnd16 (
+  UINT16 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT16 AndData
+  );
 # 4328 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-BitFieldAndThenOr16(UINT16 Operand, UINTN StartBit, UINTN EndBit,
-                    UINT16 AndData, UINT16 OrData);
+BitFieldAndThenOr16 (
+  UINT16 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT16 AndData,
+  UINT16 OrData
+  );
 # 4357 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-BitFieldRead32(UINT32 Operand, UINTN StartBit, UINTN EndBit);
+BitFieldRead32 (
+  UINT32 Operand,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 4388 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-BitFieldWrite32(UINT32 Operand, UINTN StartBit, UINTN EndBit, UINT32 Value);
+BitFieldWrite32 (
+  UINT32 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 Value
+  );
 # 4421 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-BitFieldOr32(UINT32 Operand, UINTN StartBit, UINTN EndBit, UINT32 OrData);
+BitFieldOr32 (
+  UINT32 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 OrData
+  );
 # 4454 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-BitFieldAnd32(UINT32 Operand, UINTN StartBit, UINTN EndBit, UINT32 AndData);
+BitFieldAnd32 (
+  UINT32 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 AndData
+  );
 # 4490 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-BitFieldAndThenOr32(UINT32 Operand, UINTN StartBit, UINTN EndBit,
-                    UINT32 AndData, UINT32 OrData);
+BitFieldAndThenOr32 (
+  UINT32 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 AndData,
+  UINT32 OrData
+  );
 # 4519 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-BitFieldRead64(UINT64 Operand, UINTN StartBit, UINTN EndBit);
+BitFieldRead64 (
+  UINT64 Operand,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 4550 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-BitFieldWrite64(UINT64 Operand, UINTN StartBit, UINTN EndBit, UINT64 Value);
+BitFieldWrite64 (
+  UINT64 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 Value
+  );
 # 4583 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-BitFieldOr64(UINT64 Operand, UINTN StartBit, UINTN EndBit, UINT64 OrData);
+BitFieldOr64 (
+  UINT64 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 OrData
+  );
 # 4616 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-BitFieldAnd64(UINT64 Operand, UINTN StartBit, UINTN EndBit, UINT64 AndData);
+BitFieldAnd64 (
+  UINT64 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 AndData
+  );
 # 4652 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-BitFieldAndThenOr64(UINT64 Operand, UINTN StartBit, UINTN EndBit,
-                    UINT64 AndData, UINT64 OrData);
+BitFieldAndThenOr64 (
+  UINT64 Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 AndData,
+  UINT64 OrData
+  );
 # 4682 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BitFieldCountOnes32(UINT32 Operand, UINTN StartBit, UINTN EndBit);
+BitFieldCountOnes32 (
+  UINT32 Operand,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 4710 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-BitFieldCountOnes64(UINT64 Operand, UINTN StartBit, UINTN EndBit);
+BitFieldCountOnes64 (
+  UINT64 Operand,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 4740 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-CalculateSum8(const UINT8 *Buffer, UINTN Length);
+CalculateSum8 (
+  const UINT8 *Buffer,
+  UINTN Length
+  );
 # 4765 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
-CalculateCheckSum8(const UINT8 *Buffer, UINTN Length);
+CalculateCheckSum8 (
+  const UINT8 *Buffer,
+  UINTN Length
+  );
 # 4791 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-CalculateSum16(const UINT16 *Buffer, UINTN Length);
+CalculateSum16 (
+  const UINT16 *Buffer,
+  UINTN Length
+  );
 # 4818 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-CalculateCheckSum16(const UINT16 *Buffer, UINTN Length);
+CalculateCheckSum16 (
+  const UINT16 *Buffer,
+  UINTN Length
+  );
 # 4844 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-CalculateSum32(const UINT32 *Buffer, UINTN Length);
+CalculateSum32 (
+  const UINT32 *Buffer,
+  UINTN Length
+  );
 # 4871 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-CalculateCheckSum32(const UINT32 *Buffer, UINTN Length);
+CalculateCheckSum32 (
+  const UINT32 *Buffer,
+  UINTN Length
+  );
 # 4897 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-CalculateSum64(const UINT64 *Buffer, UINTN Length);
+CalculateSum64 (
+  const UINT64 *Buffer,
+  UINTN Length
+  );
 # 4924 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-CalculateCheckSum64(const UINT64 *Buffer, UINTN Length);
+CalculateCheckSum64 (
+  const UINT64 *Buffer,
+  UINTN Length
+  );
 # 4944 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-CalculateCrc32(void *Buffer, UINTN Length);
+CalculateCrc32 (
+  void *Buffer,
+  UINTN Length
+  );
 # 4960 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-CalculateCrc16Ansi(const void *Buffer, UINTN Length, UINT16 InitialValue);
+CalculateCrc16Ansi (
+  const void *Buffer,
+  UINTN Length,
+  UINT16 InitialValue
+  );
 # 4982 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-CalculateCrc32c(const void *Buffer, UINTN Length, UINT32 InitialValue);
+CalculateCrc32c (
+  const void *Buffer,
+  UINTN Length,
+  UINT32 InitialValue
+  );
 # 4999 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-CalculateCrc16CcittF(const void *Buffer, UINTN Length, UINT16 InitialValue);
+CalculateCrc16CcittF (
+  const void *Buffer,
+  UINTN Length,
+  UINT16 InitialValue
+  );
 # 5017 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
-typedef void (*SWITCH_STACK_ENTRY_POINT)(void *Context1, void *Context2);
+typedef
+void
+( *SWITCH_STACK_ENTRY_POINT)(
+  void *Context1 ,
+  void *Context2
+  );
 # 5031 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1029,9 +1595,12 @@ MemoryFence (
   void
   );
 # 5058 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
-__attribute__((returns_twice)) UINTN
+__attribute__((returns_twice))
+UINTN
 
-SetJump(BASE_LIBRARY_JUMP_BUFFER *JumpBuffer);
+SetJump (
+  BASE_LIBRARY_JUMP_BUFFER *JumpBuffer
+  );
 # 5081 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1040,11 +1609,19 @@ LongJump (
   UINTN Value
   );
 
+
+
+
+
 void
 
 EnableInterrupts (
   void
   );
+
+
+
+
 
 void
 
@@ -1054,7 +1631,14 @@ DisableInterrupts (
 # 5116 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-SaveAndDisableInterrupts(void);
+SaveAndDisableInterrupts (
+  void
+  );
+
+
+
+
+
 
 void
 
@@ -1064,11 +1648,15 @@ EnableDisableInterrupts (
 # 5143 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-GetInterruptState(void);
+GetInterruptState (
+  void
+  );
 # 5163 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-SetInterruptState(BOOLEAN InterruptState);
+SetInterruptState (
+  BOOLEAN InterruptState
+  );
 # 5176 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1106,16 +1694,40 @@ SpeculationBarrier (
 # 5276 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-TdCall(UINT64 Leaf, UINT64 Arg1, UINT64 Arg2, UINT64 Arg3, void *Results);
+TdCall (
+  UINT64 Leaf,
+  UINT64 Arg1,
+  UINT64 Arg2,
+  UINT64 Arg3,
+  void *Results
+  );
 # 5301 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-TdVmCall(UINT64 Leaf, UINT64 Arg1, UINT64 Arg2, UINT64 Arg3, UINT64 Arg4,
-         void *Results);
+TdVmCall (
+  UINT64 Leaf,
+  UINT64 Arg1,
+  UINT64 Arg2,
+  UINT64 Arg3,
+  UINT64 Arg4,
+  void *Results
+  );
+
+
+
+
+
+
 
 BOOLEAN
 
-TdIsEnabled(void);
+TdIsEnabled (
+  void
+  );
+
+
+
+
 
 typedef enum {
   PvalidatePageSize4K = 0,
@@ -1124,12 +1736,19 @@ typedef enum {
 # 5365 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmPvalidate(PVALIDATE_PAGE_SIZE PageSize, BOOLEAN Validate,
-             PHYSICAL_ADDRESS Address);
+AsmPvalidate (
+  PVALIDATE_PAGE_SIZE PageSize,
+  BOOLEAN Validate,
+  PHYSICAL_ADDRESS Address
+  );
 # 5400 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmRmpAdjust(UINT64 Rax, UINT64 Rcx, UINT64 Rdx);
+AsmRmpAdjust (
+  UINT64 Rax,
+  UINT64 Rcx,
+  UINT64 Rdx
+  );
 # 5415 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 typedef union {
   struct {
@@ -1151,6 +1770,11 @@ typedef union {
   } Bits;
   UINT16 Uint16;
 } IA32_FLAGS16;
+
+
+
+
+
 
 typedef union {
   struct {
@@ -1180,6 +1804,11 @@ typedef union {
   UINTN UintN;
 } IA32_EFLAGS32;
 
+
+
+
+
+
 typedef union {
   struct {
     UINT32 PE : 1;
@@ -1200,6 +1829,11 @@ typedef union {
   UINTN UintN;
 } IA32_CR0;
 
+
+
+
+
+
 typedef union {
   struct {
     UINT32 VME : 1;
@@ -1215,6 +1849,7 @@ typedef union {
     UINT32 OSFXSR : 1;
 
     UINT32 OSXMMEXCPT : 1;
+
 
     UINT32 UMIP : 1;
     UINT32 LA57 : 1;
@@ -1232,6 +1867,9 @@ typedef union {
   } Bits;
   UINTN UintN;
 } IA32_CR4;
+
+
+
 
 typedef union {
   struct {
@@ -1251,6 +1889,10 @@ typedef union {
   } Bits;
   UINT64 Uint64;
 } IA32_SEGMENT_DESCRIPTOR;
+
+
+
+
 
 typedef struct {
   UINT16 Limit;
@@ -1272,6 +1914,10 @@ typedef union {
     UINT64 Uint64_1;
   } Uint128;
 } IA32_IDT_GATE_DESCRIPTOR;
+
+
+
+
 
 typedef struct {
   UINT32 Reserved_0;
@@ -1308,9 +1954,18 @@ typedef union {
   } Uint128;
 } IA32_TSS_DESCRIPTOR;
 
+
+
+
+
+
+
 typedef struct {
   UINT8 Buffer[512];
 } IA32_FX_BUFFER;
+
+
+
 
 typedef struct {
   UINT32 Reserved1;
@@ -1375,6 +2030,9 @@ typedef union {
   IA32_BYTE_REGS H;
 } IA32_REGISTER_SET;
 
+
+
+
 typedef struct {
   IA32_REGISTER_SET *RealModeState;
   void *RealModeBuffer;
@@ -1382,16 +2040,30 @@ typedef struct {
   UINT32 ThunkAttributes;
 } THUNK_CONTEXT;
 # 5816 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
-typedef void(X86_ASSEMBLY_PATCH_LABEL)(void);
+typedef void (X86_ASSEMBLY_PATCH_LABEL) (
+  void
+  );
 # 5845 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmCpuid(UINT32 Index, UINT32 *Eax, UINT32 *Ebx, UINT32 *Ecx, UINT32 *Edx);
+AsmCpuid (
+  UINT32 Index,
+  UINT32 *Eax ,
+  UINT32 *Ebx ,
+  UINT32 *Ecx ,
+  UINT32 *Edx
+  );
 # 5887 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmCpuidEx(UINT32 Index, UINT32 SubIndex, UINT32 *Eax, UINT32 *Ebx, UINT32 *Ecx,
-           UINT32 *Edx);
+AsmCpuidEx (
+  UINT32 Index,
+  UINT32 SubIndex,
+  UINT32 *Eax ,
+  UINT32 *Ebx ,
+  UINT32 *Ecx ,
+  UINT32 *Edx
+  );
 # 5905 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1407,213 +2079,355 @@ AsmEnableCache (
 # 5938 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmReadMsr32(UINT32 Index);
+AsmReadMsr32 (
+  UINT32 Index
+  );
 # 5961 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmWriteMsr32(UINT32 Index, UINT32 Value);
+AsmWriteMsr32 (
+  UINT32 Index,
+  UINT32 Value
+  );
 # 5987 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrOr32(UINT32 Index, UINT32 OrData);
+AsmMsrOr32 (
+  UINT32 Index,
+  UINT32 OrData
+  );
 # 6013 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrAnd32(UINT32 Index, UINT32 AndData);
+AsmMsrAnd32 (
+  UINT32 Index,
+  UINT32 AndData
+  );
 # 6042 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrAndThenOr32(UINT32 Index, UINT32 AndData, UINT32 OrData);
+AsmMsrAndThenOr32 (
+  UINT32 Index,
+  UINT32 AndData,
+  UINT32 OrData
+  );
 # 6072 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrBitFieldRead32(UINT32 Index, UINTN StartBit, UINTN EndBit);
+AsmMsrBitFieldRead32 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 6105 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrBitFieldWrite32(UINT32 Index, UINTN StartBit, UINTN EndBit, UINT32 Value);
+AsmMsrBitFieldWrite32 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 Value
+  );
 # 6141 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrBitFieldOr32(UINT32 Index, UINTN StartBit, UINTN EndBit, UINT32 OrData);
+AsmMsrBitFieldOr32 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 OrData
+  );
 # 6177 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrBitFieldAnd32(UINT32 Index, UINTN StartBit, UINTN EndBit, UINT32 AndData);
+AsmMsrBitFieldAnd32 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 AndData
+  );
 # 6217 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmMsrBitFieldAndThenOr32(UINT32 Index, UINTN StartBit, UINTN EndBit,
-                          UINT32 AndData, UINT32 OrData);
+AsmMsrBitFieldAndThenOr32 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT32 AndData,
+  UINT32 OrData
+  );
 # 6241 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMsr64(UINT32 Index);
+AsmReadMsr64 (
+  UINT32 Index
+  );
 # 6264 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmWriteMsr64(UINT32 Index, UINT64 Value);
+AsmWriteMsr64 (
+  UINT32 Index,
+  UINT64 Value
+  );
 # 6289 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrOr64(UINT32 Index, UINT64 OrData);
+AsmMsrOr64 (
+  UINT32 Index,
+  UINT64 OrData
+  );
 # 6314 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrAnd64(UINT32 Index, UINT64 AndData);
+AsmMsrAnd64 (
+  UINT32 Index,
+  UINT64 AndData
+  );
 # 6342 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrAndThenOr64(UINT32 Index, UINT64 AndData, UINT64 OrData);
+AsmMsrAndThenOr64 (
+  UINT32 Index,
+  UINT64 AndData,
+  UINT64 OrData
+  );
 # 6372 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrBitFieldRead64(UINT32 Index, UINTN StartBit, UINTN EndBit);
+AsmMsrBitFieldRead64 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 6404 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrBitFieldWrite64(UINT32 Index, UINTN StartBit, UINTN EndBit, UINT64 Value);
+AsmMsrBitFieldWrite64 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 Value
+  );
 # 6440 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrBitFieldOr64(UINT32 Index, UINTN StartBit, UINTN EndBit, UINT64 OrData);
+AsmMsrBitFieldOr64 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 OrData
+  );
 # 6476 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrBitFieldAnd64(UINT32 Index, UINTN StartBit, UINTN EndBit, UINT64 AndData);
+AsmMsrBitFieldAnd64 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 AndData
+  );
 # 6515 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmMsrBitFieldAndThenOr64(UINT32 Index, UINTN StartBit, UINTN EndBit,
-                          UINT64 AndData, UINT64 OrData);
+AsmMsrBitFieldAndThenOr64 (
+  UINT32 Index,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINT64 AndData,
+  UINT64 OrData
+  );
 # 6535 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadEflags(void);
+AsmReadEflags (
+  void
+  );
 # 6551 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadCr0(void);
+AsmReadCr0 (
+  void
+  );
 # 6567 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadCr2(void);
+AsmReadCr2 (
+  void
+  );
 # 6583 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadCr3(void);
+AsmReadCr3 (
+  void
+  );
 # 6599 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadCr4(void);
+AsmReadCr4 (
+  void
+  );
 # 6616 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteCr0(UINTN Cr0);
+AsmWriteCr0 (
+  UINTN Cr0
+  );
 # 6633 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteCr2(UINTN Cr2);
+AsmWriteCr2 (
+  UINTN Cr2
+  );
 # 6650 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteCr3(UINTN Cr3);
+AsmWriteCr3 (
+  UINTN Cr3
+  );
 # 6667 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteCr4(UINTN Cr4);
+AsmWriteCr4 (
+  UINTN Cr4
+  );
 # 6683 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr0(void);
+AsmReadDr0 (
+  void
+  );
 # 6699 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr1(void);
+AsmReadDr1 (
+  void
+  );
 # 6715 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr2(void);
+AsmReadDr2 (
+  void
+  );
 # 6731 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr3(void);
+AsmReadDr3 (
+  void
+  );
 # 6747 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr4(void);
+AsmReadDr4 (
+  void
+  );
 # 6763 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr5(void);
+AsmReadDr5 (
+  void
+  );
 # 6779 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr6(void);
+AsmReadDr6 (
+  void
+  );
 # 6795 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmReadDr7(void);
+AsmReadDr7 (
+  void
+  );
 # 6812 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr0(UINTN Dr0);
+AsmWriteDr0 (
+  UINTN Dr0
+  );
 # 6829 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr1(UINTN Dr1);
+AsmWriteDr1 (
+  UINTN Dr1
+  );
 # 6846 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr2(UINTN Dr2);
+AsmWriteDr2 (
+  UINTN Dr2
+  );
 # 6863 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr3(UINTN Dr3);
+AsmWriteDr3 (
+  UINTN Dr3
+  );
 # 6880 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr4(UINTN Dr4);
+AsmWriteDr4 (
+  UINTN Dr4
+  );
 # 6897 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr5(UINTN Dr5);
+AsmWriteDr5 (
+  UINTN Dr5
+  );
 # 6914 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr6(UINTN Dr6);
+AsmWriteDr6 (
+  UINTN Dr6
+  );
 # 6931 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmWriteDr7(UINTN Dr7);
+AsmWriteDr7 (
+  UINTN Dr7
+  );
 # 6946 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadCs(void);
+AsmReadCs (
+  void
+  );
 # 6961 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadDs(void);
+AsmReadDs (
+  void
+  );
 # 6976 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadEs(void);
+AsmReadEs (
+  void
+  );
 # 6991 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadFs(void);
+AsmReadFs (
+  void
+  );
 # 7006 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadGs(void);
+AsmReadGs (
+  void
+  );
 # 7021 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadSs(void);
+AsmReadSs (
+  void
+  );
 # 7036 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadTr(void);
+AsmReadTr (
+  void
+  );
 # 7053 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1641,7 +2455,9 @@ AsmWriteIdtr (
 # 7119 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
-AsmReadLdtr(void);
+AsmReadLdtr (
+  void
+  );
 # 7134 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1663,35 +2479,51 @@ AsmFxRestore (
 # 7188 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm0(void);
+AsmReadMm0 (
+  void
+  );
 # 7203 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm1(void);
+AsmReadMm1 (
+  void
+  );
 # 7218 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm2(void);
+AsmReadMm2 (
+  void
+  );
 # 7233 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm3(void);
+AsmReadMm3 (
+  void
+  );
 # 7248 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm4(void);
+AsmReadMm4 (
+  void
+  );
 # 7263 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm5(void);
+AsmReadMm5 (
+  void
+  );
 # 7278 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm6(void);
+AsmReadMm6 (
+  void
+  );
 # 7293 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadMm7(void);
+AsmReadMm7 (
+  void
+  );
 # 7308 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1743,19 +2575,30 @@ AsmWriteMm7 (
 # 7428 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadTsc(void);
+AsmReadTsc (
+  void
+  );
 # 7445 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmReadPmc(UINT32 Index);
+AsmReadPmc (
+  UINT32 Index
+  );
 # 7467 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmMonitor(UINTN Eax, UINTN Ecx, UINTN Edx);
+AsmMonitor (
+  UINTN Eax,
+  UINTN Ecx,
+  UINTN Edx
+  );
 # 7489 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
-AsmMwait(UINTN Eax, UINTN Ecx);
+AsmMwait (
+  UINTN Eax,
+  UINTN Ecx
+  );
 # 7503 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1771,7 +2614,9 @@ AsmInvd (
 # 7537 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void *
 
-AsmFlushCacheLine(void *LinearAddress);
+AsmFlushCacheLine (
+  void *LinearAddress
+  );
 # 7580 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1838,15 +2683,26 @@ AsmPrepareAndThunk16 (
 # 7862 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-AsmRdRand16(UINT16 *Rand);
+AsmRdRand16 (
+  UINT16 *Rand
+  );
 # 7879 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-AsmRdRand32(UINT32 *Rand);
+AsmRdRand32 (
+  UINT32 *Rand
+  );
 # 7896 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
-AsmRdRand64(UINT64 *Rand);
+AsmRdRand64 (
+  UINT64 *Rand
+  );
+
+
+
+
+
 
 void
 
@@ -1862,17 +2718,25 @@ AsmLfence (
 # 7936 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmXGetBv(UINT32 Index);
+AsmXGetBv (
+  UINT32 Index
+  );
 # 7959 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
-AsmXSetBv(UINT32 Index, UINT64 Value);
+AsmXSetBv (
+  UINT32 Index,
+  UINT64 Value
+  );
 # 7973 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmVmgExit (
   void
   );
+
+
+
 
 typedef struct {
   void *Caa;
@@ -1891,7 +2755,9 @@ typedef struct {
 # 8012 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
-AsmVmgExitSvsm(SVSM_CALL_DATA *SvsmCallData);
+AsmVmgExitSvsm (
+  SVSM_CALL_DATA *SvsmCallData
+  );
 # 8052 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
@@ -1905,31 +2771,58 @@ PatchInstructionX86 (
 # 33 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-CopyMem(void *DestinationBuffer, const void *SourceBuffer, UINTN Length);
+CopyMem (
+  void *DestinationBuffer,
+  const void *SourceBuffer,
+  UINTN Length
+  );
 # 55 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-SetMem(void *Buffer, UINTN Length, UINT8 Value);
+SetMem (
+  void *Buffer,
+  UINTN Length,
+  UINT8 Value
+  );
 # 82 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-SetMem16(void *Buffer, UINTN Length, UINT16 Value);
+SetMem16 (
+  void *Buffer,
+  UINTN Length,
+  UINT16 Value
+  );
 # 109 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-SetMem32(void *Buffer, UINTN Length, UINT32 Value);
+SetMem32 (
+  void *Buffer,
+  UINTN Length,
+  UINT32 Value
+  );
 # 136 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-SetMem64(void *Buffer, UINTN Length, UINT64 Value);
+SetMem64 (
+  void *Buffer,
+  UINTN Length,
+  UINT64 Value
+  );
 # 163 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-SetMemN(void *Buffer, UINTN Length, UINTN Value);
+SetMemN (
+  void *Buffer,
+  UINTN Length,
+  UINTN Value
+  );
 # 185 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-ZeroMem(void *Buffer, UINTN Length);
+ZeroMem (
+  void *Buffer,
+  UINTN Length
+  );
 # 214 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 INTN
 
@@ -1941,43 +2834,78 @@ CompareMem (
 # 241 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-ScanMem8(const void *Buffer, UINTN Length, UINT8 Value);
+ScanMem8 (
+  const void *Buffer,
+  UINTN Length,
+  UINT8 Value
+  );
 # 270 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-ScanMem16(const void *Buffer, UINTN Length, UINT16 Value);
+ScanMem16 (
+  const void *Buffer,
+  UINTN Length,
+  UINT16 Value
+  );
 # 299 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-ScanMem32(const void *Buffer, UINTN Length, UINT32 Value);
+ScanMem32 (
+  const void *Buffer,
+  UINTN Length,
+  UINT32 Value
+  );
 # 328 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-ScanMem64(const void *Buffer, UINTN Length, UINT64 Value);
+ScanMem64 (
+  const void *Buffer,
+  UINTN Length,
+  UINT64 Value
+  );
 # 357 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-ScanMemN(const void *Buffer, UINTN Length, UINTN Value);
+ScanMemN (
+  const void *Buffer,
+  UINTN Length,
+  UINTN Value
+  );
 # 380 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 GUID *
 
-CopyGuid(GUID *DestinationGuid, const GUID *SourceGuid);
+CopyGuid (
+  GUID *DestinationGuid,
+  const GUID *SourceGuid
+  );
 # 403 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 BOOLEAN
 
-CompareGuid(const GUID *Guid1, const GUID *Guid2);
+CompareGuid (
+  const GUID *Guid1,
+  const GUID *Guid2
+  );
 # 432 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 void *
 
-ScanGuid(const void *Buffer, UINTN Length, const GUID *Guid);
+ScanGuid (
+  const void *Buffer,
+  UINTN Length,
+  const GUID *Guid
+  );
 # 454 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 BOOLEAN
 
-IsZeroGuid(const GUID *Guid);
+IsZeroGuid (
+  const GUID *Guid
+  );
 # 476 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/BaseMemoryLib.h"
 BOOLEAN
 
-IsZeroBuffer(const void *Buffer, UINTN Length);
+IsZeroBuffer (
+  const void *Buffer,
+  UINTN Length
+  );
 # 15 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h" 2
 # 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h" 1
 # 126 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h"
@@ -2015,80 +2943,134 @@ DebugAssert (
 # 226 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h"
 void *
 
-DebugClearMemory(void *Buffer, UINTN Length);
+DebugClearMemory (
+  void *Buffer,
+  UINTN Length
+  );
 # 243 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h"
 BOOLEAN
 
-DebugAssertEnabled(void);
+DebugAssertEnabled (
+  void
+  );
 # 259 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h"
 BOOLEAN
 
-DebugPrintEnabled(void);
+DebugPrintEnabled (
+  void
+  );
 # 275 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h"
 BOOLEAN
 
-DebugCodeEnabled(void);
+DebugCodeEnabled (
+  void
+  );
 # 291 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h"
 BOOLEAN
 
-DebugClearMemoryEnabled(void);
+DebugClearMemoryEnabled (
+  void
+  );
 # 306 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/DebugLib.h"
 BOOLEAN
 
-DebugPrintLevelEnabled(const UINTN ErrorLevel);
+DebugPrintLevelEnabled (
+  const UINTN ErrorLevel
+  );
 # 16 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h" 2
 # 35 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathLShiftU64(UINT64 Operand, UINTN Count);
+InternalMathLShiftU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 55 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathRShiftU64(UINT64 Operand, UINTN Count);
+InternalMathRShiftU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 75 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathARShiftU64(UINT64 Operand, UINTN Count);
+InternalMathARShiftU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 96 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathLRotU64(UINT64 Operand, UINTN Count);
+InternalMathLRotU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 117 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathRRotU64(UINT64 Operand, UINTN Count);
+InternalMathRRotU64 (
+  UINT64 Operand,
+  UINTN Count
+  );
 # 136 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathSwapBytes64(UINT64 Operand);
+InternalMathSwapBytes64 (
+  UINT64 Operand
+  );
 # 156 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathMultU64x32(UINT64 Multiplicand, UINT32 Multiplier);
+InternalMathMultU64x32 (
+  UINT64 Multiplicand,
+  UINT32 Multiplier
+  );
 # 177 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathMultU64x64(UINT64 Multiplicand, UINT64 Multiplier);
+InternalMathMultU64x64 (
+  UINT64 Multiplicand,
+  UINT64 Multiplier
+  );
 # 198 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathDivU64x32(UINT64 Dividend, UINT32 Divisor);
+InternalMathDivU64x32 (
+  UINT64 Dividend,
+  UINT32 Divisor
+  );
 # 219 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT32
 
-InternalMathModU64x32(UINT64 Dividend, UINT32 Divisor);
+InternalMathModU64x32 (
+  UINT64 Dividend,
+  UINT32 Divisor
+  );
 # 243 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathDivRemU64x32(UINT64 Dividend, UINT32 Divisor, UINT32 *Remainder);
+InternalMathDivRemU64x32 (
+  UINT64 Dividend,
+  UINT32 Divisor,
+  UINT32 *Remainder
+  );
 # 268 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINT64
 
-InternalMathDivRemU64x64(UINT64 Dividend, UINT64 Divisor, UINT64 *Remainder);
+InternalMathDivRemU64x64 (
+  UINT64 Dividend,
+  UINT64 Divisor,
+  UINT64 *Remainder
+  );
 # 293 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 INT64
 
-InternalMathDivRemS64x64(INT64 Dividend, INT64 Divisor, INT64 *Remainder);
+InternalMathDivRemS64x64 (
+  INT64 Dividend,
+  INT64 Divisor,
+  INT64 *Remainder
+  );
 # 325 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 void
 
@@ -2102,15 +3084,29 @@ InternalSwitchStack (
 # 347 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINTN
 
-BitFieldReadUint(UINTN Operand, UINTN StartBit, UINTN EndBit);
+BitFieldReadUint (
+  UINTN Operand,
+  UINTN StartBit,
+  UINTN EndBit
+  );
 # 371 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINTN
 
-BitFieldOrUint(UINTN Operand, UINTN StartBit, UINTN EndBit, UINTN OrData);
+BitFieldOrUint (
+  UINTN Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINTN OrData
+  );
 # 396 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINTN
 
-BitFieldAndUint(UINTN Operand, UINTN StartBit, UINTN EndBit, UINTN AndData);
+BitFieldAndUint (
+  UINTN Operand,
+  UINTN StartBit,
+  UINTN EndBit,
+  UINTN AndData
+  );
 # 416 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 void
 
@@ -2127,27 +3123,39 @@ InternalLongJump (
 # 453 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 BOOLEAN
 
-InternalIsDecimalDigitCharacter(CHAR16 Char);
+InternalIsDecimalDigitCharacter (
+  CHAR16 Char
+  );
 # 472 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINTN
 
-InternalHexCharToUintn(CHAR16 Char);
+InternalHexCharToUintn (
+  CHAR16 Char
+  );
 # 492 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 BOOLEAN
 
-InternalIsHexaDecimalDigitCharacter(CHAR16 Char);
+InternalIsHexaDecimalDigitCharacter (
+  CHAR16 Char
+  );
 # 511 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 BOOLEAN
 
-InternalAsciiIsDecimalDigitCharacter(CHAR8 Char);
+InternalAsciiIsDecimalDigitCharacter (
+  CHAR8 Char
+  );
 # 531 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 BOOLEAN
 
-InternalAsciiIsHexaDecimalDigitCharacter(CHAR8 Char);
+InternalAsciiIsHexaDecimalDigitCharacter (
+  CHAR8 Char
+  );
 # 550 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 UINTN
 
-InternalAsciiHexCharToUintn(CHAR8 Char);
+InternalAsciiHexCharToUintn (
+  CHAR8 Char
+  );
 # 570 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 void
 
@@ -2225,237 +3233,336 @@ InternalX86DisablePaging64 (
 # 816 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 BOOLEAN
 
-InternalX86RdRand16(UINT16 *Rand);
+InternalX86RdRand16 (
+  UINT16 *Rand
+  );
 # 831 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 BOOLEAN
 
-InternalX86RdRand32(UINT32 *Rand);
+InternalX86RdRand32 (
+  UINT32 *Rand
+  );
 # 847 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/BaseLibInternals.h"
 BOOLEAN
 
-InternalX86RdRand64(UINT64 *Rand);
+InternalX86RdRand64 (
+  UINT64 *Rand
+  );
 # 3 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/X64/Thunk16.nasm" 2
 
+;------------------------------------------------------------------------------
 ;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --;
+; Copyright (c) 2006 - 2018, Intel Corporation. All rights reserved.<BR>
+; SPDX-License-Identifier: BSD-2-Clause-Patent
 ;
-Copyright(c) 2006 - 2018, Intel Corporation.All rights reserved.<BR>;
-SPDX - License - Identifier : BSD - 2 - Clause - Patent;
+; Module Name:
 ;
-Module Name :;
+; Thunk.asm
 ;
-Thunk.asm;
+; Abstract:
 ;
-Abstract :;
+; Real mode thunk
 ;
-Real mode thunk;
-;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+;------------------------------------------------------------------------------
 
-                                                                                                                  global m16Size global mThunk16Attr
-                                                                                                                      global m16Gdt global m16GdtrBase
-                                                                                                                          global mTransition
-                                                                                                                              global m16Start
+global m16Size
+global mThunk16Attr
+global m16Gdt
+global m16GdtrBase
+global mTransition
+global m16Start
 
-                                                                                                                                  struc IA32_REGS
+struc IA32_REGS
 
-                                                                                                                                      ._EDI
-    : resd 1 ._ESI : resd 1 ._EBP : resd 1 ._ESP : resd 1 ._EBX : resd 1 ._EDX
-    : resd 1 ._ECX : resd 1 ._EAX : resd 1 ._DS : resw 1 ._ES : resw 1 ._FS
-    : resw 1 ._GS : resw 1 ._EFLAGS : resq 1 ._EIP : resd 1 ._CS : resw 1 ._SS
-    : resw 1 .size :
+  ._EDI: resd 1
+  ._ESI: resd 1
+  ._EBP: resd 1
+  ._ESP: resd 1
+  ._EBX: resd 1
+  ._EDX: resd 1
+  ._ECX: resd 1
+  ._EAX: resd 1
+  ._DS: resw 1
+  ._ES: resw 1
+  ._FS: resw 1
+  ._GS: resw 1
+  ._EFLAGS: resq 1
+  ._EIP: resd 1
+  ._CS: resw 1
+  ._SS: resw 1
+  .size:
 
-    endstruc
+endstruc
 
-        SECTION.data
+SECTION .data
 
+;
+; These are global constant to convey information to C code.
+;
+m16Size DW InternalAsmThunk16 - m16Start
+mThunk16Attr DW _BackFromUserCode.ThunkAttrEnd - 4 - m16Start
+m16Gdt DW _NullSeg - m16Start
+m16GdtrBase DW _16GdtrBase - m16Start
+mTransition DW _EntryPoint - m16Start
+
+SECTION .text
+
+m16Start:
+
+SavedGdt:
+            dw 0
+            dq 0
+
+;------------------------------------------------------------------------------
+; _BackFromUserCode() takes control in real mode after 'retf' has been executed
+; by user code. It will be shadowed to somewhere in memory below 1MB.
+;------------------------------------------------------------------------------
+_BackFromUserCode:
     ;
-;
-These are global constant to convey information to C code.;
-m16Size DW InternalAsmThunk16 -
-    m16Start mThunk16Attr DW _BackFromUserCode.ThunkAttrEnd - 4 -
-    m16Start m16Gdt DW _NullSeg - m16Start m16GdtrBase DW _16GdtrBase -
-    m16Start mTransition DW _EntryPoint -
-    m16Start
-
-        SECTION.text
-
-            m16Start :
-
-    SavedGdt : dw 0 dq 0
-
+    ; The order of saved registers on the stack matches the order they appears
+    ; in IA32_REGS structure. This facilitates wrapper function to extract them
+    ; into that structure.
     ;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --;
-_BackFromUserCode() takes control in real mode after 'retf' has been executed;
-by user code.It will be shadowed to somewhere in memory below 1MB.;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --_BackFromUserCode
-    :;
-;
-The order of saved registers on the stack matches the order they appears;
-in IA32_REGS structure.This facilitates wrapper function to extract them;
-into that structure.;
-BITS 16 push ss push cs;
-;
-Note : We can't use o32 on the next instruction because of a bug ;
-in NASM 2.09.04 through 2.10rc1.;
-call dword.Base;
-push eip.Base : push dword 0;
-reserved high order 32 bits of EFlags pushfd cli;
-disable interrupts push gs push fs push es push ds pushad mov edx,
-    strict dword 0 .ThunkAttrEnd : test dl, 0x00000002 jz.1 mov ax,
-    2401h int 15h cli;
-disable interrupts jnc.2 .1 : test dl,
-                              0x00000004 jz.2 in al,
-                              92h or al,
-                              2 out 92h,
-                              al;
-deactivate A20M #.2
-    : xor eax,
-      eax mov ax,
-      ss lea ebp,
-      [esp + IA32_REGS.size] mov[bp - IA32_REGS.size + IA32_REGS._ESP],
-      ebp mov ebx,
-      [bp - IA32_REGS.size + IA32_REGS._EIP] shl eax,
-      4;
-shl eax, 4 add ebp, eax;
-add ebp, eax mov eax, cs shl eax, 4 lea eax,
-    [eax + ebx + (.X64JmpEnd -.Base)] mov [cs:bx + (.X64JmpEnd - 6 -.Base)],
-    eax mov eax, strict dword 0 .SavedCr4End : mov cr4,
-    eax o32 lgdt [cs:bx + (SavedGdt -.Base)] mov ecx, 0c0000080h rdmsr or ah,
-    1 wrmsr mov eax, strict dword 0 .SavedCr0End : mov cr0,
-    eax jmp 0 : strict dword 0 .X64JmpEnd : BITS 64 nop mov rsp,
-    strict qword 0 .SavedSpEnd : nop ret
-
-                                     _EntryPoint : DD _ToUserCode -
-        m16Start DW CODE16 _16Gdtr
-    : DW GDT_SIZE -
-      1 _16GdtrBase : DQ 0 _16Idtr : DW(1 << 10) - 1 DD 0
-
+BITS 16
+    push ss
+    push cs
     ;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --;
-_ToUserCode() takes control in real mode before passing control to user code.;
-It will be shadowed to somewhere in memory below 1MB.;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --_ToUserCode
-    : BITS 16 mov ss,
-    dx;
-set new segment selectors mov ds, dx mov es, dx mov fs, dx mov gs, dx mov ecx,
-    0c0000080h mov cr0, eax;
-real mode starts at next instruction rdmsr and ah, ~1 wrmsr mov cr4, ebp mov ss,
-    si;
-set up 16 - bit stack segment mov esp, ebx;
-set up 16 - bit stack pointer call dword.Base;
-push eip.Base : pop ebp;
-ebp < -address of.Base push word[dword esp + IA32_REGS.size + 2] lea ax,
-    [bp + (.RealMode -.Base)] push ax retf;
-execution begins at next instruction.RealMode :
-
-    o32 lidt [cs:bp + (_16Idtr -.Base)]
-
-    popad pop ds pop es pop fs pop gs popfd lea esp,
-    [esp + 4];
-skip high order 32 bits of EFlags
-
-    o32 retf;
-transfer control to user code
-
-        ALIGN 8
-
-    CODE16 equ _16Code -
-    $ DATA16 equ _16Data - $ DATA32 equ _32Data -
-    $
-
-        _NullSeg DQ 0 _16Code : DW -
-                                1 DW 0 DB 0 DB 9bh DB 8fh;
-16 - bit segment, 4GB limit DB 0 _16Data : DW - 1 DW 0 DB 0 DB 93h DB 8fh;
-16 - bit segment, 4GB limit DB 0 _32Data : DW - 1 DW 0 DB 0 DB 93h DB 0cfh;
-16 - bit segment, 4GB limit DB 0
-
-                      GDT_SIZE equ $ -
-                      _NullSeg
-
+    ; Note: We can't use o32 on the next instruction because of a bug
+    ; in NASM 2.09.04 through 2.10rc1.
     ;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --;
-IA32_REGISTER_SET *;
-;
-InternalAsmThunk16(; IA32_REGISTER_SET * RegisterSet, ; void *Transition;);
-;
--- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --global
-                                                                                                                      InternalAsmThunk16
-                                                                                                                          InternalAsmThunk16
-    : BITS 64 push rbp push rbx push rsi push rdi
+    call dword .Base ; push eip
+.Base:
+    push dword 0 ; reserved high order 32 bits of EFlags
+    pushfd
+    cli ; disable interrupts
+    push gs
+    push fs
+    push es
+    push ds
+    pushad
+    mov edx, strict dword 0
+.ThunkAttrEnd:
+    test dl, 0x00000002
+    jz .1
+    mov ax, 2401h
+    int 15h
+    cli ; disable interrupts
+    jnc .2
+.1:
+    test dl, 0x00000004
+    jz .2
+    in al, 92h
+    or al, 2
+    out 92h, al ; deactivate A20M#
+.2:
+    xor eax, eax
+    mov ax, ss
+    lea ebp, [esp + IA32_REGS.size]
+    mov [bp - IA32_REGS.size + IA32_REGS._ESP], ebp
+    mov ebx, [bp - IA32_REGS.size + IA32_REGS._EIP]
+    shl eax, 4 ; shl eax, 4
+    add ebp, eax ; add ebp, eax
+    mov eax, cs
+    shl eax, 4
+    lea eax, [eax + ebx + (.X64JmpEnd - .Base)]
+    mov [cs:bx + (.X64JmpEnd - 6 - .Base)], eax
+    mov eax, strict dword 0
+.SavedCr4End:
+    mov cr4, eax
+o32 lgdt [cs:bx + (SavedGdt - .Base)]
+    mov ecx, 0c0000080h
+    rdmsr
+    or ah, 1
+    wrmsr
+    mov eax, strict dword 0
+.SavedCr0End:
+    mov cr0, eax
+    jmp 0:strict dword 0
+.X64JmpEnd:
+BITS 64
+    nop
+    mov rsp, strict qword 0
+.SavedSpEnd:
+    nop
+    ret
 
-          mov ebx,
-    ds push rbx;
-Save ds segment register on the stack mov ebx, es push rbx;
-Save es segment register on the stack mov ebx, ss push rbx;
-Save ss segment register on the stack
+_EntryPoint:
+        DD _ToUserCode - m16Start
+        DW CODE16
+_16Gdtr:
+        DW GDT_SIZE - 1
+_16GdtrBase:
+        DQ 0
+_16Idtr:
+        DW (1 << 10) - 1
+        DD 0
 
-    push fs push gs mov rsi,
-    rcx movzx r8d, word[rsi + IA32_REGS._SS] mov edi,
-    [rsi + IA32_REGS._ESP] lea rdi, [edi - (IA32_REGS.size + 4)] imul eax, r8d,
-    16;
-eax < -r8d(stack segment) * 16 mov ebx, edi; ebx <- stack for 16-bit code
+;------------------------------------------------------------------------------
+; _ToUserCode() takes control in real mode before passing control to user code.
+; It will be shadowed to somewhere in memory below 1MB.
+;------------------------------------------------------------------------------
+_ToUserCode:
+BITS 16
+    mov ss, dx ; set new segment selectors
+    mov ds, dx
+    mov es, dx
+    mov fs, dx
+    mov gs, dx
+    mov ecx, 0c0000080h
+    mov cr0, eax ; real mode starts at next instruction
+    rdmsr
+    and ah, ~1
+    wrmsr
+    mov cr4, ebp
+    mov ss, si ; set up 16-bit stack segment
+    mov esp, ebx ; set up 16-bit stack pointer
+    call dword .Base ; push eip
+.Base:
+    pop ebp ; ebp <- address of .Base
+    push word [dword esp + IA32_REGS.size + 2]
+    lea ax, [bp + (.RealMode - .Base)]
+    push ax
+    retf ; execution begins at next instruction
+.RealMode:
+
+o32 lidt [cs:bp + (_16Idtr - .Base)]
+
+    popad
+    pop ds
+    pop es
+    pop fs
+    pop gs
+    popfd
+    lea esp, [esp + 4] ; skip high order 32 bits of EFlags
+
+o32 retf ; transfer control to user code
+
+ALIGN 8
+
+CODE16 equ _16Code - $
+DATA16 equ _16Data - $
+DATA32 equ _32Data - $
+
+_NullSeg DQ 0
+_16Code:
+            DW -1
+            DW 0
+            DB 0
+            DB 9bh
+            DB 8fh ; 16-bit segment, 4GB limit
+            DB 0
+_16Data:
+            DW -1
+            DW 0
+            DB 0
+            DB 93h
+            DB 8fh ; 16-bit segment, 4GB limit
+            DB 0
+_32Data:
+            DW -1
+            DW 0
+            DB 0
+            DB 93h
+            DB 0cfh ; 16-bit segment, 4GB limit
+            DB 0
+
+GDT_SIZE equ $ - _NullSeg
+
+;------------------------------------------------------------------------------
+; IA32_REGISTER_SET *
+;
+; InternalAsmThunk16 (
+; IA32_REGISTER_SET *RegisterSet,
+; void *Transition
+; );
+;------------------------------------------------------------------------------
+global InternalAsmThunk16
+InternalAsmThunk16:
+BITS 64
+    push rbp
+    push rbx
+    push rsi
+    push rdi
+
+    mov ebx, ds
+    push rbx ; Save ds segment register on the stack
+    mov ebx, es
+    push rbx ; Save es segment register on the stack
+    mov ebx, ss
+    push rbx ; Save ss segment register on the stack
+
+    push fs
+    push gs
+    mov rsi, rcx
+    movzx r8d, word [rsi + IA32_REGS._SS]
+    mov edi, [rsi + IA32_REGS._ESP]
+    lea rdi, [edi - (IA32_REGS.size + 4)]
+    imul eax, r8d, 16 ; eax <- r8d(stack segment) * 16
+    mov ebx, edi ; ebx <- stack for 16-bit code
     push IA32_REGS.size / 4
-    add edi, eax ;
-edi < -linear address of 16 - bit stack pop rcx rep movsd;
-copy RegSet lea ecx, [rdx + (_BackFromUserCode.SavedCr4End - m16Start)] mov eax,
-    edx;
-eax < -transition code address and edx, 0fh shl eax, 12;
-segment address in high order 16 bits lea ax,
-    [rdx + (_BackFromUserCode - m16Start)];
-offset address stosd;
-[edi] < -return address of user code
+    add edi, eax ; edi <- linear address of 16-bit stack
+    pop rcx
+    rep movsd ; copy RegSet
+    lea ecx, [rdx + (_BackFromUserCode.SavedCr4End - m16Start)]
+    mov eax, edx ; eax <- transition code address
+    and edx, 0fh
+    shl eax, 12 ; segment address in high order 16 bits
+    lea ax, [rdx + (_BackFromUserCode - m16Start)] ; offset address
+    stosd ; [edi] <- return address of user code
 
-            sgdt[rsp + 60h];
-save GDT stack in argument space movzx r10, word[rsp + 60h];
-r10 < -GDT limit lea r11,
-    [rcx + (InternalAsmThunk16 - _BackFromUserCode.SavedCr4End) + 0xf] and r11,
-    ~0xf;
-r11 < -16 - byte aligned shadowed GDT table in real mode buffer
+    sgdt [rsp + 60h] ; save GDT stack in argument space
+    movzx r10, word [rsp + 60h] ; r10 <- GDT limit
+    lea r11, [rcx + (InternalAsmThunk16 - _BackFromUserCode.SavedCr4End) + 0xf]
+    and r11, ~0xf ; r11 <- 16-byte aligned shadowed GDT table in real mode buffer
 
-                mov[rcx + (SavedGdt - _BackFromUserCode.SavedCr4End)],
-    r10w;
-save the limit of shadowed GDT table
-    mov[rcx + (SavedGdt - _BackFromUserCode.SavedCr4End) + 2],
-    r11;
-save the base address of shadowed GDT table
+    mov [rcx + (SavedGdt - _BackFromUserCode.SavedCr4End)], r10w ; save the limit of shadowed GDT table
+    mov [rcx + (SavedGdt - _BackFromUserCode.SavedCr4End) + 2], r11 ; save the base address of shadowed GDT table
 
-    mov rsi,
-    [rsp + 62h];
-rsi < -the original GDT base address xchg rcx, r10;
-save rcx to r10 and initialize rcx to be the limit of GDT table inc rcx;
-rcx < -the size of memory to copy xchg rdi, r11;
-save rdi to r11 and initialize rdi to the base address of shadowed GDT table rep
-    movsb;
-perform memory copy to shadow GDT table mov rcx, r10;
-restore the orignal rcx before memory copy mov rdi, r11;
-restore the original rdi before memory copy
+    mov rsi, [rsp + 62h] ; rsi <- the original GDT base address
+    xchg rcx, r10 ; save rcx to r10 and initialize rcx to be the limit of GDT table
+    inc rcx ; rcx <- the size of memory to copy
+    xchg rdi, r11 ; save rdi to r11 and initialize rdi to the base address of shadowed GDT table
+    rep movsb ; perform memory copy to shadow GDT table
+    mov rcx, r10 ; restore the orignal rcx before memory copy
+    mov rdi, r11 ; restore the original rdi before memory copy
 
-    sidt[rsp + 50h];
-save IDT stack in argument space mov rax,
-    cr0 mov[rcx + (_BackFromUserCode.SavedCr0End - 4 -
-                   _BackFromUserCode.SavedCr4End)],
-    eax and eax, 7ffffffeh;
-clear PE, PG bits mov rbp, cr4 mov[rcx - 4], ebp;
-save CR4 in _BackFromUserCode.SavedCr4End - 4 and ebp, ~30h;
-clear PAE, PSE bits mov esi, r8d;
-esi < -16 - bit stack segment push DATA32 pop rdx;
-rdx < -32 - bit data segment selector
-                lgdt[rcx + (_16Gdtr - _BackFromUserCode.SavedCr4End)] mov ss,
-    edx pushfq lea edx, [rdx + DATA16 - DATA32] lea r8,
-    [REL.RetFromRealMode] push r8 mov r8d,
-    cs mov[rcx +
-           (_BackFromUserCode.X64JmpEnd - 2 - _BackFromUserCode.SavedCr4End)],
-    r8w mov[rcx +
-            (_BackFromUserCode.SavedSpEnd - 8 - _BackFromUserCode.SavedCr4End)],
-    rsp jmp dword far[rcx + (_EntryPoint - _BackFromUserCode.SavedCr4End)]
-        .RetFromRealMode : popfq lgdt[rsp + 60h];
-restore protected mode GDTR lidt[rsp + 50h];
-restore protected mode IDTR lea eax,
-    [rbp - IA32_REGS.size] pop gs pop fs pop rbx mov ss, ebx pop rbx mov es,
-    ebx pop rbx mov ds,
-    ebx
+    sidt [rsp + 50h] ; save IDT stack in argument space
+    mov rax, cr0
+    mov [rcx + (_BackFromUserCode.SavedCr0End - 4 - _BackFromUserCode.SavedCr4End)], eax
+    and eax, 7ffffffeh ; clear PE, PG bits
+    mov rbp, cr4
+    mov [rcx - 4], ebp ; save CR4 in _BackFromUserCode.SavedCr4End - 4
+    and ebp, ~30h ; clear PAE, PSE bits
+    mov esi, r8d ; esi <- 16-bit stack segment
+    push DATA32
+    pop rdx ; rdx <- 32-bit data segment selector
+    lgdt [rcx + (_16Gdtr - _BackFromUserCode.SavedCr4End)]
+    mov ss, edx
+    pushfq
+    lea edx, [rdx + DATA16 - DATA32]
+    lea r8, [REL .RetFromRealMode]
+    push r8
+    mov r8d, cs
+    mov [rcx + (_BackFromUserCode.X64JmpEnd - 2 - _BackFromUserCode.SavedCr4End)], r8w
+    mov [rcx + (_BackFromUserCode.SavedSpEnd - 8 - _BackFromUserCode.SavedCr4End)], rsp
+    jmp dword far [rcx + (_EntryPoint - _BackFromUserCode.SavedCr4End)]
+.RetFromRealMode:
+    popfq
+    lgdt [rsp + 60h] ; restore protected mode GDTR
+    lidt [rsp + 50h] ; restore protected mode IDTR
+    lea eax, [rbp - IA32_REGS.size]
+    pop gs
+    pop fs
+    pop rbx
+    mov ss, ebx
+    pop rbx
+    mov es, ebx
+    pop rbx
+    mov ds, ebx
 
-        pop rdi pop rsi pop rbx pop rbp
+    pop rdi
+    pop rsi
+    pop rbx
+    pop rbp
 
     ret

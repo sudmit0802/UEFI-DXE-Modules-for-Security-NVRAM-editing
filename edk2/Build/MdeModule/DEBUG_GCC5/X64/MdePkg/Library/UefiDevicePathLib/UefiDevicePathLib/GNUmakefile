@@ -291,25 +291,25 @@ $(OUTPUT_DIR)/DevicePathUtilities.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DevicePathUtilities.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
 	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathUtilities.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
 
-$(OUTPUT_DIR)/UefiDevicePathLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/UefiDevicePathLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/UefiDevicePathLib.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./UefiDevicePathLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
-
 $(OUTPUT_DIR)/DevicePathFromText.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DevicePathFromText.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DevicePathFromText.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathFromText.c
 	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathFromText.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathFromText.c
 
-$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathUtilitiesDxeSmm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
-
 $(OUTPUT_DIR)/DevicePathToText.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DevicePathToText.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DevicePathToText.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathToText.c
 	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathToText.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathToText.c
+
+$(OUTPUT_DIR)/UefiDevicePathLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/UefiDevicePathLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/UefiDevicePathLib.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./UefiDevicePathLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
+
+$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathUtilitiesDxeSmm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
 
 $(OUTPUT_DIR)/UefiDevicePathLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UefiDevicePathLib.lib : $(OBJECT_FILES_LIST)

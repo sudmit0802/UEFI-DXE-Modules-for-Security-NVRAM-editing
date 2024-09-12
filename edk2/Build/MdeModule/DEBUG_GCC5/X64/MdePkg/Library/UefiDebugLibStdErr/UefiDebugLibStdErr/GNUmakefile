@@ -283,15 +283,15 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/DebugLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/DebugLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/DebugLib.obj : $(WORKSPACE)/MdePkg/Library/UefiDebugLibStdErr/DebugLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDebugLibStdErr/UefiDebugLibStdErr/OUTPUT/./DebugLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDebugLibStdErr/DebugLib.c
-
 $(OUTPUT_DIR)/DebugLibConstructor.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DebugLibConstructor.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DebugLibConstructor.obj : $(WORKSPACE)/MdePkg/Library/UefiDebugLibStdErr/DebugLibConstructor.c
 	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDebugLibStdErr/UefiDebugLibStdErr/OUTPUT/./DebugLibConstructor.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDebugLibStdErr/DebugLibConstructor.c
+
+$(OUTPUT_DIR)/DebugLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/DebugLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/DebugLib.obj : $(WORKSPACE)/MdePkg/Library/UefiDebugLibStdErr/DebugLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiDebugLibStdErr/UefiDebugLibStdErr/OUTPUT/./DebugLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiDebugLibStdErr/DebugLib.c
 
 $(OUTPUT_DIR)/UefiDebugLibStdErr.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UefiDebugLibStdErr.lib : $(OBJECT_FILES_LIST)

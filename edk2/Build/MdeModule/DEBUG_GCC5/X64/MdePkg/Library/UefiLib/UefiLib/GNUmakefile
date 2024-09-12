@@ -287,6 +287,21 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
+$(OUTPUT_DIR)/UefiNotTiano.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/UefiNotTiano.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/UefiNotTiano.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/UefiNotTiano.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/./UefiNotTiano.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiLib/UefiNotTiano.c
+
+$(OUTPUT_DIR)/Acpi.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Acpi.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Acpi.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/Acpi.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/./Acpi.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiLib/Acpi.c
+
+$(OUTPUT_DIR)/UefiLibPrint.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/UefiLibPrint.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/UefiLibPrint.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/UefiLibPrint.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/./UefiLibPrint.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiLib/UefiLibPrint.c
+
 $(OUTPUT_DIR)/UefiLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UefiLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UefiLib.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/UefiLib.c
@@ -296,21 +311,6 @@ $(OUTPUT_DIR)/UefiDriverModel.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UefiDriverModel.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UefiDriverModel.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/UefiDriverModel.c
 	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/./UefiDriverModel.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiLib/UefiDriverModel.c
-
-$(OUTPUT_DIR)/Acpi.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Acpi.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Acpi.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/Acpi.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/./Acpi.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiLib/Acpi.c
-
-$(OUTPUT_DIR)/UefiNotTiano.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/UefiNotTiano.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/UefiNotTiano.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/UefiNotTiano.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/./UefiNotTiano.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiLib/UefiNotTiano.c
-
-$(OUTPUT_DIR)/UefiLibPrint.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/UefiLibPrint.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/UefiLibPrint.obj : $(WORKSPACE)/MdePkg/Library/UefiLib/UefiLibPrint.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/./UefiLibPrint.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/UefiLib/UefiLibPrint.c
 
 $(OUTPUT_DIR)/Console.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Console.obj : $(DEBUG_DIR)/AutoGen.h

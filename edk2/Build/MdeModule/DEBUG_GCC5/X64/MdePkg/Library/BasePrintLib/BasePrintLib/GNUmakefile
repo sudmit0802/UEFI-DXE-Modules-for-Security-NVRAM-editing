@@ -283,15 +283,15 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/PrintLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PrintLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PrintLib.obj : $(WORKSPACE)/MdePkg/Library/BasePrintLib/PrintLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/./PrintLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BasePrintLib/PrintLib.c
-
 $(OUTPUT_DIR)/PrintLibInternal.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PrintLibInternal.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PrintLibInternal.obj : $(WORKSPACE)/MdePkg/Library/BasePrintLib/PrintLibInternal.c
 	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/./PrintLibInternal.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BasePrintLib/PrintLibInternal.c
+
+$(OUTPUT_DIR)/PrintLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PrintLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PrintLib.obj : $(WORKSPACE)/MdePkg/Library/BasePrintLib/PrintLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/./PrintLib.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BasePrintLib/PrintLib.c
 
 $(OUTPUT_DIR)/BasePrintLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/BasePrintLib.lib : $(OBJECT_FILES_LIST)
