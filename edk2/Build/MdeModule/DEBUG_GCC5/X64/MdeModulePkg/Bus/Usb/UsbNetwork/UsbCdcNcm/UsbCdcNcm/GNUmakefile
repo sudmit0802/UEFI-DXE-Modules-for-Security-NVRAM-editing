@@ -19,7 +19,7 @@ PLATFORM_NAME = MdeModule
 PLATFORM_GUID = 587CE499-6CBE-43cd-94E2-186218569478
 PLATFORM_VERSION = 0.98
 PLATFORM_RELATIVE_DIR = MdeModulePkg
-PLATFORM_DIR = /home/sudmi/workspace/edk2/MdeModulePkg
+PLATFORM_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg
 PLATFORM_OUTPUT_DIR = Build/MdeModule
 
 #
@@ -35,7 +35,7 @@ MODULE_FILE_BASE_NAME = UsbCdcNcm
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm
 PACKAGE_RELATIVE_DIR = Bus/Usb/UsbNetwork/UsbCdcNcm
-MODULE_DIR = /home/sudmi/workspace/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm
+MODULE_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm
 FFS_OUTPUT_DIR = 
 
 MODULE_ENTRY_POINT = UsbNcmEntry
@@ -59,13 +59,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
-BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
+BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm
-OUTPUT_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT
-DEBUG_DIR = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG
+MODULE_BUILD_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm
+OUTPUT_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT
+DEBUG_DIR = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -220,8 +220,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/static_library_files.lst
 
 
 #
@@ -231,7 +231,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi \
+CODA_TARGET = /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi \
               
 
 #
@@ -323,42 +323,42 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/UsbNcmFunction.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UsbNcmFunction.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UsbNcmFunction.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbNcmFunction.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./UsbNcmFunction.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbNcmFunction.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./UsbNcmFunction.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbNcmFunction.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./AutoGen.obj $(INC) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./AutoGen.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/ComponentName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./ComponentName.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/ComponentName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./ComponentName.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/ComponentName.c
 
 $(OUTPUT_DIR)/UsbCdcNcm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UsbCdcNcm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UsbCdcNcm.obj : $(WORKSPACE)/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./UsbCdcNcm.obj $(INC) /home/sudmi/workspace/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/./UsbCdcNcm.obj $(INC) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm.c
 
 $(OUTPUT_DIR)/UsbCdcNcm.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UsbCdcNcm.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.lib
-	"$(SLINK)" cr /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.lib
+	"$(SLINK)" cr /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/UsbCdcNcm.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/UsbCdcNcm.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/UsbCdcNcm.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll
+	"$(DLINK)" -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll
 
 $(OUTPUT_DIR)/UsbCdcNcm.efi : $(DEBUG_DIR)/UsbCdcNcm.dll
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll $(GENFW_FLAGS)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi $(DEBUG_DIR)
-	$(CP) /home/sudmi/workspace/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/DEBUG/UsbCdcNcm.dll $(GENFW_FLAGS)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi $(DEBUG_DIR)
+	$(CP) /home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdeModulePkg/Bus/Usb/UsbNetwork/UsbCdcNcm/UsbCdcNcm/OUTPUT/UsbCdcNcm.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 
 $(OUTPUT_DIR)/UsbCdcNcm.map : $(OUTPUT_DIR)/UsbCdcNcm.efi
