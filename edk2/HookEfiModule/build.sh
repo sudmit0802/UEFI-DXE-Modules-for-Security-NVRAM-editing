@@ -4,9 +4,6 @@
 sudo rm -rf hook-efi.img
 sudo rm -rf $EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/HookEfiModule
 
-# Выполняем настройку окружения EDK2
-source $EDK_PATH/edksetup.sh
-
 build -a X64 -t GCC5 clean
 build -a X64 -t GCC5 -p MdeModulePkg/MdeModulePkg.dsc
 
