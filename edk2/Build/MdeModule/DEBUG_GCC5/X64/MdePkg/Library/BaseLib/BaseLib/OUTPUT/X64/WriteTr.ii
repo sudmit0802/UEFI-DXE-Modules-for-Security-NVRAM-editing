@@ -1,14 +1,14 @@
-# 0 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/X64/WriteTr.nasm"
+# 0 "$EDK_PATH/MdePkg/Library/BaseLib/X64/WriteTr.nasm"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 1
-# 16 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h" 1
-# 21 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/X64/ProcessorBind.h" 1
-# 162 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/X64/ProcessorBind.h"
+# 1 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 1
+# 16 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h"
+# 1 "$EDK_PATH/MdePkg/Include/Base.h" 1
+# 21 "$EDK_PATH/MdePkg/Include/Base.h"
+# 1 "$EDK_PATH/MdePkg/Include/X64/ProcessorBind.h" 1
+# 162 "$EDK_PATH/MdePkg/Include/X64/ProcessorBind.h"
 typedef unsigned long long UINT64;
 
 
@@ -64,8 +64,8 @@ typedef UINT64 UINTN;
 
 
 typedef INT64 INTN;
-# 22 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h" 2
-# 213 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 22 "$EDK_PATH/MdePkg/Include/Base.h" 2
+# 213 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef struct {
   UINT32 Data1;
   UINT16 Data2;
@@ -104,11 +104,11 @@ struct _LIST_ENTRY {
   LIST_ENTRY *ForwardLink;
   LIST_ENTRY *BackLink;
 };
-# 607 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 607 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef __builtin_ms_va_list VA_LIST;
-# 711 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 711 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef UINTN *BASE_LIST;
-# 816 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 816 "$EDK_PATH/MdePkg/Include/Base.h"
 _Static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
 _Static_assert (sizeof (INT8) == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
 _Static_assert (sizeof (UINT8) == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
@@ -137,7 +137,7 @@ _Static_assert (_Alignof (CHAR16) == sizeof (CHAR16), "Alignment of CHAR16 does 
 _Static_assert (_Alignof (INTN) == sizeof (INTN), "Alignment of INTN does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (UINTN) == sizeof (UINTN), "Alignment of UINTN does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (void *) == sizeof (void *), "Alignment of VOID * does not meet UEFI Specification Data Type requirements");
-# 852 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 852 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef enum {
   __VerifyUint8EnumValue = 0xff
 } __VERIFY_UINT8_ENUM_SIZE;
@@ -157,136 +157,136 @@ _Static_assert (sizeof (__VERIFY_INT32_ENUM_SIZE) == 4, "Size of enum does not m
 _Static_assert (_Alignof (__VERIFY_UINT8_ENUM_SIZE) == sizeof (__VERIFY_UINT8_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (__VERIFY_UINT16_ENUM_SIZE) == sizeof (__VERIFY_UINT16_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (__VERIFY_INT32_ENUM_SIZE) == sizeof (__VERIFY_INT32_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
-# 1026 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Base.h"
+# 1026 "$EDK_PATH/MdePkg/Include/Base.h"
 typedef UINTN RETURN_STATUS;
-# 17 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h" 1
-# 809 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 17 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 2
+# 1 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h" 1
+# 809 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdSetSku (
   UINTN SkuId
   );
-# 825 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 825 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
 LibPcdGet8 (
   UINTN TokenNumber
   );
-# 841 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 841 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
 LibPcdGet16 (
   UINTN TokenNumber
   );
-# 857 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 857 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
 LibPcdGet32 (
   UINTN TokenNumber
   );
-# 873 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 873 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
 LibPcdGet64 (
   UINTN TokenNumber
   );
-# 889 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 889 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPcdGetPtr (
   UINTN TokenNumber
   );
-# 905 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 905 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
 LibPcdGetBool (
   UINTN TokenNumber
   );
-# 919 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 919 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetSize (
   UINTN TokenNumber
   );
-# 939 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 939 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
 LibPcdGetEx8 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 960 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 960 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
 LibPcdGetEx16 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 978 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 978 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
 LibPcdGetEx32 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 999 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 999 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
 LibPcdGetEx64 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1020 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1020 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPcdGetExPtr (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1041 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1041 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
 LibPcdGetExBool (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1062 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1062 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetExSize (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1081 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1081 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet8S (
   UINTN TokenNumber,
   UINT8 Value
   );
-# 1100 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1100 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet16S (
   UINTN TokenNumber,
   UINT16 Value
   );
-# 1119 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1119 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet32S (
   UINTN TokenNumber,
   UINT32 Value
   );
-# 1138 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1138 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet64S (
   UINTN TokenNumber,
   UINT64 Value
   );
-# 1167 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1167 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetPtrS (
@@ -294,14 +294,14 @@ LibPcdSetPtrS (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1187 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1187 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetBoolS (
   UINTN TokenNumber,
   BOOLEAN Value
   );
-# 1210 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1210 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx8S (
@@ -309,7 +309,7 @@ LibPcdSetEx8S (
   UINTN TokenNumber,
   UINT8 Value
   );
-# 1234 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1234 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx16S (
@@ -317,7 +317,7 @@ LibPcdSetEx16S (
   UINTN TokenNumber,
   UINT16 Value
   );
-# 1258 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1258 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx32S (
@@ -325,7 +325,7 @@ LibPcdSetEx32S (
   UINTN TokenNumber,
   UINT32 Value
   );
-# 1282 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1282 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx64S (
@@ -333,7 +333,7 @@ LibPcdSetEx64S (
   UINTN TokenNumber,
   UINT64 Value
   );
-# 1312 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1312 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetExPtrS (
@@ -342,7 +342,7 @@ LibPcdSetExPtrS (
   UINTN *SizeOfBuffer,
   void *Buffer
   );
-# 1337 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1337 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetExBoolS (
@@ -350,7 +350,7 @@ LibPcdSetExBoolS (
   UINTN TokenNumber,
   BOOLEAN Value
   );
-# 1361 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1361 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 typedef
 void
 ( *PCD_CALLBACK)(
@@ -359,7 +359,7 @@ void
   void *TokenData,
   UINTN TokenDataSize
   );
-# 1386 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1386 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdCallbackOnSet (
@@ -367,7 +367,7 @@ LibPcdCallbackOnSet (
   UINTN TokenNumber,
   PCD_CALLBACK NotificationFunction
   );
-# 1407 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1407 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdCancelCallback (
@@ -375,20 +375,20 @@ LibPcdCancelCallback (
   UINTN TokenNumber,
   PCD_CALLBACK NotificationFunction
   );
-# 1434 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1434 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetNextToken (
   const GUID *Guid ,
   UINTN TokenNumber
   );
-# 1454 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1454 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 GUID *
 
 LibPcdGetNextTokenSpace (
   const GUID *TokenSpaceGuid
   );
-# 1483 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1483 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPatchPcdSetPtr (
@@ -397,7 +397,7 @@ LibPatchPcdSetPtr (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1515 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1515 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPatchPcdSetPtrS (
@@ -406,7 +406,7 @@ LibPatchPcdSetPtrS (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1549 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1549 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPatchPcdSetPtrAndSize (
@@ -416,7 +416,7 @@ LibPatchPcdSetPtrAndSize (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1584 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1584 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPatchPcdSetPtrAndSizeS (
@@ -455,14 +455,14 @@ typedef struct {
 
   CHAR8 *PcdName;
 } PCD_INFO;
-# 1635 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1635 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdGetInfo (
   UINTN TokenNumber,
   PCD_INFO *PcdInfo
   );
-# 1655 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1655 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdGetInfoEx (
@@ -470,13 +470,13 @@ LibPcdGetInfoEx (
   UINTN TokenNumber,
   PCD_INFO *PcdInfo
   );
-# 1670 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1670 "$EDK_PATH/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetSku (
   void
   );
-# 18 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 2
+# 18 "$EDK_PATH/Build/MdeModule/DEBUG_GCC5/X64/MdePkg/Library/BaseLib/BaseLib/DEBUG/AutoGen.h" 2
 
 extern GUID gEfiCallerIdGuid;
 extern GUID gEdkiiDscPlatformGuid;
@@ -525,7 +525,7 @@ extern const UINT32 _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask;
 
 extern const UINT8 _gPcd_FixedAtBuild_PcdSpeculationBarrierType;
 # 0 "<command-line>" 2
-# 1 "/home/sudmit/work/UEFI-DXE-Modules-for-Security-NVRAM-editing/edk2/MdePkg/Library/BaseLib/X64/WriteTr.nasm"
+# 1 "$EDK_PATH/MdePkg/Library/BaseLib/X64/WriteTr.nasm"
 ;------------------------------------------------------------------------------ ;
 ; Copyright (c) 2017, Intel Corporation. All rights reserved.<BR>
 ; SPDX-License-Identifier: BSD-2-Clause-Patent
