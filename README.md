@@ -21,6 +21,9 @@ export EDK_PATH=$(pwd)
 ```bash
 export EDK_TOOLS_PATH=$(pwd)/BaseTools
 ```
+```bash
+source edksetup.sh
+```
 
 To build hook.efi module run following:
 
