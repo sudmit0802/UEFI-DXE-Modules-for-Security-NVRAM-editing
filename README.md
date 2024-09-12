@@ -21,3 +21,14 @@ cd edk2/
 ```bash
 export EDK_PATH=$(pwd)
 ```
+To build hook.efi module run following:
+
+```bash
+HookEfiModule/build.sh
+```
+
+To build editor.efi module run following:
+
+```bash
+EditorEfiModule/build.sh
+```
